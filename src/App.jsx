@@ -5,6 +5,9 @@ import Explain from './components/Explain'
 import ImageExplain1 from "./assets/explain1.png"
 import ImageExplain2 from "./assets/explain2.png"
 import ImageExplain3 from "./assets/explain3.png"
+import Advantagens from './components/Advantages'
+import LastNews from './components/LastNews'
+import Footer from './components/Footer'
 function App() {
 
   return (
@@ -64,6 +67,14 @@ function App() {
         </ul>
       </div>
       </div>
+
+    <div className='flex gap-2 items-center justify-center font-semibold'>
+      <p className='text-orange-500'>6 vantagens</p> 
+      <p> de  ser um cooperado</p>
+    </div>
+    <Advantagens/>
+    <LastNews/>
+    <Footer/>
     </>
   )
 }
