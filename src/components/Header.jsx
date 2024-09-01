@@ -34,14 +34,14 @@ export default function Header(){
                     <li><Link to="/dinamica" className="pb-2 border-b border-white hover:text-orange-500 hover:underline">A Dinâmica</Link></li>
                     <li><Link to="/noticias" className="pb-2 border-b border-white hover:text-orange-500 hover:underline">Nóticias</Link></li>
                 </ul>
-                <div className="flex justify-end sm:pt-3">
-                <button className="text-white bg-orange-500 rounded-xl p-2 flex">Contate-nos</button>
-            </div>
-                </div>
-
+                <div className="flex gap-4 justify-end sm:pt-3">
+                    <button className="text-white bg-orange-500 rounded-xl p-2 flex">Contate-nos</button>
                 <div onClick={()=>setMenu(true)} className="bg-green-900 rounded-xl flex items-center p-2 sm:hidden">
                     <Menu color="white"/>
                 </div>
+                </div>
+                </div>
+
             </div>
         </header>
         </>
