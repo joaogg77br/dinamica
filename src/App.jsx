@@ -8,10 +8,18 @@ import ImageExplain3 from "./assets/explain3.png"
 import Advantagens from './components/Advantages'
 import LastNews from './components/LastNews'
 import Footer from './components/Footer'
+import Award  from './assets/award.png' 
+import TaskSquare from './assets/task-square.png'
+import  Wallet  from './assets/wallet-add.png'
+import Teacher from './assets/teacher.png'
+import Brif from "./assets/brifecase-tick.png"
+import Security from "./assets/security-user.png"
+
 function App() {
 
   return (
     <>
+    <div className='sm:px-10 md:px-20'>
       <Header />
       <Banner />
       <div className='p-4 sm:p-8'>
@@ -38,6 +46,7 @@ function App() {
         title={"Cooperativismo: juntos construímos uma sociedade mais próspera"}
         text={"Você sabe o que é cooperativismo? A estrutura é baseada na colaboração e na parceria para promover o auxílio mútuo. Hoje, faz parte do cotidiano de milhares de pessoas."}
         img={ImageExplain1}
+        side={true}
       />
       <Explain
         title={"O que é cooperativismo?"}
@@ -48,6 +57,7 @@ function App() {
         title={"Qual é o objetivo do cooperativismo?"}
         text={'O modelo busca maior integração com a sociedade, por isso, o objetivo é representar uma união de justiça com economia e sustentabilidade. A ideia é equilibrar os princípios respeitando a coletividade.'}
         img={ImageExplain3}
+        side={true}
       />
 
       <div className='p-4 sm:p-8'>
@@ -72,14 +82,15 @@ function App() {
         <p className='text-orange-500'>6 vantagens</p>
         <p> de  ser um cooperado</p>
       </div>
-      <div className='flex justify-center items-center mt-10'>
-        <div className='grid grid-cols-2 gap-4 sm:grid-cols-3'>
-          <Advantagens number={1} />
-          <Advantagens />
-          <Advantagens />
-          <Advantagens />
-          <Advantagens />
-          <Advantagens />
+      </div>
+      <div className='flex justify-center items-center m-5'>
+        <div className='grid grid-cols-2 gap-6 sm:grid-cols-3 '>
+          <Advantagens number={1} text={"Ser Sócio-cotista"} img={Award} />
+          <Advantagens number={2} text={"Opinar e votar nas decisões"} img={TaskSquare}/>
+          <Advantagens number={3} text={"Oportunidade  de trabalho"} img={Wallet}/>
+          <Advantagens number={4} text={"Qualificação profissional"} img={Teacher}/>
+          <Advantagens number={5} text={"Direitos previdenciários"} img={Brif}/>
+          <Advantagens number={6} text={"Jalecos e calçados profissionais"} img={Security}/>
         </div>
       </div>
       <LastNews />
