@@ -136,11 +136,60 @@ export default function Header() {
                     <div className="flex gap-10">
                         <ul className="hidden justify-center mt-4 gap-10 sm:flex">
                             <li><Link to="/" className="pb-2 border-b border-white  a hover:text-orange-500 hover:underline">Home</Link></li>
-                            <li><Link to="/dinamica" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">A Dinâmica</Link></li>
+                            <li className="group  pb-6">
+                                <Link to="/dinamica" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Institucional</Link>
+                                <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute  pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
+                                    <hr className="mb-10 border-10 border-zinc-500 bg-white h-0 w-full"/>
+                                    <div className="flex gap-20 p-10 px-32">
+                                        <div className=" text-4xl font-medium text-zinc-400">Institucional</div>
+                                        <ul className="flex flex-col mt-2 text-start gap-4 ">
+                                            <li className="hover:text-orange-500 duration-300"><Link>Conteúdo</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Missão,Visão e Valores</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Atividades Desenvolvidas Pela Dinâmica</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Benefícios exclusivos da Dinâmica</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Onde atuamos</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Conselhos</Link></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li className="group pb-6">
+                                <Link to="/dinamica" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Cooperativismo</Link>
+                                <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
+                                    <hr className="mb-10 border-10 border-zinc-500 bg-white h-0 w-full"/>
+                                    <div className="flex gap-20 p-10 px-32">
+                                        <div className=" text-4xl font-medium text-zinc-400">Cooperativismo</div>
+                                        <ul className="flex flex-col gap-4 text-start mt-2 ">
+                                            <li className="hover:text-orange-500 duration-300"><Link>Cooperativismo</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Cooperativa</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Cooperado</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>7 Príncipios do Coopertivismo</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Educação Continuada</Link></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
+                            <li className="group pb-6">
+                                <Link to="/dinamica" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Contéudos</Link>
+
+                                <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
+                                    <hr className="mb-10 border-10 border-zinc-500 bg-white h-0 w-full"/>
+                                    <div className="flex gap-20 p-10 px-32">
+                                        <div className=" text-4xl font-medium text-zinc-400">Conteúdo</div>
+                                        <ul className="flex flex-col gap-4 text-start mt-2 ">
+                                            <li className="hover:text-orange-500 duration-300"><Link>Leis Cooperativistas</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Edições da Dinâmica News</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Filme Institucional</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Parcerias Locais</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link>Galeria de Fotos</Link></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </li>
                             <li><Link to="/noticias" className="pb-2 border-b border-white hover:text-orange-500 hover:underline">Nóticias</Link></li>
                         </ul>
                         <div className="flex gap-4 justify-end sm:pt-3">
-                            <button className="text-white bg-orange-500 rounded-xl p-2 flex text-nowrap duration-300 border-2 border-orange-500 hover:text-orange-500  hover:bg-white" onClick={() => { setContact(true) }}>Fale conosco</button>
+                            <button className="text-white h-10 bg-orange-500 rounded-xl p-1 px-2 flex text-nowrap duration-300 border-2 border-orange-500 hover:text-orange-500  hover:bg-white" onClick={() => { setContact(true) }}>Fale conosco</button>
                             <div onClick={() => setMenu("flex")} className="bg-green-900 rounded-xl flex items-center p-2 sm:hidden">
                                 <Menu color="white" />
                             </div>
