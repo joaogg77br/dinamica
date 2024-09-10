@@ -110,7 +110,7 @@ export default function Header() {
                 {
                     contact ?
                         <div className="fixed  flex justify-center items-center bg-black bg-opacity-75 w-full h-screen top-0 left-0 z-40">
-                            <section className="bg-white p-4 rounded-3xl  sm:w-1/3 z-20">
+                            <section className="bg-white p-4 rounded-3xl  lg:w-1/3 z-20">
                                 <div className="flex justify-between pt-4">
                                     <h1 className="text-xl font-semibold">Contate-nos</h1>
                                     <button onClick={() => setContact(false)}><X className="text-zinc-700 bg-zinc-200 p-1 rounded-md" /></button>
@@ -128,13 +128,13 @@ export default function Header() {
                 }
 
 
-                <div className="flex gap-10 p-2 justify-between w-full items-center sm:pr-10">
-                    <div className="flex gap-2 sm:mr-20 items-center">
+                <div className="flex gap-10 p-2 justify-between w-full items-center lg:pr-10">
+                    <div className="flex gap-2 lg:mr-20 items-center min-w-10">
                         <img src={MyImage} alt="Logo" className="h-10" />
-                        <img src={Dinamic} alt="" className="hidden  lg:block" />
+                        <img src={Dinamic} alt="" className="hidden xl:block" />
                     </div>
                     <div className="flex gap-10">
-                        <ul className="hidden justify-center mt-4 gap-10 sm:flex">
+                        <ul className="hidden justify-center mt-4 gap-10 lg:flex">
                             <li><Link to="/" className="pb-2 border-b border-white  a hover:text-orange-500 hover:underline">Home</Link></li>
                             <li className="group  pb-6">
                                 <Link to="/dinamica" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Institucional</Link>
@@ -188,9 +188,9 @@ export default function Header() {
                             </li>
                             <li><Link to="/noticias" className="pb-2 border-b border-white hover:text-orange-500 hover:underline">Nóticias</Link></li>
                         </ul>
-                        <div className="flex gap-4 justify-end sm:pt-3">
+                        <div className="flex gap-4 justify-end lg:pt-3">
                             <button className="text-white h-10 bg-orange-500 rounded-xl p-1 px-2 flex text-nowrap duration-300 border-2 border-orange-500 hover:text-orange-500  hover:bg-white" onClick={() => { setContact(true) }}>Fale conosco</button>
-                            <div onClick={() => setMenu("flex")} className="bg-green-900 rounded-xl flex items-center p-2 sm:hidden">
+                            <div onClick={() => setMenu("flex")} className="bg-green-900 rounded-xl flex items-center p-2 lg:hidden">
                                 <Menu color="white" />
                             </div>
                         </div>
