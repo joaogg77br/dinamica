@@ -39,9 +39,9 @@ export default function Header() {
                                 </div>
                                 {openIns ?
                                     <ul className="flex flex-col gap-4 mt-4 animate-wiggle">
-                                        <li className="underline"><Link>Sobre A Dinâmica</Link></li>
-                                        <li className="underline"><Link>Visão, Missão e vetores</Link></li>
-                                        <li className="underline"><Link>Atividades Desenvolvidas pela Dinâmica</Link></li>
+                                        <li className="underline"><Link to="/dinamica">Sobre A Dinâmica</Link></li>
+                                        <li className="underline"><Link to="/mvv">Visão, Missão e vetores</Link></li>
+                                        <li className="underline"><Link to="/atividades">Atividades Desenvolvidas pela Dinâmica</Link></li>
                                         <li className="underline"><Link>Benefício Excluidos da Dinâmica</Link></li>
                                         <li className="underline"><Link>Onde atuamos</Link></li>
                                         <li className="underline"><Link>Conselhos</Link></li>
@@ -145,7 +145,7 @@ export default function Header() {
                                         <ul className="flex flex-col mt-2 text-start gap-4 ">
                                             <li className="hover:text-orange-500 duration-300"><Link to="/dinamica">Conteúdo</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link to="/mvv">Missão, Visão e Valores</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Atividades Desenvolvidas Pela Dinâmica</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/atividades">Atividades Desenvolvidas Pela Dinâmica</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link>Benefícios exclusivos da Dinâmica</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link>Onde atuamos</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link>Conselhos</Link></li>

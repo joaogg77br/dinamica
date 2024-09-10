@@ -6,6 +6,8 @@ import './index.css'
 import Notices from './pages/Notices.jsx'
 import Dinamica from './pages/dinamica.jsx'
 import Mvv from './pages/Mvv.jsx'
+import Atividades from './pages/Atividades.jsx'
+import Beneficios from './pages/Beneficios.jsx'
 
 
 const router = createBrowserRouter([
@@ -25,7 +27,16 @@ const router = createBrowserRouter([
   {
     path:"/mvv",
     element:<Mvv/>
+  },
+  {
+    path:"/atividades",
+    element:<Atividades/>
+  },
+  {
+    path:"/beneficios",
+    element:<Beneficios/>
   }
+
 
 ])
 createRoot(document.getElementById('root')).render(

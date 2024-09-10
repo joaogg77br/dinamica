@@ -6,7 +6,7 @@ import reuniao from "../assets/Snapinsta 1(1).png"
 
 export default function Dinamica() {
     return (
-        <div >
+        <div className="sm:px-10 md:px-20">
             <Header />
             <Info Title={"A Dinâmica"} text={"Cooperativa de trabalho, serviços gerais e administrativos."} />
             <section className="p-8 flex justify-center items-center">

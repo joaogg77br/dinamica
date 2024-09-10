@@ -7,7 +7,7 @@ export default  function Notices(){
     return(
         <div>
             <Header/>
-            <Info Title={"Notícias"} text={"Cooperativa de trabalho, serviços gerais e administrativos."}/>
+            <Info Title={"Notícias"} />
             <Footer/>
         </div>
     )
