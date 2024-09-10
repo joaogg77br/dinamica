@@ -137,14 +137,14 @@ export default function Header() {
                         <ul className="hidden justify-center mt-4 gap-10 lg:flex">
                             <li><Link to="/" className="pb-2 border-b border-white  a hover:text-orange-500 hover:underline">Home</Link></li>
                             <li className="group  pb-6">
-                                <Link to="/dinamica" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Institucional</Link>
+                                <Link to="" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Institucional</Link>
                                 <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute  pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
                                     <hr className="mb-10 border-10 border-zinc-500 bg-white h-0 w-full"/>
                                     <div className="flex gap-20 p-10 px-32">
                                         <div className=" text-4xl font-medium text-zinc-400">Institucional</div>
                                         <ul className="flex flex-col mt-2 text-start gap-4 ">
-                                            <li className="hover:text-orange-500 duration-300"><Link>Conteúdo</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Missão,Visão e Valores</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/dinamica">Conteúdo</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/mvv">Missão, Visão e Valores</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link>Atividades Desenvolvidas Pela Dinâmica</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link>Benefícios exclusivos da Dinâmica</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link>Onde atuamos</Link></li>
@@ -154,7 +154,7 @@ export default function Header() {
                                 </section>
                             </li>
                             <li className="group pb-6">
-                                <Link to="/dinamica" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Cooperativismo</Link>
+                                <Link className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Cooperativismo</Link>
                                 <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
                                     <hr className="mb-10 border-10 border-zinc-500 bg-white h-0 w-full"/>
                                     <div className="flex gap-20 p-10 px-32">
@@ -170,8 +170,7 @@ export default function Header() {
                                 </section>
                             </li>
                             <li className="group pb-6">
-                                <Link to="/dinamica" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Contéudos</Link>
-
+                                <Link className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Contéudos</Link>
                                 <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
                                     <hr className="mb-10 border-10 border-zinc-500 bg-white h-0 w-full"/>
                                     <div className="flex gap-20 p-10 px-32">
