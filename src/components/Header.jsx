@@ -42,8 +42,8 @@ export default function Header() {
                                         <li className="underline"><Link to="/dinamica">Sobre A Dinâmica</Link></li>
                                         <li className="underline"><Link to="/mvv">Visão, Missão e vetores</Link></li>
                                         <li className="underline"><Link to="/atividades">Atividades Desenvolvidas pela Dinâmica</Link></li>
-                                        <li className="underline"><Link>Benefício Excluidos da Dinâmica</Link></li>
-                                        <li className="underline"><Link>Onde atuamos</Link></li>
+                                        <li className="underline"><Link to="/beneficios">Benefício Excluidos da Dinâmica</Link></li>
+                                        <li className="underline"><Link to="/area de atuacao">Onde atuamos</Link></li>
                                         <li className="underline"><Link>Conselhos</Link></li>
                                     </ul>
                                     : null

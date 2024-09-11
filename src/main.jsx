@@ -8,6 +8,7 @@ import Dinamica from './pages/dinamica.jsx'
 import Mvv from './pages/Mvv.jsx'
 import Atividades from './pages/Atividades.jsx'
 import Beneficios from './pages/Beneficios.jsx'
+import Atuacao from './pages/Atucao.jsx'
 
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path:"/beneficios",
     element:<Beneficios/>
+  },
+  {
+    path:"/area de atuacao",
+    element:<Atuacao/>
   }
 
 

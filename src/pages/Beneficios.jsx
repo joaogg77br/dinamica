@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Info from "../components/Info"
 
 
 export default function Beneficios(){
@@ -7,10 +8,11 @@ export default function Beneficios(){
         <>
         <div>
             <Header/>
-            <section>
-            <div className="flex gap-4 border-b border-zinc-400">
+            <Info Title={"Benéficios exclusivos da Dinâmica"}/>
+            <section className="flex mt-10 p-4">
+            <div className="flex gap-4 border-b border-zinc-400 p-4 ">
                 <img src="" alt="" />
-                <p></p>
+                <p>Cursos de capacitação e profissionalizantes</p>
             </div>
             </section>
             <Footer/>
