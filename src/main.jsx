@@ -9,6 +9,10 @@ import Mvv from './pages/Mvv.jsx'
 import Atividades from './pages/Atividades.jsx'
 import Beneficios from './pages/Beneficios.jsx'
 import Atuacao from './pages/Atucao.jsx'
+import Conselhos from './pages/Conselhos.jsx'
+import Cooperativismo from './pages/Cooperativismo.jsx'
+import Principios from './pages/Principios.jsx'
+
 
 
 const router = createBrowserRouter([
@@ -40,7 +44,20 @@ const router = createBrowserRouter([
   {
     path:"/area de atuacao",
     element:<Atuacao/>
+  },
+  {
+    path:"/conselhos",
+    element:<Conselhos/>
+  },
+  {
+    path:"/Cooperativismo",
+    element:<Cooperativismo/>
+  },
+  {
+    path:"/principios",
+    element:<Principios/>
   }
+
 
 
 ])

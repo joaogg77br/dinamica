@@ -44,7 +44,7 @@ export default function Header() {
                                         <li className="underline"><Link to="/atividades">Atividades Desenvolvidas pela Dinâmica</Link></li>
                                         <li className="underline"><Link to="/beneficios">Benefício Excluidos da Dinâmica</Link></li>
                                         <li className="underline"><Link to="/area de atuacao">Onde atuamos</Link></li>
-                                        <li className="underline"><Link>Conselhos</Link></li>
+                                        <li className="underline"><Link to="/conselhos">Conselhos</Link></li>
                                     </ul>
                                     : null
                                 }
@@ -65,12 +65,9 @@ export default function Header() {
                                 </div>
                                 {openCoop ?
                                     <ul className="flex flex-col gap-4 animate-wiggle pt-4">
-                                        <li className="underline"><Link>Sobre A Dinâmica</Link></li>
-                                        <li className="underline"><Link>Visão, Missão e vetores</Link></li>
-                                        <li className="underline"><Link>Atividades Desenvolvidas pela Dinâmica</Link></li>
-                                        <li className="underline"><Link>Benefício Excluidos da Dinâmica</Link></li>
-                                        <li className="underline"><Link>Onde atuamos</Link></li>
-                                        <li className="underline"><Link>Conselhos</Link></li>
+                                        <li className="underline"><Link to="/cooperativismo">Cooperativismo, Cooperativa e Cooperado</Link></li>
+                                        <li className="underline"><Link to="/principios">7 Princípios do Cooperativismo</Link></li>
+                                        <li className="underline"><Link to="/Educacao continuada">Educação Continuada</Link></li>
                                     </ul>
                                     : null
                                 }
@@ -146,7 +143,7 @@ export default function Header() {
                                             <li className="hover:text-orange-500 duration-300"><Link to="/dinamica">Conteúdo</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link to="/mvv">Missão, Visão e Valores</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link to="/atividades">Atividades Desenvolvidas Pela Dinâmica</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Benefícios exclusivos da Dinâmica</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/beneficios">Benefícios exclusivos da Dinâmica</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link>Onde atuamos</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link>Conselhos</Link></li>
                                         </ul>
