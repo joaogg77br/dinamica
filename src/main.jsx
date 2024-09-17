@@ -56,6 +56,10 @@ const router = createBrowserRouter([
   {
     path:"/principios",
     element:<Principios/>
+  },
+  {
+    path:"/educação continuada",
+    element:<Principios/>
   }
 
 
