@@ -16,7 +16,7 @@ export default function Principios() {
                 <Header />
                 <Info Title={"7 Príncipios do Cooperativismo"} />
             </div>
-            <section className="bg-zinc-100 p-4">
+            <section className="bg-zinc-100 p-4 w-full">
                 <div className="flex flex-col text-xl font-medium">
                     <div className="relative">
                         <div className="flex justify-center p-2 bg-orange-500 rounded-t-2xl w-16  text-white">1</div>

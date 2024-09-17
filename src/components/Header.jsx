@@ -74,16 +74,7 @@ export default function Header() {
                             </li>
                             <li className="flex gap-2 flex-col border-b-zinc-50 border-b-2 pb-4 pr-4 border-opacity-25">
                                 <div className="flex justify-between ">
-                                    <Link to="/noticias" className="relative border-white hover:left-4 font-medium">Contéudos</Link>
-                                    {openCon ?
-                                        <ChevronUp className="cursor-pointer" onClick={() => {
-                                            setOpenCoon(!openCon)
-                                        }} />
-                                        :
-                                        <ChevronDown className="cursor-pointer" onClick={() => {
-                                            setOpenCoon(!openCon)
-                                        }} />
-                                    }
+                                    <Link to="/conteudos" className="relative border-white hover:left-4 font-medium">Contéudos</Link>
                                 </div>
                                 {openCon ?
                                     <ul className="flex flex-col gap-4 mt-4 animate-wiggle">
@@ -167,20 +158,7 @@ export default function Header() {
                                 </section>
                             </li>
                             <li className="group pb-6">
-                                <Link className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Contéudos</Link>
-                                <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
-                                    <hr className="mb-10 border-10 border-zinc-500 bg-white h-0 w-full"/>
-                                    <div className="flex gap-20 p-10 px-32">
-                                        <div className=" text-4xl font-medium text-zinc-400">Conteúdo</div>
-                                        <ul className="flex flex-col gap-4 text-start mt-2 ">
-                                            <li className="hover:text-orange-500 duration-300"><Link>Leis Cooperativistas</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Edições da Dinâmica News</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Filme Institucional</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Parcerias Locais</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Galeria de Fotos</Link></li>
-                                        </ul>
-                                    </div>
-                                </section>
+                                <Link  to="/conteudo" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Contéudos</Link>
                             </li>
                             <li><Link to="/noticias" className="pb-2 border-b border-white hover:text-orange-500 hover:underline">Nóticias</Link></li>
                         </ul>
