@@ -4,7 +4,7 @@ export default function Explain({title,text,img,side}){
     
     return(
         <div className="p-4 sm:p-8">   
-            <div className="flex flex-col bg-zinc-50 rounded-3xl sm:flex-row w-full">
+            <div className="flex flex-col bg-zinc-50 rounded-3xl lg:flex-row w-full sm:items-center">
                 { side?
                 <div>
                     <img src={img} alt="Not found" className="max-h-96 w-full sm:h-full sm:w-96" />

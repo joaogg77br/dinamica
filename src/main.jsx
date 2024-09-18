@@ -65,10 +65,10 @@ const router = createBrowserRouter([
   {
     path:"/conteudos",
     element:<Conteudos/>
+  },
+  {
+    
   }
-
-
-
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>

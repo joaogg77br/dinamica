@@ -12,6 +12,9 @@ export default {
       }
     },
     extend: {
+      spacing:{
+          "fifityMin":'-5%'
+      },
         animation: {
           wiggle: 'wiggle 1s ease-in-out',
         } 

@@ -65,7 +65,6 @@ function App() {
           <h1 className='text-2xl'>Quais são as áreas de atuação do <span className='text-orange-500'>cooperativismo?</span></h1>
           <p className='pt-4'>Após um processo democrático, reduziu-se para sete ramos do cooperativismo. Essa modificação veio para garantir que ficassem
             mais alinhados com a realidade das organizações, sendo classificados em:</p>
-
           <ul className='grid p-4 list-disc gap-4 '>
             <li>Agropecuário: composto por trabalhadores rurais, alunos de escolas técnicas e demais pessoas da produção agrícola;</li>
             <li>Consumo: tanto de turismo e lazer quanto educacional (formado por pais e alunos);</li>
