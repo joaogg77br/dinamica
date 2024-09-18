@@ -31,12 +31,12 @@ export default function Footer() {
                         <li className="hover:text-orange-500"><Link to="/principios">7 Principios do Cooperativismo</Link></li>
                         <li className="hover:text-orange-500"><Link to="/beneficios">Educação Continuada</Link></li>
                         <li className="font-medium text-black hidden lg:block mt-4"><Link to="/noticias">Nóticias</Link></li>
-                        <li className="font-medium text-black hidden lg:block"><Link to="/">Conteúdo</Link></li>
+                        <li className="font-medium text-black hidden lg:block"><Link to="/conteudos">Conteúdos</Link></li>
                     </ul>
                 </div>
 
                 <h1 className="font-medium lg:hidden"><Link to="/noticias">Nóticias</Link></h1>
-                <h1 className="font-medium lg:hidden"><Link to="/">Conteúdo</Link></h1>
+                <h1 className="font-medium lg:hidden"><Link to="/">Conteúdos</Link></h1>
             </main>
         </footer>
     )

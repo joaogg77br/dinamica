@@ -1,26 +1,78 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info"
+import Teacher from "../assets/teacher.svg"
+import Lifebouy from "../assets/lifebuoy.svg"
+import Receipt from "../assets/receipt-discount.svg"
+import security from "../assets/security.svg"
+import People from "../assets/people.svg"
+import PersonalCard from "../assets/personalcard.svg"
+import BagTick from "../assets/bag-tick.svg"
+import SecuritUser from "../assets/security-user.svg"
+import HeartTick from "../assets/heart-tick.svg"
+import Hospital from "../assets/hospital.svg"
+import Calls from "../assets/call-calling.svg"
+import Book from "../assets/book.svg"
+import CourtHouse from "../assets/courthouse.svg"
 
-
-export default function Beneficios(){
-    return(
+export default function Beneficios() {
+    return (
         <>
-        <div className="sm:px-10 lg:px-20">
-            <Header/>
-            <Info Title={"Benéficios exclusivos da Dinâmica"}/>
-        </div>
-            <section className="flex flex-col gap-8 mt-10 p-4 bg-zinc-100">
-            <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
-                <img src="" alt="" />
-                <p>Cursos de capacitação e profissionalizantes</p>
+            <div className="sm:px-10 lg:px-20">
+                <Header />
+                <Info Title={"Benéficios exclusivos da Dinâmica"} />
             </div>
-            <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
-                <img src="" alt="" />
-                <p>Cursos de capacitação e profissionalizantes</p>
-            </div>
+            <section className="flex flex-col gap-8 mt-10 p-4 bg-zinc-100 lg:px-20">
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={Teacher} alt="" />
+                    <p>Cursos de capacitação e profissionalizantes</p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={Lifebouy} alt="" />
+                    <p>Assistência ao cooperado desalocado </p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={Receipt} alt="" />
+                    <p>Parcerias com estabelecimentos locais</p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={security} alt="" />
+                    <p>Execução dos Programas de Gerenciamento de Riscos com profissionais especializados</p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={People} alt="" />
+                    <p>Ações Cooperativas</p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={BagTick} alt="" />
+                    <p>Sorteio de cestas Básicas</p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={SecuritUser} alt="" />
+                    <p>Crachás de Identificação Individual </p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={HeartTick} alt="" />
+                    <p>Seguro de vida</p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={Hospital} alt="" />
+                    <p>Assistência Médica, Hospitalar e Odontológica </p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={Calls} alt="" />
+                    <p>Atendimento médico por Telemedicina</p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={Book} alt="" />
+                    <p>Informativos Semestrais – Dinâmica News</p>
+                </div>
+                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                    <img src={CourtHouse} alt="" />
+                    <p>Assessoria Jurídica Gratuita</p>
+                </div>
             </section>
-            <Footer/>
+            <Footer />
         </>
     )
 }

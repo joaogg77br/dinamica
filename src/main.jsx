@@ -12,6 +12,7 @@ import Atuacao from './pages/Atucao.jsx'
 import Conselhos from './pages/Conselhos.jsx'
 import Cooperativismo from './pages/Cooperativismo.jsx'
 import Principios from './pages/Principios.jsx'
+import Conteudos from './pages/Conteudos.jsx'
 
 
 
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
   {
     path:"/educação continuada",
     element:<Principios/>
+  },
+  {
+    path:"/conteudos",
+    element:<Conteudos/>
   }
 
 

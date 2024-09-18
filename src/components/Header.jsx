@@ -158,7 +158,7 @@ export default function Header() {
                                 </section>
                             </li>
                             <li className="group pb-6">
-                                <Link  to="/conteudo" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Contéudos</Link>
+                                <Link  to="/conteudos" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Contéudos</Link>
                             </li>
                             <li><Link to="/noticias" className="pb-2 border-b border-white hover:text-orange-500 hover:underline">Nóticias</Link></li>
                         </ul>
