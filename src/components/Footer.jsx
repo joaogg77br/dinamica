@@ -13,7 +13,7 @@ export default function Footer() {
             </div>
 
             <main className="grid grid-cols-2 p-10 gap-4 lg:w-3/4">
-                <div classsName="">
+                <div className="">
                     <h1 className="font-medium">Institucional</h1>
                     <ul className="grid gap-5 text-start grid-cols-1 mt-5 duration-300 sm:gap-4 w-full mb-10 text-zinc-400">
                         <li className="hover:text-orange-500"><Link to="/dinamica">Sobre a Dinâmica</Link></li>
@@ -24,7 +24,7 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div classsName="">
+                <div className="">
                     <h1 className="font-medium">Cooperativismo</h1>
                     <ul className="grid gap-5 text-start grid-cols-1 mt-5 duration-300 sm:gap-4 w-full mb-10 text-zinc-400">
                         <li className="hover:text-orange-500"><Link to="/cooperativismo">Cooperativismo, Cooperativa e Cooperado</Link></li>

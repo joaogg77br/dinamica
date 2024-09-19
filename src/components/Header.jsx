@@ -152,7 +152,7 @@ export default function Header() {
                                         <ul className="flex flex-col gap-4 text-start mt-2 ">
                                             <li className="hover:text-orange-500 duration-300"><Link to="/cooperativismo">Cooperativismo, Cooperativa e Cooperado</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link to="/principios">7 Príncipios do Coopertivismo</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link to="/educacao">Educação Continuada</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/">Educação Continuada</Link></li>
                                         </ul>
                                     </div>
                                 </section>

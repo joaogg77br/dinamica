@@ -84,7 +84,7 @@ function App() {
       <div className='flex justify-center items-center m-5'>
         <div className='grid grid-cols-2 gap-6 sm:grid-cols-3 '>
           <Advantagens number={1} text={"Ser Sócio-cotista"} img={Award} />
-          <Advantagens number={2} text={"Opinaar e votar nas decisões"} img={TaskSquare}/>
+          <Advantagens number={2} text={"Opinar e votar nas decisões"} img={TaskSquare}/>
           <Advantagens number={3} text={"Oportunidade  de trabalho"} img={Wallet}/>
           <Advantagens number={4} text={"Qualificação profissional"} img={Teacher}/>
           <Advantagens number={5} text={"Direitos previdenciários"} img={Brif}/>
