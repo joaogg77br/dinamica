@@ -6,7 +6,7 @@ import Notebook from "../assets/Frame 20.png"
 export default function Banner() {
     return (
         <div className="p-4 sm:p-8">
-            <div className="flex flex-col justify-center items-center relative rounded-2xl w-full bg-green-900 h-96 ">
+            <div className="flex flex-col justify-center items-center relative rounded-2xl w-full bg-verde h-96 ">
                 <img src={leftCanto} alt="" className="absolute top-0 left-0 rounded-2xl md:h-32 "/>
                 <img src={SquareRigth} alt=""  className="absolute top-0 right-0 rounded-2xl lg:h-32" />
                 <img src={SquareMid} alt=""  className="absolute bottom-24 left-5 h-12 lg:h-20 lg:bottom-40 lg:left-4 z-10"/>

@@ -19,23 +19,23 @@ function App() {
 
   return (
     <>
-    <div className='sm:px-10 md:px-20'>
+    <div className='sm:px-10 lg:px-40'>
       <Header />
       <Banner />
-      <div className='p-4 sm:p-8'>
-        <div className='flex items-center flex-col p-4 bg-orange-500 rounded-3xl sm:flex-row sm:justify-around '>
-          <h1 className='text-white text-xl font-semibold m-4 sm:text-3xl'>Dinâmica em números</h1>
-          <div className='flex w-full justify-between bg-white mt-4 gap-4 rounded-2xl p-2 sm:w-4/6 sm:p-10 sm:justify-around sm:flex-wrap'>
-            <div className='flex flex-col items-center'>
-              <p className='font-bold text-2xl text-orange-500 sm:text-4xl '> +13</p>
+      <div className='p-4 '>
+        <div className='px-2 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around '>
+          <h1 className='text-white text-xl font-semibold m-4 sm:text-3xl pl-10'>Dinâmica em números</h1>
+          <div className='flex w-full justify-between bg-white  gap-4 rounded-2xl  lg:my-5 m-4 sm:w-4/6 sm:p-10 sm:justify-around sm:flex-wrap'>
+            <div className='flex flex-col items-center p-4 sm:p-0'>
+              <p className='font-bold text-2xl text-laranja sm:text-4xl '> +13</p>
               <p className='font-semibold  sm:text-2xl'>Cidades</p>
             </div>
-            <div className='flex flex-col items-center'>
-              <p className='font-bold text-2xl text-orange-500 sm:text-4xl '> +1700</p>
+            <div className='flex flex-col items-center p-4 sm:p-0'>
+              <p className='font-bold text-2xl text-laranja sm:text-4xl'> +1700</p>
               <p className='font-semibold sm:text-2xl'>Cooperados</p>
             </div>
-            <div className='flex flex-col items-center'>
-              <p className='font-bold text-2xl text-orange-500 sm:text-4xl '>+300</p>
+            <div className='flex flex-col items-center p-4 sm:p-0'>
+              <p className='font-bold text-2xl text-laranja sm:text-4xl '>+300</p>
               <p className='font-semibold sm:text-2xl'>Parceiros</p>
             </div>
           </div>
@@ -52,17 +52,17 @@ function App() {
         title={"O que é cooperativismo?"}
         text={'O cooperativismo a é a união de pessoas com interesses em comum que colaboram entre si, nela, os cooperados são considerados "donos do negócio", dessa forma, as decisões são tomadas em assembleias.'}
         img={ImageExplain2}
-      />
+        />
       <Explain
         title={"Qual é o objetivo do cooperativismo?"}
         text={'O modelo busca maior integração com a sociedade, por isso, o objetivo é representar uma união de justiça com economia e sustentabilidade. A ideia é equilibrar os princípios respeitando a coletividade.'}
         img={ImageExplain3}
         side={true}
-      />
+        />
 
       <div className='p-4 sm:p-8'>
-        <div className='text-white p-4 mt-4 rounded-2xl bg-green-900'>
-          <h1 className='text-2xl'>Quais são as áreas de atuação do <span className='text-orange-500'>cooperativismo?</span></h1>
+        <div className='text-white  p-4 md:p-20 mt-4 rounded-2xl bg-verde'>
+          <h1 className='text-2xl'>Quais são as áreas de atuação do <span className='text-laranja'>cooperativismo?</span></h1>
           <p className='pt-4'>Após um processo democrático, reduziu-se para sete ramos do cooperativismo. Essa modificação veio para garantir que ficassem
             mais alinhados com a realidade das organizações, sendo classificados em:</p>
           <ul className='grid p-4 list-disc gap-4 '>
@@ -81,7 +81,6 @@ function App() {
         <p className='text-orange-500'>6 vantagens</p>
         <p> de  ser um cooperado</p>
       </div>
-      </div>
       <div className='flex justify-center items-center m-5'>
         <div className='grid grid-cols-2 gap-6 sm:grid-cols-3 '>
           <Advantagens number={1} text={"Ser Sócio-cotista"} img={Award} />
@@ -92,6 +91,7 @@ function App() {
           <Advantagens number={6} text={"Jalecos e calçados profissionais"} img={Security}/>
         </div>
       </div>
+        </div>
       <LastNews />
       <Footer />
     </>

@@ -18,11 +18,11 @@ import CourtHouse from "../assets/courthouse.svg"
 export default function Beneficios() {
     return (
         <>
-            <div className="sm:px-10 lg:px-20">
+            <div className="sm:px-10 lg:px-40">
                 <Header />
                 <Info Title={"Benéficios exclusivos da Dinâmica"} />
             </div>
-            <section className="flex flex-col gap-8 mt-10 p-4 bg-zinc-100 lg:px-20">
+            <section className="flex flex-col gap-8 mt-10 p-4 bg-zinc-100 lg:px-40">
                 <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
                     <img src={Teacher} alt="" />
                     <p>Cursos de capacitação e profissionalizantes</p>
@@ -67,7 +67,7 @@ export default function Beneficios() {
                     <img src={Book} alt="" />
                     <p>Informativos Semestrais – Dinâmica News</p>
                 </div>
-                <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
+                <div className="flex flex-row gap-4 border-opacity-25 w-full p-6 font-medium">
                     <img src={CourtHouse} alt="" />
                     <p>Assessoria Jurídica Gratuita</p>
                 </div>

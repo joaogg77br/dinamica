@@ -9,14 +9,24 @@ export default {
       wiggle: {
         '0%': { transform: 'translate(+300px,0px)' },
         '100%': { transform: '' },
+      },
+      opacityHy:{
+          "0%": { opacity:"0%"},
+          "100%":{ opacity:"100%"}
       }
     },
     extend: {
+      colors:{
+          "verde":"#13524A",
+          "laranja":"#F58634",
+          "cinza":"#EEEEEF"
+      },
       spacing:{
           "fifityMin":'-5%'
       },
         animation: {
-          wiggle: 'wiggle 1s ease-in-out',
+          wiggle: 'wiggle .3s ease-in-out',
+          opacityHy: "opacityHy .2s ease-in"
         } 
     },
   },

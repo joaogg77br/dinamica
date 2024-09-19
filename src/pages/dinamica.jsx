@@ -6,31 +6,34 @@ import reuniao from "../assets/Snapinsta 1(1).png"
 
 export default function Dinamica() {
     return (
-        <div className="sm:px-10 md:px-20">
-            <Header />
-            <Info Title={"A Dinâmica"} text={"Cooperativa de trabalho, serviços gerais e administrativos."} />
-            <section className="p-8 flex justify-center items-center">
-                <div className="flex flex-col justify-center items-center lg:flex-row gap-4 bg-zinc-50 rounded-2xl p-4">
-                    <img src={reuniao} alt="" />
-
-                    <div className="flex flex-col gap-4">
-                        <p className="mt-4">A Dinâmica nasce em 2021 com o objetivo de ser uma cooperativa que busca uma melhor qualidade
-                            de vida para seus cooperados e toda sociedade onde tem contrato formado, como também uma facilitadora para os tomadores que buscam economicidade, legalidade e respeito aos cooperados
-                            e a gestão</p>
+        <>
+            <div className="sm:px-10 md:px-40">
+                <Header />
+                <Info Title={"A Dinâmica"} text={"Cooperativa de trabalho, serviços gerais e administrativos."} />
+            </div>
+            <section className=" flex justify-center items-center">
+                <div className="flex flex-col justify-center items-center lg:flex-row gap-4 bg-cinza p-8 lg:p-28  w-full">
+                    <img src={reuniao} alt="" className="lg:h-80 " />
+                    <div className="flex flex-col gap-4 lg:ml-10 md:text-center lg:text-start">
+                        <p className="mt-4">Constituída em 2021, a Dinâmica Cooperativa de Trabalho foi fundada por 9 profissionais
+                            de diferentes áreas de atuação, que apesar da severa crise econômica mundial causada
+                            pelo coronavírus, uniram esforços para edificar esse projeto em busca de oportunidades
+                            e inserção no Mercado de Trabalho.
+                        </p>
                         <p className="">
-                            Nosso valor também consiste na ideia de que a cooperação fortalece os laços entre as pessoas e permite que alcancemos resultados significativos que beneficiam a comunidade como um todo, pois
-                            acreditamos que cooperar torna o mundo mais justo. Como uma união de esforços em busca
-                            de um bem maior.
+                            Com natureza associativa, a Dinâmica não possui vínculo empregatício ou subordinação.
+                            Ao integrar-se ao seu quadro social, o profissional torna-se ASSOCIADO, podendo opinar,
+                            participar e decidir sobre qualquer melhoria a ser implementada ao aperfeiçoamento e
+                            condições de trabalho oferecidas na prestação de serviços da Cooperativa.
                         </p>
                         <p>
-                            Para isto, foi desenvolvido um sistema único comprometido em fornecer tecnologia de ponta e uma plataforma abrangente que aprimore a gestão e intermediação de mão de obra, a fim de trazer agilidade e segurança para nossos sócios cooperados e parceiros.
+                            Para fazer parte da Dinâmica, além da manifestação espontânea da vontade de se associar, o profissional precisa estar legalmente capacitado a exercer as atividades que precisa desempenhar. Seus direitos e deveres estão estabelecidos na LEI 12.690/2012, que dispõe a organização e funcionamento das Cooperativas de Trabalho.
                         </p>
                     </div>
-
                 </div>
             </section>
             <Footer />
 
-        </div>
+        </>
     )
 }

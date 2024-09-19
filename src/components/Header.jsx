@@ -11,12 +11,12 @@ export default function Header() {
     const [openCon, setOpenCoon] = useState(false)
     return (
         <>
-            <header className="flex justify-between p-3">
-
-                <div className={`fixed ${menu}   justify-end top-0 left-0  bg-black w-full h-screen z-50`}>
-                    <div className="bg-green-900 flex flex-col h-screen overflow-hidden animate-wiggle w-11/12 p-2 pt-4">
+        <div className="flex w-full  justify-center mb-20">
+            <header className="flex w-full justify-between p-3 fixed z-50 bg-white lg:px-40">
+                <div className={`fixed ${menu}   justify-end top-0 left-0  bg-black bg-opacity-50 w-full h-screen z-50`}>
+                    <div className="bg-verde flex flex-col h-screen overflow-hidden animate-wiggle w-11/12 p-2 pt-4">
                         <div className="flex w-full justify-end">
-                            <button onClick={() => setMenu("hidden")}><X className="text-green-900 bg-white p-1 rounded-md" /></button>
+                            <button  className="p-2 bg-white mr-4 mt-2 rounded-xl" onClick={() => setMenu("hidden")}><X className="text-green-900 rounded-md " /></button>
                         </div>
                         <ul className="flex justify-start flex-col mt-4 text-white gap-10 pl-4">
                             <li className="flex gap-2 flex-col border-b-2 border-zinc-50 border-opacity-25 pb-4">
@@ -117,42 +117,42 @@ export default function Header() {
 
 
                 <div className="flex gap-10 p-2 justify-between w-full items-center lg:pr-10">
-                    <div className="flex gap-2 lg:mr-20 items-center min-w-10">
+                    <Link to="/">
+                    <div className="flex gap-2 xl:mr-20 items-center min-w-10">
                         <img src={MyImage} alt="Logo" className="h-10" />
                         <img src={Dinamic} alt="" className="hidden xl:block" />
                     </div>
-                    <div className="flex gap-10">
-                        <ul className="hidden justify-center mt-4 gap-10 lg:flex">
+                    </Link>
+                    <div className="flex gap-5 xl:gap-10">
+                        <ul className="hidden justify-center mt-4 lg:gap-5 lg:flex xl:gap-10">
                             <li><Link to="/" className="pb-2 border-b border-white  a hover:text-orange-500 hover:underline">Home</Link></li>
                             <li className="group  pb-6">
                                 <Link to="" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Institucional</Link>
-                                <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute  pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
+                                <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute animate-opacityHy  pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
                                     <hr className="mb-10 border-10 border-zinc-500 bg-white h-0 w-full"/>
                                     <div className="flex gap-20 p-10 px-32">
                                         <div className=" text-4xl font-medium text-zinc-400">Institucional</div>
                                         <ul className="flex flex-col mt-2 text-start gap-4 ">
-                                            <li className="hover:text-orange-500 duration-300"><Link to="/dinamica">Conteúdo</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/dinamica">A Dinâmica</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link to="/mvv">Missão, Visão e Valores</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link to="/atividades">Atividades Desenvolvidas Pela Dinâmica</Link></li>
                                             <li className="hover:text-orange-500 duration-300"><Link to="/beneficios">Benefícios exclusivos da Dinâmica</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Onde atuamos</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Conselhos</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/area de atuacao">Onde atuamos</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/conselhos">Conselhos</Link></li>
                                         </ul>
                                     </div>
                                 </section>
                             </li>
                             <li className="group pb-6">
                                 <Link className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Cooperativismo</Link>
-                                <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
+                                <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute pb-10 w-full z-20 left-0 top-20 pt-10 px-20 animate-opacityHy">
                                     <hr className="mb-10 border-10 border-zinc-500 bg-white h-0 w-full"/>
                                     <div className="flex gap-20 p-10 px-32">
                                         <div className=" text-4xl font-medium text-zinc-400">Cooperativismo</div>
                                         <ul className="flex flex-col gap-4 text-start mt-2 ">
-                                            <li className="hover:text-orange-500 duration-300"><Link>Cooperativismo</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Cooperativa</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Cooperado</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>7 Príncipios do Coopertivismo</Link></li>
-                                            <li className="hover:text-orange-500 duration-300"><Link>Educação Continuada</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/cooperativismo">Cooperativismo, Cooperativa e Cooperado</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/principios">7 Príncipios do Coopertivismo</Link></li>
+                                            <li className="hover:text-orange-500 duration-300"><Link to="/educacao">Educação Continuada</Link></li>
                                         </ul>
                                     </div>
                                 </section>
@@ -163,8 +163,8 @@ export default function Header() {
                             <li><Link to="/noticias" className="pb-2 border-b border-white hover:text-orange-500 hover:underline">Nóticias</Link></li>
                         </ul>
                         <div className="flex gap-4 justify-end lg:pt-3">
-                            <button className="text-white h-10 bg-orange-500 rounded-xl p-1 px-2 flex text-nowrap duration-300 border-2 border-orange-500 hover:text-orange-500  hover:bg-white" onClick={() => { setContact(true) }}>Fale conosco</button>
-                            <div onClick={() => setMenu("flex")} className="bg-green-900 rounded-xl flex items-center p-2 lg:hidden">
+                            <button className="text-white h-7 bg-laranja rounded-xl p-4 flex justify-center items-center text-nowrap duration-300 border-2 border-laranja hover:text-laranja  hover:bg-white" onClick={() => { setContact(true) }}>Fale conosco</button>
+                            <div onClick={() => setMenu("flex")} className="bg-verde rounded-xl flex items-center p-2 lg:hidden">
                                 <Menu color="white" />
                             </div>
                         </div>
@@ -172,6 +172,7 @@ export default function Header() {
 
                 </div>
             </header>
+        </div>
         </>
     )
 }
