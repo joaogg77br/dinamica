@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <>
         <div className="flex w-full  justify-center mb-20">
-            <header className="flex w-full justify-between p-3 fixed z-50 bg-white lg:px-40">
+            <header className="flex w-full justify-between p-3 fixed z-50 bg-white md:px-20 lg:px-40">
                 <div className={`fixed ${menu}   justify-end top-0 left-0  bg-black bg-opacity-50 w-full h-screen z-50`}>
                     <div className="bg-verde flex flex-col h-screen overflow-hidden animate-wiggle w-11/12 p-2 pt-4">
                         <div className="flex w-full justify-end">
@@ -22,8 +22,8 @@ export default function Header() {
                             <li className="flex gap-2 flex-col border-b-2 border-zinc-50 border-opacity-25 pb-4">
                                 <Link to="/" className="relative font-medium border-white  hover:left-4">Home</Link>
                             </li>
-                            <li className="flex gap-2 flex-col border-b-zinc-50 border-b-2 pb-4 pr-4 border-opacity-25">
-                                <div className="flex justify-between ">
+                            <li className="flex gap-2 flex-col border-b-zinc-50 border-b-2 pb-4 pr-4 border-opacity-25 overflow-hidden">
+                                <div className="flex justify-between overflow-hidden">
                                     <Link to="/noticias" className="relative border-white hover:left-4 font-medium">Institucional</Link>
                                     {openIns ?
                                         <ChevronUp className="cursor-pointer" onClick={() => {
@@ -38,7 +38,7 @@ export default function Header() {
                                     }
                                 </div>
                                 {openIns ?
-                                    <ul className="flex flex-col gap-4 mt-4 animate-wiggle">
+                                    <ul className="flex flex-col gap-4 mt-4 animate-downside">
                                         <li className="underline"><Link to="/dinamica">Sobre A Dinâmica</Link></li>
                                         <li className="underline"><Link to="/mvv">Visão, Missão e vetores</Link></li>
                                         <li className="underline"><Link to="/atividades">Atividades Desenvolvidas pela Dinâmica</Link></li>
@@ -49,7 +49,7 @@ export default function Header() {
                                     : null
                                 }
                             </li>
-                            <li className="flex gap-2 flex-col border-b-2 border-zinc-50 pb-4 border-opacity-25">
+                            <li className="flex gap-2 flex-col border-b-2 border-zinc-50 pb-4 border-opacity-25 overflow-hidden">
                                 <div className="flex justify-between pr-4">
                                     <Link to="/dinamica" className="relative border-white hover:left-4 font-medium">Cooperativismo</Link>
 
@@ -64,7 +64,7 @@ export default function Header() {
                                     }
                                 </div>
                                 {openCoop ?
-                                    <ul className="flex flex-col gap-4 animate-wiggle pt-4">
+                                    <ul className="flex flex-col gap-4 animate-downside pt-4">
                                         <li className="underline"><Link to="/cooperativismo">Cooperativismo, Cooperativa e Cooperado</Link></li>
                                         <li className="underline"><Link to="/principios">7 Princípios do Cooperativismo</Link></li>
                                         <li className="underline"><Link to="/Educacao continuada">Educação Continuada</Link></li>

@@ -14,15 +14,49 @@ import Wallet from './assets/wallet-add.png'
 import Teacher from './assets/teacher.png'
 import Brif from "./assets/brifecase-tick.png"
 import Security from "./assets/security-user.png"
+import Ss from "./assets/Headline.png"
+import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow } from "swiper/modules"
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import 'swiper/css'
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 function App() {
-
   return (
     <>
       <div className='sm:px-10 lg:px-40'>
         <Header />
-        <Banner />
-        <div className='p-4 '>
+        <Swiper
+          className='p-10'
+          effect={'coverflow'}
+          grabCursor={true}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+          }}
+          Navigation={true}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination,]}
+        >
+          <SwiperSlide>
+            <Banner />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Banner />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Banner />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Banner />
+          </SwiperSlide>
+        </Swiper>
+        <div className='p-4'>
           <div className='px-2 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around '>
             <h1 className='text-white text-xl font-semibold m-4 sm:text-3xl pl-10'>Dinâmica em números</h1>
             <div className='flex w-full justify-between bg-white  gap-4 rounded-2xl  lg:my-5 m-4 sm:w-4/6 sm:p-10 sm:justify-around sm:flex-wrap'>

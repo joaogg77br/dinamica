@@ -1,28 +1,24 @@
 
 
-export default function Explain({title,text,img,side}){
-    
-    return(
-        <div className="">   
-            <div className="flex flex-col bg-cinza rounded-3xl lg:flex-row w-full sm:items-center ">
+export default function Explain({ title, text, img, side }) {
+
+    return (
+        <>
+            <div className="bg-cinza flex gap-4 flex-col p-4 pb-4 rounded-3xl md:flex-row">
                 { side?
-                <div>
-                    <img src={img} alt="Not found" className="w-full rounded-3xl h-30" />
-                </div>
+                    <img src={img} alt="" />
                     :null
                 }
-                <div className="flex flex-col p-10 px-20">
-                    <h1 className="font-semibold text-start text-xl mb-4 m-4 sm:text-3xl">{title}</h1>
-                    <p className="m-4 text-zinc-800 ">{text}</p>
+                <div className="flex  flex-col justify-center p-4 gap-4">
+                    <h1 className="text-4xl font-medium">{title}</h1>
+                    <p className="text-xl">{text}</p>
                 </div>
                 { !side?
-                <div>
-                    <img src={img} alt="Not found" className="h-96 w-full sm:h-full" />
-                </div>
+                    <img src={img} alt="" />
                     :null
                 }
-                
             </div>
-        </div>
+
+        </>
     )
 }
