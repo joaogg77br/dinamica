@@ -79,7 +79,7 @@ export default function Header() {
                                 {openCon ?
                                     <ul className="flex flex-col gap-4 mt-4 animate-wiggle">
                                         <li className="underline"><Link>Sobre A Dinâmica</Link></li>
-                                        <li className="underline"><Link>Visão, Missão e vetores</Link></li>
+                                        <li className="underline"><Link>Missão,Visão e Valores</Link></li>
                                         <li className="underline"><Link>Atividades Desenvolvidas pela Dinâmica</Link></li>
                                         <li className="underline"><Link>Benefício Excluidos da Dinâmica</Link></li>
                                         <li className="underline"><Link>Onde atuamos</Link></li>

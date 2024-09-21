@@ -58,24 +58,24 @@ function App() {
         </Swiper>
         <div className='p-4'>
           <div className='px-2 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around '>
-            <h1 className='text-white text-xl font-semibold m-4 sm:text-3xl pl-10'>Dinâmica em números</h1>
+            <h1 className='text-white text-xl font-semibold m-4 sm:text-3xl lg:pl-10'>Dinâmica em números</h1>
             <div className='flex w-full justify-between bg-white  gap-4 rounded-2xl  lg:my-5 m-4 sm:w-4/6 sm:p-10 sm:justify-around sm:flex-wrap'>
               <div className='flex flex-col items-center p-4 sm:p-0'>
                 <p className='font-bold text-2xl text-laranja sm:text-4xl '> +13</p>
                 <p className='font-semibold  sm:text-2xl'>Cidades</p>
               </div>
               <div className='flex flex-col items-center p-4 sm:p-0'>
-                <p className='font-bold text-2xl text-laranja sm:text-4xl'> +1700</p>
+                <p className='font-bold text-2xl text-laranja sm:text-4xl'> +6000</p>
                 <p className='font-semibold sm:text-2xl'>Cooperados</p>
               </div>
-              <div className='flex flex-col items-center p-4 sm:p-0'>
+              <div className='flex flex-col items-center p-4 sm:p-0 overflow-hidden'>
                 <p className='font-bold text-2xl text-laranja sm:text-4xl '>+300</p>
                 <p className='font-semibold sm:text-2xl'>Parceiros</p>
               </div>
             </div>
           </div>
         </div>
-        <div className='flex flex-col gap-10'>
+        <div className='flex flex-col gap-10 px-5'>
           <Explain
             title={"Cooperativismo: juntos construímos uma sociedade mais próspera"}
             text={"Você sabe o que é cooperativismo? A estrutura é baseada na colaboração e na parceria para promover o auxílio mútuo. Hoje, faz parte do cotidiano de milhares de pessoas."}
@@ -112,8 +112,8 @@ function App() {
           </div>
         </div>
 
-        <div className='flex gap-2 items-center justify-center font-semibold sm:text-xl'>
-          <p className='text-orange-500'>6 vantagens</p>
+        <div className='flex gap-2 text-center items-center justify-center font-semibold text-xl sm:text-2xl'>
+          <p className='text-orange-500 '>6 vantagens</p>
           <p> de  ser um cooperado</p>
         </div>
         <div className='flex justify-center items-center m-5'>
