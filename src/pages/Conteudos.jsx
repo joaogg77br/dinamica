@@ -6,7 +6,7 @@ import WhiteHome from "../assets/Frame 55.svg"
 
 export default function Conteudos() {
     return (
-        <>
+        <div className="font-nunitoSans">
             <div className="sm:px-10 lg:px-20">
                 <Header />
                 <Info Title={"Conteúdos"} />
@@ -33,6 +33,6 @@ export default function Conteudos() {
                 </div>
             </section>
             <Footer />
-        </>
+        </div>
     )
 }

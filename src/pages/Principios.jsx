@@ -11,7 +11,7 @@ import Community from "../assets/undraw_community_re_cyrm 1.svg"
 
 export default function Principios() {
     return (
-        <>
+        <div className="font-nunitoSans">
             <div className="sm:px-10 lg:px-40">
                 <Header />
                 <Info Title={"7 Príncipios do Cooperativismo"} />
@@ -21,7 +21,7 @@ export default function Principios() {
                     <div className="sm:hidden ">
                         <div className="bg-laranja h-10 w-10 p-2 flex  rounded-t-xl justify-center items-center text-white">1</div>
                     </div>
-                    <div className="w-full flex flex-col bg-white sm:w-1/2 rounded-tr-3xl rounded-bl-3xl sm:rounded-tl-3xl sm:rounded-bl-3xl">
+                    <div className="w-full flex flex-col bg-white sm:w-1/2 lg:rounded-tr-3xl rounded-bl-3xl sm:rounded-tl-3xl sm:rounded-bl-3xl">
                         <div className="flex justify-center items-center p-2 sm:h-52">
                             <img src={Adesao} alt="" className="w-1/2" />
                             <p className="font-medium">Adesão Voluntária e Livre</p>
@@ -117,6 +117,6 @@ export default function Principios() {
                 </section>
             </div>
             <Footer/>
-        </>
+        </div>
     )
 }

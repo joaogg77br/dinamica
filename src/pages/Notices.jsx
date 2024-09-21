@@ -5,10 +5,12 @@ import Info from "../components/Info";
 
 export default  function Notices(){
     return(
+    <div className="font-nunitoSans">
         <div>
             <Header/>
             <Info Title={"Notícias"} />
             <Footer/>
         </div>
+    </div>
     )
 }

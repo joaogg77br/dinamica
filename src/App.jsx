@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './font.css'
 import Header from './components/Header'
 import Banner from './components/Banner'
 import Explain from './components/Explain'
@@ -27,7 +28,7 @@ import 'swiper/css/scrollbar';
 function App() {
   return (
     <>
-      <div className='sm:px-10 lg:px-40'>
+      <div className='sm:px-10 lg:px-40 font-nunitoSans'>
         <Header />
         <Swiper
           className='p-10'
@@ -56,10 +57,10 @@ function App() {
             <Banner />
           </SwiperSlide>
         </Swiper>
-        <div className='p-4'>
-          <div className='px-2 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around '>
+        <div className='p-4 lg:mb-10'>
+          <div className='px-2 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around'>
             <h1 className='text-white text-xl font-semibold m-4 sm:text-3xl lg:pl-10'>Dinâmica em números</h1>
-            <div className='flex w-full justify-between bg-white  gap-4 rounded-2xl  lg:my-5 m-4 sm:w-4/6 sm:p-10 sm:justify-around sm:flex-wrap'>
+            <div className='flex w-full justify-between bg-white  rounded-2xl  lg:my-5 m-4 sm:w-4/6 sm:p-10 sm:justify-around sm:flex-wrap'>
               <div className='flex flex-col items-center p-4 sm:p-0'>
                 <p className='font-bold text-2xl text-laranja sm:text-4xl '> +13</p>
                 <p className='font-semibold  sm:text-2xl'>Cidades</p>
@@ -112,12 +113,12 @@ function App() {
           </div>
         </div>
 
-        <div className='flex gap-2 text-center items-center justify-center font-semibold text-xl sm:text-2xl'>
+        <div className='flex gap-2 text-center items-center justify-center font-semibold text-xl sm:text-2xl lg:mb-10'>
           <p className='text-orange-500 '>6 vantagens</p>
           <p> de  ser um cooperado</p>
         </div>
         <div className='flex justify-center items-center m-5'>
-          <div className='grid grid-cols-2 gap-6 sm:grid-cols-3 '>
+          <div className='grid grid-cols-2 gap-6 xl:gap-10 sm:grid-cols-3'>
             <Advantagens number={1} text={"Ser Sócio-cotista"} img={Award} />
             <Advantagens number={2} text={"Opinar e votar nas decisões"} img={TaskSquare} />
             <Advantagens number={3} text={"Oportunidade  de trabalho"} img={Wallet} />

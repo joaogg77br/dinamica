@@ -5,7 +5,7 @@ import manual from "../assets/brazil.svg"
 
 export default function Atuacao() {
     return (
-        <>
+        <div className="font-nunitoSans">
             <div className="sm:px-10 lg:px-40">
                 <Header/>
                 <Info Title={"Onde atuamos"}/>
@@ -15,6 +15,6 @@ export default function Atuacao() {
                     <img className=" lg:w-4/5 p-4" src={manual} alt="" />
                 </div>
                 <Footer/>
-        </>
+        </div>
     )
 }

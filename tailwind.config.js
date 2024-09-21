@@ -27,6 +27,9 @@ export default {
       }
     },
     extend: {
+      fontFamily:{
+          'nunitoSans':['nunitoSans', 'sans-serif']
+      },
       colors:{
           "verde":"#13524A",
           "laranja":"#F58634",

@@ -5,9 +5,9 @@ import Ativiti from "../components/ativiti";
 
 export default function Atividades() {
     return (
-        <>
+        <div className="font-nunitoSans">
                 <Header />
-            <div className="sm:px-10 md:px-40">
+            <div className="sm:px-10 md:px-20 lg:px-40">
                 <Info Title={"Atividades desenvolvidas pela Dinâmica"} />
             </div>
             <div className="flex gap-2  flex-row flex-wrap justify-center items-center bg-zinc-100 w-full p-2 lg:gap-8 lg:p-10 lg:px-20 pb-10">
@@ -30,6 +30,6 @@ export default function Atividades() {
                 <Ativiti Txt={"Serviços combinados de escritório e apoio administrativo"}/>
             </div>
             <Footer />
-        </>
+        </div>
     )
 }

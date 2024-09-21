@@ -6,8 +6,8 @@ import reuniao from "../assets/Snapinsta 1(1).png"
 
 export default function Dinamica() {
     return (
-        <>
-            <div className="sm:px-10 md:px-40">
+        <div className="font-nunitoSans">
+            <div className="sm:px-10 md:px-20 lg:px-40">
                 <Header />
                 <Info Title={"A Dinâmica"} text={"Cooperativa de trabalho, serviços gerais e administrativos."} />
             </div>
@@ -34,6 +34,6 @@ export default function Dinamica() {
             </section>
             <Footer />
 
-        </>
+        </div>
     )
 }

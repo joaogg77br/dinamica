@@ -17,7 +17,7 @@ import CourtHouse from "../assets/courthouse.svg"
 
 export default function Beneficios() {
     return (
-        <>
+        <div className="font-nunitoSans">
             <div className="sm:px-10 lg:px-40">
                 <Header />
                 <Info Title={"Benéficios exclusivos da Dinâmica"} />
@@ -73,6 +73,6 @@ export default function Beneficios() {
                 </div>
             </section>
             <Footer />
-        </>
+        </div>
     )
 }

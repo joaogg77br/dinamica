@@ -8,7 +8,7 @@ import { Gem } from "lucide-react";
 
 export default function Mvv() {
     return (
-        <>
+        <div className="font-nunitoSans">
             <div className="sm:px-10 md:px-40">
                 <Header />
                 <Info Title={"Missão, Visão e Valores"} text={""} />
@@ -45,6 +45,6 @@ export default function Mvv() {
                     </div>
                 </section>
             <Footer />
-        </>
+        </div>
     )
 }
