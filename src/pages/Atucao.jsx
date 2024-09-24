@@ -2,10 +2,12 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
 import manual from "../assets/brazil.svg"
+import Scrolltop from "../components/ScrollTop";
 
 export default function Atuacao() {
     return (
         <div className="font-nunitoSans">
+            <Scrolltop/>
             <div className="sm:px-10 lg:px-40">
                 <Header/>
                 <Info Title={"Onde atuamos"}/>

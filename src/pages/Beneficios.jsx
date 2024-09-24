@@ -14,10 +14,12 @@ import Hospital from "../assets/hospital.svg"
 import Calls from "../assets/call-calling.svg"
 import Book from "../assets/book.svg"
 import CourtHouse from "../assets/courthouse.svg"
+import Scrolltop from "../components/ScrollTop";
 
 export default function Beneficios() {
     return (
         <div className="font-nunitoSans">
+            <Scrolltop/>
             <div className="sm:px-10 lg:px-40">
                 <Header />
                 <Info Title={"Benéficios exclusivos da Dinâmica"} />

@@ -13,6 +13,7 @@ import Conselhos from './pages/Conselhos.jsx'
 import Cooperativismo from './pages/Cooperativismo.jsx'
 import Principios from './pages/Principios.jsx'
 import Conteudos from './pages/Conteudos.jsx'
+import Details from './pages/Details.jsx'
 
 
 
@@ -67,7 +68,8 @@ const router = createBrowserRouter([
     element:<Conteudos/>
   },
   {
-    
+    path:"/noticias/details/:id",
+    element:<Details/>
   }
 ])
 createRoot(document.getElementById('root')).render(

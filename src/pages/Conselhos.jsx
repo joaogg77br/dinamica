@@ -5,9 +5,11 @@ import Persons from "../assets/undraw_term_sheet_re_ju7s 1.svg"
 import Analitc from "../assets/undraw_engineering_team_a7n2 1.svg"
 import Folder from "../assets/undraw_folder_re_apfp 1.svg"
 import Footer from "../components/Footer";
+import Scrolltop from "../components/ScrollTop";
 export default function Conselhos() {
     return (
         <div className="font-nunitoSans">
+            <Scrolltop/>
             <div className="sm:px-10 md:px-20 lg:px-40">
                 <Header />
                 <Info Title="Conselhos" />

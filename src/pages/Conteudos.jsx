@@ -2,11 +2,13 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Info from "../components/Info";
 import WhiteHome from "../assets/Frame 55.svg"
+import Scrolltop from "../components/ScrollTop";
 
 
 export default function Conteudos() {
     return (
         <div className="font-nunitoSans">
+            <Scrolltop/>
             <div className="sm:px-10 lg:px-20">
                 <Header />
                 <Info Title={"Conteúdos"} />

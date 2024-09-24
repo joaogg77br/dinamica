@@ -1,10 +1,12 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
+import Scrolltop from "../components/ScrollTop";
 
 export default function Cooperativismo() {
     return (
         <div className="font-nunitoSans">
+            <Scrolltop/>
             <div className="sm:px-10 lg:px-20">
                 <Header />
                 <Info Title={"Cooperativismo, Cooperativa e Cooperado"} />

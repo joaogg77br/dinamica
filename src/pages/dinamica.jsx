@@ -3,10 +3,12 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
 import reuniao from "../assets/Snapinsta 1(1).png"
+import Scrolltop from "../components/ScrollTop";
 
 export default function Dinamica() {
     return (
         <div className="font-nunitoSans">
+            <Scrolltop/>
             <div className="sm:px-10 md:px-20 lg:px-40">
                 <Header />
                 <Info Title={"A Dinâmica"} text={"Cooperativa de trabalho, serviços gerais e administrativos."} />

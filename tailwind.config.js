@@ -27,6 +27,15 @@ export default {
       }
     },
     extend: {
+      height:{
+          "Max":"500px"
+      },
+      width:{
+        "Max":"490px"
+      },
+      borderRadius:{
+          "custom":"50px"
+      },
       fontFamily:{
           'nunitoSans':['nunitoSans', 'sans-serif']
       },

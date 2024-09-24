@@ -2,10 +2,46 @@
     "news": [
         {
             "id":"1",
-            "title":"Cooperados atuantes em são miguel",
+            "title":"Cooperados atuantes em São Miguel dos Campos/AL participaram do curso de NR6.",
             "timer":"7 horas",
             "text":"",
-            "img":""
+            "img":"./src/assets/explain1.png"
+        },
+        {
+            "id":"2",
+            "title":"Certificação referente aos treinamentos de Formação de Brigada de Incêndio e NR 17.",
+            "timer":"2 dias",
+            "text":"",
+            "img":"./src/assets/explain2.png"
+        },
+        {
+            "id":"3",
+            "title":"Assembleias gerais ordinária e extraordinária para apresentar a prestação de contas de 2023.",
+            "timer":"30 dias",
+            "text":"",
+            "img":"./src/assets/explain3.png"
+        },
+
+        {
+            "id":"3",
+            "title":"Assembleias gerais ordinária e extraordinária para apresentar a prestação de contas de 2023.",
+            "timer":"30 dias",
+            "text":"",
+            "img":"./src/assets/explain3.png"
+        },
+        {
+            "id":"3",
+            "title":"Assembleias gerais ordinária e extraordinária para apresentar a prestação de contas de 2023.",
+            "timer":"30 dias",
+            "text":"",
+            "img":"./src/assets/explain3.png"
+        },
+        {
+            "id":"3",
+            "title":"Assembleias gerais ordinária e extraordinária para apresentar a prestação de contas de 2023.",
+            "timer":"30 dias",
+            "text":"",
+            "img":"./src/assets/explain3.png"
         }
     ]
 }

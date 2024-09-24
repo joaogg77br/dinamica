@@ -8,10 +8,12 @@ import Card from "../assets/undraw_online_payments_re_y8f2 1.svg"
 import Education from "../assets/undraw_education_f8ru 1.svg"
 import People from "../assets/undraw_people_re_8spw 1.svg"
 import Community from "../assets/undraw_community_re_cyrm 1.svg"
+import Scrolltop from "../components/ScrollTop";
 
 export default function Principios() {
     return (
         <div className="font-nunitoSans">
+            <Scrolltop/>
             <div className="sm:px-10 lg:px-40">
                 <Header />
                 <Info Title={"7 Príncipios do Cooperativismo"} />

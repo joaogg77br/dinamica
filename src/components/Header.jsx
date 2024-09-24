@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <>
         <div className="flex w-full  justify-center mb-20">
-            <header className="flex w-full justify-between p-3 fixed z-50 bg-white md:px-20 lg:px-40">
+            <header className="flex w-full justify-between p-3 fixed z-50 bg-white sm:px-20 lg:px-40 ">
                 <div className={`fixed ${menu}   justify-end top-0 left-0  bg-black bg-opacity-50 w-full h-screen z-50`}>
                     <div className="bg-verde flex flex-col h-screen overflow-hidden animate-wiggle w-11/12 p-2 pt-4">
                         <div className="flex w-full justify-end">
@@ -124,8 +124,8 @@ export default function Header() {
                     </div>
                     </Link>
                     <div className="flex gap-5 xl:gap-10">
-                        <ul className="hidden justify-center mt-4 lg:gap-5 lg:flex xl:gap-10">
-                            <li><Link to="/" className="pb-2 border-b border-white  a hover:text-orange-500 hover:underline">Home</Link></li>
+                        <ul className="hidden justify-center text-sm mt-4 lg:gap-5 lg:flex xl:gap-10">
+                            <li><Link to="/" className="pb-2 border-b border-white   hover:text-orange-500 hover:underline">Home</Link></li>
                             <li className="group  pb-6">
                                 <Link to="" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap">Institucional</Link>
                                 <section className="hidden flex-col bg-white  hover:flex group-hover:flex duration-1000 text-center absolute animate-opacityHy  pb-10 w-full z-20 left-0 top-20 pt-10 px-20">

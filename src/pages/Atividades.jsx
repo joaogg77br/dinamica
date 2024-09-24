@@ -2,14 +2,17 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
 import Ativiti from "../components/ativiti";
-
+import Scrolltop from "../components/ScrollTop";
 export default function Atividades() {
     return (
+        
         <div className="font-nunitoSans">
+            <Scrolltop/>
                 <Header />
             <div className="sm:px-10 md:px-20 lg:px-40">
                 <Info Title={"Atividades desenvolvidas pela Dinâmica"} />
             </div>
+
             <div className="flex gap-2  flex-row flex-wrap justify-center items-center bg-zinc-100 w-full p-2 lg:gap-8 lg:p-10 lg:px-20 pb-10">
                 <Ativiti Txt={"Serviço de preparação de terreno, cultivo e colheita"}/>
                 <Ativiti Txt={"Coleta de resíduos não-perigosos"}/>
