@@ -33,22 +33,15 @@ function App() {
         <Scrolltop/>
         <Header />
         <Swiper
-          className='p-10'
           effect={'coverflow'}
           autoplay={{
             delay:4000,
             disableOnInteraction:false,
           }}
           grabCursor={true}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-          }}
           Navigation={true}
           pagination={true}
-          modules={[EffectCoverflow, Pagination,Autoplay]}
+          modules={[ Pagination,Autoplay]}
         >
           <SwiperSlide>
             <Banner />
