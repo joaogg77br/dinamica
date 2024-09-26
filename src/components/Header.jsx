@@ -163,7 +163,9 @@ export default function Header() {
                             <li><Link to="/noticias" className="pb-2 border-b border-white hover:text-orange-500 hover:underline">Nóticias</Link></li>
                         </ul>
                         <div className="flex gap-4 justify-end lg:pt-3">
-                            <button className="text-white h-7 bg-laranja rounded-xl p-4 flex justify-center items-center text-nowrap duration-300 border-2 border-laranja hover:text-laranja  hover:bg-white" onClick={() => { setContact(true) }}>Fale conosco</button>
+                            <Link to={"/fale conosco"}>
+                            <button className="text-white h-7 bg-laranja rounded-xl p-4 flex justify-center items-center text-nowrap duration-300 border-2 border-laranja hover:text-laranja  hover:bg-white" >Fale conosco</button>
+                            </Link>
                             <div onClick={() => setMenu("flex")} className="bg-verde rounded-xl flex items-center p-2 lg:hidden">
                                 <Menu color="white" />
                             </div>

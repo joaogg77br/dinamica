@@ -14,6 +14,8 @@ import Cooperativismo from './pages/Cooperativismo.jsx'
 import Principios from './pages/Principios.jsx'
 import Conteudos from './pages/Conteudos.jsx'
 import Details from './pages/Details.jsx'
+import FaleConosco from './pages/FaleConosco.jsx'
+import Educacao from './pages/Educação.jsx'
 
 
 
@@ -70,7 +72,16 @@ const router = createBrowserRouter([
   {
     path:"/noticias/details/:id",
     element:<Details/>
+  },
+  {
+    path:"/fale conosco",
+    element:<FaleConosco/>
+  },
+  {
+    path:"/Educacao continuada",
+    element:<Educacao/>
   }
+
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
