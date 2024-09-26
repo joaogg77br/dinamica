@@ -14,7 +14,7 @@ export default function Conteudos() {
                 <Info Title={"Conteúdos"} />
             </div>
             <div className="flex flex-col justify-center items-center w-full bg-zinc-100 gap-4 p-20 lg:text-2xl lg:flex-row">
-                <h1 className="font-medium text-center">Filme institucional</h1>
+                <h1 className=" text-center text-2xl font-bold">Filme institucional</h1>
             <iframe className="lg:w-2/4 h-60" src="https://www.youtube.com/embed/LsEf4r_ocS8?si=QTcdzgN5R1I5MgFS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div className="flex justify-center p-4">
@@ -34,6 +34,36 @@ export default function Conteudos() {
                     </div>
                 </div>
             </section>
+
+            <section className="flex flex-col gap-5  items-center py-10">
+                <h1 className="font-bold text-2xl">Parceiros Locais</h1> 
+                <div className="flex flex-wrap p-2 gap-2 justify-center">
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                    <img src="" alt="" className="h-16 w-28 rounded-xl"/>
+                </div>
+            </section>
+
             <Footer />
         </div>
     )
