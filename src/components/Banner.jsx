@@ -5,7 +5,7 @@ import ImageBefore from "../assets/Frame 19.png"
 import Notebook from "../assets/Frame 20.png"
 export default function Banner() {
     return (
-        <div className="p-4 sm:p-8">
+        <div className="">
             <div className="flex flex-col justify-center items-center relative rounded-2xl w-full bg-verde h-96 ">
                 <img src={leftCanto} alt="" className="absolute top-0 left-0 rounded-2xl md:h-32 "/>
                 <img src={SquareRigth} alt=""  className="absolute top-0 right-0 rounded-2xl lg:h-32" />

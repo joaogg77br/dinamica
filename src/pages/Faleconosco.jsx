@@ -22,8 +22,8 @@ export default function FaleConosco() {
                     <button className="p-2 w-32 border-2 border-laranja duration-300 bg-laranja text-white rounded-xl">Enviar</button>
                 </form>
                 <hr className="bg-zinc-800 my-5"/>
-                <div className="flex flex-col text-zinc-800 bg-cinza">
-                    <section className="bg-white px-4 py-10">
+                <div className="flex flex-col text-zinc-800 bg-cinza gap-10">
+                    <section className="bg-white px-4 py-10 ">
                         <div className="flex gap-4">
                             <img src={Call} alt="" />
                             <h1 className="font-bold text-2xl">Contatos da Sede</h1>

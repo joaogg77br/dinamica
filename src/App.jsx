@@ -15,7 +15,6 @@ import Wallet from './assets/wallet-add.png'
 import Teacher from './assets/teacher.png'
 import Brif from "./assets/brifecase-tick.png"
 import Security from "./assets/security-user.png"
-import Ss from "./assets/Headline.png"
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -32,8 +31,9 @@ function App() {
       <div className='sm:px-10 lg:px-40 font-nunitoSans'>
         <Scrolltop/>
         <Header />
-        <Swiper
+        <Swiper className='mt-10 p-5'
           effect={'coverflow'}
+          spaceBetween={50}
           autoplay={{
             delay:4000,
             disableOnInteraction:false,
@@ -44,7 +44,7 @@ function App() {
           modules={[ Pagination,Autoplay]}
         >
           <SwiperSlide>
-            <Banner />
+            <Banner/>
           </SwiperSlide>
           <SwiperSlide>
             <Banner />
@@ -56,6 +56,7 @@ function App() {
             <Banner />
           </SwiperSlide>
         </Swiper>
+
         <div className='p-4 lg:mb-10'>
           <div className='px-5 p-4 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around lg:px-10'>
           <h1 className='text-white text-3xl font-semibold m-4 sm:text-3xl lg:pl-10'>Dinâmica em números</h1>

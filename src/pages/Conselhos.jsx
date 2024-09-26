@@ -45,7 +45,7 @@ export default function Conselhos() {
                             por 1, mas 3 Cooperados Coordenadores, em cada contrato firmado, que além da sua produtividade habitual atuarão junto
                             a Dinâmica e aos Tomadores de Serviços como elo de comunicação, fiscalização e execução dos direitos, deveres e serviços prestados.</p>
                     </div>
-                    <img src={Analitc} alt="persons" className="hidden xl:block lg:h-60" />
+                    <img src={Analitc} alt="persons" className="hidden xl:block lg:h-52" />
                 </div>
             </section>
             <Footer/>
