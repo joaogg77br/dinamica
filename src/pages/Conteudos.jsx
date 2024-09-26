@@ -4,6 +4,13 @@ import Info from "../components/Info";
 import WhiteHome from "../assets/Frame 55.svg"
 import Pdf1 from "../assets/Pdfs/LEI 5.764.pdf"
 import Pdf2 from "../assets/Pdfs/Lei 12.690-12.pdf"
+import Noticias from "../assets/Parceiros/Noticias.svg"
+import Noticias2 from "../assets/Parceiros/Noticias2.svg"
+import Noticias3 from "../assets/Parceiros/Noticias3.svg"
+import DinamicaNews1 from "../assets/Pdfs/DINÂMICA NEWS - 1 EDIÇÃO.pdf"
+import DinamicaNews2 from "../assets/Pdfs/Dinâmica News - 2ª edição.pdf"
+import DinamicaNews3 from "../assets/Pdfs/Dinâmica News - 3ª edição .pdf"
+
 import Scrolltop from "../components/ScrollTop";
 import FrameSkin from "../assets/Parceiros/Frame 56.svg"
 import FrameSkin2 from "../assets/Parceiros/Frame 57.svg" 
@@ -49,11 +56,20 @@ export default function Conteudos() {
                 <h1 className=" text-cente text-2xl lg:text-3xl font-bold">Filme institucional</h1>
             <iframe className="lg:w-2/4 h-60" src="https://www.youtube.com/embed/LsEf4r_ocS8?si=QTcdzgN5R1I5MgFS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div className="flex flex-col justify-center p-4 ">
-                <h1 className="text-xl font-medium">Dinâmica <span className="text-orange-500">News</span></h1>
-                <div className="flex">
-                        <div>
-                            <img src="" alt="" />
+            <div className="flex flex-col justify-center items-center p-4 py-10">
+                <h1 className="text-3xl font-bold p-10">Dinâmica <span className="text-orange-500">News</span></h1>
+                <div className="flex flex-col md:flex-row gap-20">
+                        <div className="flex flex-col text-center gap-2">
+                            <img src={Noticias} alt="" className="lg:h-96 2xl:h-Max"/>
+                            <a href={DinamicaNews1} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 1° edição</a>
+                        </div>
+                        <div className="flex flex-col text-center gap-2">
+                            <img src={Noticias2} alt="" className="lg:h-96 2xl:h-Max"/>
+                            <a href={DinamicaNews2} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 2° edição</a>
+                        </div>
+                        <div className="flex flex-col text-center gap-2">
+                            <img src={Noticias3} alt="" className="lg:h-96 2xl:h-Max"/>
+                            <a href={DinamicaNews3} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 3° edição</a>
                         </div>
                 </div>
             </div>
