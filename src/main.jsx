@@ -14,7 +14,7 @@ import Cooperativismo from './pages/Cooperativismo.jsx'
 import Principios from './pages/Principios.jsx'
 import Conteudos from './pages/Conteudos.jsx'
 import Details from './pages/Details.jsx'
-import FaleConosco from './pages/FaleConosco.jsx'
+import FaleConosco from './pages/Faleconosco.jsx'
 import Educacao from './pages/Educação.jsx'
 
 

@@ -49,15 +49,20 @@ export default function Conteudos() {
                 <h1 className=" text-cente text-2xl lg:text-3xl font-bold">Filme institucional</h1>
             <iframe className="lg:w-2/4 h-60" src="https://www.youtube.com/embed/LsEf4r_ocS8?si=QTcdzgN5R1I5MgFS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div className="flex justify-center p-4">
+            <div className="flex flex-col justify-center p-4 ">
                 <h1 className="text-xl font-medium">Dinâmica <span className="text-orange-500">News</span></h1>
+                <div className="flex">
+                        <div>
+                            <img src="" alt="" />
+                        </div>
+                </div>
             </div>
             <section className="flex flex-col gap-6 justify-center items-center pt-12 bg-zinc-100 p-4 lg:pb-32">
                 <img src={WhiteHome} alt="" />
                 <h1 className="text-xl font-medium">Leis do <span className="text-orange-500">Cooperativismo</span></h1>
                 <p className="text-center">A Cooperativa Dinâmica é regida pelas<br /><span className="font-bold">Leis nº 5.764/71 e Lei nº 12.690/12.</span></p>
 
-                <div className="flex flex-col lg:flex-row lg:px-24 gap-4">
+                <div className="flex flex-col lg:flex-row md:px-24 lg:px-40 gap-4">
                     <div className="rounded-2xl p-6 bg-white">
                             <a href={Pdf1} className="underline" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 5.764/71 -</span> Define a Política Nacional de Cooperativismo, institui o regime jurídico das sociedades cooperativas, e dá outras providências.</a>
                     </div>

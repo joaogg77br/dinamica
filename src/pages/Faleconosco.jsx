@@ -8,6 +8,7 @@ export default function FaleConosco() {
     return (
         <>
             <div className="md:px-20 lg:px-40">
+                <Scrolltop/>
                 <Header />
                 <Info Title={"Fale Conosco"} />
             </div>
