@@ -15,7 +15,7 @@ export default function Mvv() {
                 <Header />
                 <Info Title={"Missão, Visão e Valores"} text={""} />
             </div>
-            <section className=" w-full p-4 lg:px-40  grid grid-cols-1  gap-10 bg-cinza pb-14">
+            <section className=" w-full p-4 lg:px-44  grid grid-cols-1  gap-10 bg-cinza pb-14 py-10">
                 <div className="p-10 bg-laranja text-white rounded-2xl flex flex-col sm:flex-row sm:items-center gap-10 lg:justify-start lg:p-10">
                     <img src={Interative} alt="" className=" flex justify-center max-w-40 items-center rounded-2xl  " />
                     <div className="flex  gap-4 flex-col text-start ">

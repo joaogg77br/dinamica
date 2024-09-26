@@ -8,12 +8,12 @@ export default function Atividades() {
         
         <div className="font-nunitoSans">
             <Scrolltop/>
-                <Header />
             <div className="sm:px-10 md:px-20 lg:px-40">
+                <Header />
                 <Info Title={"Atividades desenvolvidas pela Dinâmica"} />
             </div>
 
-            <div className="flex gap-2  flex-row flex-wrap justify-center items-center bg-zinc-100 w-full p-2 lg:gap-8 lg:p-10 lg:px-20 pb-10">
+            <div className="flex gap-6 py-10 flex-row flex-wrap justify-center items-center bg-zinc-100 w-full p-2 lg:gap-6 lg:p-10 lg:px-30 pb-10 2xl:gap-10 2xl:px-10">
                 <Ativiti Txt={"Serviço de preparação de terreno, cultivo e colheita"}/>
                 <Ativiti Txt={"Coleta de resíduos não-perigosos"}/>
                 <Ativiti Txt={"Obras de urbanização - ruas, praças e calçadas"}/>

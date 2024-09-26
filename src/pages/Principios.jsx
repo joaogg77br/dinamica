@@ -23,9 +23,9 @@ export default function Principios() {
                     <div className="sm:hidden ">
                         <div className="bg-laranja h-10 w-10 p-2 flex  rounded-t-xl justify-center items-center text-white">1</div>
                     </div>
-                    <div className="w-full flex flex-col bg-white sm:w-1/2 lg:rounded-tr-3xl rounded-bl-3xl sm:rounded-tl-3xl sm:rounded-bl-3xl">
-                        <div className="flex justify-center items-center p-2 sm:h-52">
-                            <img src={Adesao} alt="" className="w-1/2" />
+                    <div className="w-full flex flex-col  sm:w-1/2 sm:rounded-tl-3xl sm:rounded-bl-3xl 2xl:h-auto">
+                        <div className="flex justify-center items-center p-2 bg-rounded-tl-xl sm:h-52  bg-white ">
+                            <img src={Adesao} alt="" className="w-1/2 2xl:h-full" />
                             <p className="font-medium">Adesão Voluntária e Livre</p>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ export default function Principios() {
                     </div>
                     <div className="w-full flex flex-col bg-white sm:w-1/2 rounded-tl-3xl rounded-br-3xl sm:rounded-br-2xl sm:rounded-tr-2xl">
                         <div className="flex justify-center items-center p-2 gap-4 sm:h-52">
-                            <img src={Gestao} alt="" className="w-1/2" />
+                            <img src={Gestao} alt="" className="w-1/2 2xl:h-full" />
                             <p className="font-medium">Gestão Democrática e Livre</p>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ export default function Principios() {
                     </div>
                     <div className="w-full flex flex-col bg-white sm:w-1/2 rounded-bl-3xl rounded-tr-3xl ">
                         <div className="flex justify-center items-center p-2 gap-4 sm:h-52">
-                            <img src={Pizza} alt="" className="w-1/2" />
+                            <img src={Pizza} alt="" className="w-1/2 2xl:h-full" />
                             <p className="font-medium">Participação Econômica dos Cooperados</p>
                         </div>
                     </div>
@@ -65,9 +65,9 @@ export default function Principios() {
                     <div className=" flex justify-end sm:w-1/2  items-end sm:justify-end sm:items-start ">
                         <div className="bg-laranja h-10 w-10 p-2 flex justify-center lg:rounded-bl-xl items-end text-white">4</div>
                     </div>
-                    <div className="w-full flex flex-col bg-white sm:w-1/2 sm:h-52 rounded-tl-3xl rounded-br-3xl sm:rounded-tr-3xl sm:rounded-br-3xl">
-                        <div className="flex justify-center items-center p-2 gap-4">
-                            <img src={Card} alt="" className="w-1/2" />
+                    <div className="w-full flex flex-col bg-white sm:w-1/2  rounded-tl-3xl sm:rounded-tl-none  rounded-br-3xl sm:rounded-tr-3xl sm:rounded-br-3xl">
+                        <div className="flex justify-center items-center p-2 gap-4 sm:h-52">
+                            <img src={Card} alt="" className="w-1/2 2xl:h-full" />
                             <p className="font-medium">Autonomia e Independência</p>
                         </div>
                     </div>
@@ -79,9 +79,9 @@ export default function Principios() {
                     <div className="sm:hidden flex">
                         <div className="bg-laranja h-10 w-10 p-2 flex justify-center items-center text-white">5</div>
                     </div>
-                    <div className="w-full flex flex-col bg-white sm:w-1/2 rounded-tr-3xl rounded-bl-3xl sm:rounded-tl-3xl sm:rounded-bl-3xl">
+                    <div className="w-full flex flex-col bg-white sm:w-1/2 rounded-tr-3xl sm:rounded-tr-none rounded-bl-3xl sm:rounded-tl-3xl sm:rounded-bl-3xl">
                         <div className="flex justify-center items-center p-2 sm:h-52 ">
-                            <img src={Education} alt="" className="w-1/2" />
+                            <img src={Education} alt="" className="w-1/2 2xl:h-full" />
                             <p className="font-medium">Educação, Formação e Informação</p>
                         </div>
                     </div>
@@ -93,9 +93,9 @@ export default function Principios() {
                     <div className=" flex justify-end sm:justify-end sm:w-1/2">
                         <div className="bg-laranja h-10 w-10 p-2  sm:rounded-bl-xl flex justify-center items-center text-white">6</div>
                     </div>
-                    <div className="w-full flex flex-col bg-white sm:w-1/2 rounded-tl-3xl rounded-br-3xl sm:h-52 sm:rounded-tr-3xl sm:rounded-br-3xl">
-                        <div className="flex justify-center items-center p-2 gap-4">
-                            <img src={People} alt="" className="w-1/2" />
+                    <div className="w-full flex flex-col bg-white sm:w-1/2  sm:rounded-tl-0 rounded-br-3xl sm:rounded-tr-3xl sm:rounded-br-3xl">
+                        <div className="flex justify-center items-center p-2 gap-4 sm:h-52">
+                            <img src={People} alt="" className="w-1/2 2xl:h-full" />
                             <p className="font-medium">Intercoo-peração</p>
                         </div>
                     </div>
@@ -107,7 +107,7 @@ export default function Principios() {
                     <div className="sm:hidden">
                         <div className="bg-laranja h-10 w-10 p-2  flex justify-center items-center text-white">7</div>
                     </div>
-                    <div className="w-full flex flex-col bg-white sm:w-1/2 rounded-b-3xl rounded-tr-3xl sm:rounded-bl-3xl sm:rounded-tl-3xl">
+                    <div className="w-full flex flex-col bg-white sm:w-1/2 rounded-b-3xl rounded-tr-3xl sm:rounded-tr-none sm:rounded-bl-3xl sm:rounded-tl-3xl">
                         <div className="flex justify-center items-center p-2 gap-4  sm:h-52">
                             <img src={Community} alt="" className="w-1/2" />
                             <p className="font-medium">Interesse Pela Comunidade</p>
