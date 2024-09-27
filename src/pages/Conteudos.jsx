@@ -35,7 +35,7 @@ import FrameSkin21 from "../assets/Parceiros/Frame 81.svg"
 import FrameSkin22 from "../assets/Parceiros/Frame 82.svg"
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+import Video from "../assets/filme.mp4"
 
 
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
@@ -49,10 +49,10 @@ export default function Conteudos() {
                 <Header />
                 <Info Title={"Conteúdos"} />
             </div>
-            <div className="flex flex-col justify-start items-center w-full bg-zinc-100 gap-10 p-20 lg:px-44 lg:text-2xl lg:flex-row">
-                <h1 className=" text-cente text-2xl lg:text-3xl font-bold">Filme institucional</h1>
-                <video src="" className="w-full">
-                    <source src="" />
+            <div className="flex flex-col justify-start items-center w-full bg-zinc-100 gap-10  lg:px-44 py-20 lg:text-2xl lg:flex-row">
+                <h1 className=" text-cente text-2xl lg:text-3xl font-bold md:text-3xl">Filme institucional</h1>
+                <video  className="w-full lg:w-4/6  lg:rounded-custom" controls autoPlay>
+                    <source src={Video} />
                 </video>
             </div>
             <div className="flex flex-col justify-center items-center p-4 py-10">
