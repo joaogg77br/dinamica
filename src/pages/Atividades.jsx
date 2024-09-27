@@ -13,7 +13,7 @@ export default function Atividades() {
                 <Info Title={"Atividades desenvolvidas pela Dinâmica"} />
             </div>
 
-            <div className="flex gap-6 py-10 flex-row flex-wrap justify-center items-center bg-zinc-100 w-full p-2 lg:gap-6 lg:p-10 lg:px-30 pb-10 2xl:gap-10 2xl:px-10">
+            <div className="flex gap-6 py-10 flex-row flex-wrap justify-center items-center bg-zinc-100 w-full p-2 lg:gap-6 lg:p-10 lg:px-30 pb-10 2xl:gap-10 2xl:px-10 ">
                 <Ativiti Txt={"Serviço de preparação de terreno, cultivo e colheita"}/>
                 <Ativiti Txt={"Coleta de resíduos não-perigosos"}/>
                 <Ativiti Txt={"Obras de urbanização - ruas, praças e calçadas"}/>

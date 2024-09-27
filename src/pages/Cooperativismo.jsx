@@ -7,12 +7,12 @@ export default function Cooperativismo() {
     return (
         <div className="font-nunitoSans">
             <Scrolltop/>
-            <div className="sm:px-10 lg:px-20">
+            <div className="sm:px-20 lg:px-40">
                 <Header />
                 <Info Title={"Cooperativismo, Cooperativa e Cooperado"} />
             </div>
 
-            <section className="flex  justify-center items-center gap-4 flex-col p-4 md:px-20 bg-zinc-100 lg:pb-20">
+            <section className="flex  justify-center items-center gap-4 flex-col p-4 md:px-20 lg:px-40 bg-zinc-100 md:py-20 lg:pb-20">
                 <div className="relative bg-white p-4 rounded-2xl pl-20 lg:p-10 lg:pl-32 lg:pr-32">
                     <div className="absolute w-5 top-0 left-0 rounded-l-3xl bg-orange-500 h-full lg:w-10"></div>
                     <div className="text-zinc-700">

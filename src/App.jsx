@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './font.css'
 import Header from './components/Header'
-import Banner from './components/Banner'
 import Explain from './components/Explain'
 import ImageExplain1 from "./assets/explain1.png"
 import ImageExplain2 from "./assets/explain2.png"
@@ -9,12 +8,15 @@ import ImageExplain3 from "./assets/explain3.png"
 import Advantagens from './components/Advantages'
 import LastNews from './components/LastNews'
 import Footer from './components/Footer'
-import Award from './assets/award.png'
-import TaskSquare from './assets/task-square.png'
-import Wallet from './assets/wallet-add.png'
-import Teacher from './assets/teacher.png'
-import Brif from "./assets/brifecase-tick.png"
-import Security from "./assets/security-user.png"
+import Award from './assets/award.svg'
+import TaskSquare from './assets/task-square.svg'
+import Wallet from './assets/wallet-add.svg'
+import Teacher from './assets/teacher.svg'
+import Banner from "./assets/Banners/Headline.svg"
+import Banner2 from "./assets/Banners/Headline2.svg"
+import Banner3 from "./assets/Banners/Headline3.svg"
+import Brif from "./assets/brifecase-tick.svg"
+import Security from "./assets/security-user.svg"
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -31,7 +33,7 @@ function App() {
       <div className='sm:px-10 lg:px-40 font-nunitoSans'>
         <Scrolltop/>
         <Header />
-        <Swiper className='mt-10 p-5'
+        <Swiper className='mt-10 p-5 mr-4 pb-10 '
           effect={'coverflow'}
           spaceBetween={50}
           autoplay={{
@@ -44,39 +46,36 @@ function App() {
           modules={[ Pagination,Autoplay]}
         >
           <SwiperSlide>
-            <Banner/>
+            <img src={Banner} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Banner />
+            <img src={Banner2} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <Banner />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Banner />
+            <img src={Banner3} alt="" />
           </SwiperSlide>
         </Swiper>
 
         <div className='p-4 lg:mb-10'>
-          <div className='px-5 p-4 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around lg:px-10'>
-          <h1 className='text-white text-3xl font-semibold m-4 sm:text-3xl lg:pl-10'>Dinâmica em números</h1>
-            <div className='flex w-full justify-between bg-white  rounded-3xl md:gap-10 m-4 sm:w-4/6 sm:p-5 sm:justify-around flex-wrap '>
-              <div className='flex flex-col items-center p-4 sm:p-0'>
+          <div className='px-5 p-4 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around lg:px-10 mr-4'>
+          <h1 className='text-white text-3xl font-semibold m-4 sm:text-3xl lg:pl-2'>Dinâmica em números</h1>
+            <div className='flex w-full justify-between bg-white  rounded-2xl md:3xl md:gap-10 sm:w-4/6 sm:p-5 sm:justify-around flex-wrap '>
+              <div className='flex flex-col items-center p-2 sm:p-0'>
                 <p className='font-bold text-2xl text-laranja sm:text-5xl '> +13</p>
                 <p className='font-semibold text-sm sm:text-2xl'>Cidades</p>
               </div>
-              <div className='flex flex-col items-center p-4 sm:p-0'>
+              <div className='flex flex-col items-center p-2 sm:p-0'>
                 <p className='font-bold text-2xl text-laranja sm:text-5xl'> +6000</p>
                 <p className='font-semibold text-sm sm:text-2xl'>Cooperados</p>
               </div>
-              <div className='flex flex-col items-center p-4 sm:p-0 overflow-hidden'>
+              <div className='flex flex-col items-center p-2 sm:p-0 overflow-hidden'>
                 <p className='font-bold text-2xl text-laranja sm:text-5xl '>+300</p>
                 <p className='font-semibold text-sm sm:text-2xl'>Parceiros</p>
               </div>
             </div>
           </div>
         </div>
-        <div className='flex flex-col gap-10 lg:gap-32 px-10 pb-10 lg:px-5 pt-10'>
+        <div className='flex flex-col gap-10 lg:gap-32 px-2 pb-10 lg:px-5 pt-10'>
           <Explain
             title={"Cooperativismo: juntos construímos uma sociedade mais próspera"}
             text={"Você sabe o que é cooperativismo? A estrutura é baseada na colaboração e na parceria para promover o auxílio mútuo. Hoje, faz parte do cotidiano de milhares de pessoas."}

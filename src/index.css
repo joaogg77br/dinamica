@@ -1,5 +1,9 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+    .swiper-pagination-bullet-active{
+        @apply bg-laranja;
+    }
+}
