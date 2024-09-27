@@ -51,7 +51,7 @@ export default function Conteudos() {
             </div>
             <div className="flex flex-col justify-start items-center w-full bg-zinc-100 gap-10 p-20 lg:px-44 lg:text-2xl lg:flex-row">
                 <h1 className=" text-cente text-2xl lg:text-3xl font-bold">Filme institucional</h1>
-                <video src="">
+                <video src="" className="w-full">
                     <source src="" />
                 </video>
             </div>
