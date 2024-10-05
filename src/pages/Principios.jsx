@@ -96,7 +96,7 @@ export default function Principios() {
                     <div className="w-full flex flex-col bg-white sm:w-1/2  rounded-tl-3xl  sm:rounded-tl-none rounded-br-3xl sm:rounded-tr-3xl sm:rounded-br-3xl">
                         <div className="flex justify-center items-center p-2 gap-4 sm:h-52">
                             <img src={People} alt="" className="w-1/2 2xl:h-full" />
-                            <p className="font-bold">Intercoo - peração</p>
+                            <p className="font-bold">Intercooperação</p>
                         </div>
                     </div>
                     <div className="hidden sm:w-1/2">

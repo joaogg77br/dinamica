@@ -33,7 +33,7 @@ function App() {
       <div className='sm:px-10 lg:px-40 font-nunitoSans'>
         <Scrolltop/>
         <Header />
-        <Swiper className='mt-10 p-5 mr-4 pb-10 '
+        <Swiper className='mt-10 p-5 mr-5 pb-10 '
           effect={'coverflow'}
           spaceBetween={50}
           autoplay={{
@@ -46,33 +46,19 @@ function App() {
           modules={[ Pagination,Autoplay]}
         >
           <SwiperSlide>
+            <img src={Banner3} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
             <img src={Banner} alt="" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={Banner2} alt="" />
           </SwiperSlide>
-          <SwiperSlide>
-            <img src={Banner3} alt="" />
-          </SwiperSlide>
         </Swiper>
 
         <div className='p-4 lg:mb-10'>
-          <div className='px-5 p-4 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around lg:px-10 mr-4'>
-          <h1 className='text-white text-3xl font-semibold m-4 sm:text-3xl lg:pl-2'>Dinâmica em números</h1>
-            <div className='flex w-full justify-between bg-white  rounded-2xl md:3xl md:gap-10 sm:w-4/6 sm:p-5 sm:justify-around flex-wrap '>
-              <div className='flex flex-col items-center p-2 sm:p-0'>
-                <p className='font-bold text-2xl text-laranja sm:text-5xl '> +13</p>
-                <p className='font-semibold text-sm sm:text-2xl'>Cidades</p>
-              </div>
-              <div className='flex flex-col items-center p-2 sm:p-0'>
-                <p className='font-bold text-2xl text-laranja sm:text-5xl'> +6000</p>
-                <p className='font-semibold text-sm sm:text-2xl'>Cooperados</p>
-              </div>
-              <div className='flex flex-col items-center p-2 sm:p-0 overflow-hidden'>
-                <p className='font-bold text-2xl text-laranja sm:text-5xl '>+300</p>
-                <p className='font-semibold text-sm sm:text-2xl'>Parceiros</p>
-              </div>
-            </div>
+          <div className='px-5 p-12 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around lg:px-10 mr-4'>
+          <h1 className='text-white text-3xl font-semibold m-4 sm:text-3xl lg:pl-2'><a href='https://www.instagram.com/cooperativadinamica/'>Acesse nossas Redes Sociais</a></h1>
           </div>
         </div>
         <div className='flex flex-col gap-10 lg:gap-32 px-2 pb-10 lg:px-5 pt-10'>

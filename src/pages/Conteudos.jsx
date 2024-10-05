@@ -36,12 +36,16 @@ import FrameSkin22 from "../assets/Parceiros/Frame 82.svg"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Video from "../assets/filme.mp4"
-
+import {UseState} from "react"
 
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function Conteudos() {
+    function handleClick(pdf) {
+        window.open(pdf, '_blank');
+    }
+
     return (
         <div className="font-nunitoSans">
             <Scrolltop />
@@ -49,7 +53,7 @@ export default function Conteudos() {
                 <Header />
                 <Info Title={"Conteúdos"} />
             </div>
-            <div className="flex flex-col justify-start items-center w-full bg-zinc-100 gap-10  lg:px-44 py-20 lg:text-2xl lg:flex-row">
+            <div className="flex flex-col justify-start items-center w-full bg-zinc-100 gap-10  lg:px-52 py-20 lg:text-2xl lg:flex-row">
                 <h1 className=" text-cente text-2xl lg:text-3xl font-bold md:text-3xl">Filme institucional</h1>
                 <video  className="w-full lg:w-4/6  lg:rounded-custom" controls autoPlay>
                     <source src={Video} />
@@ -63,34 +67,36 @@ export default function Conteudos() {
                     <SwiperSlide>
                     <div className=" md:flex flex-col text-center gap-2">
                         <img src={Noticias} alt="" className="lg:h-96 2xl:h-Max" />
-                        <a href={DinamicaNews1} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 1ª edição</a>
+                        <a onClick={()=>{DinamicaNews1}} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
                     </div>
                     </SwiperSlide>
                     <SwiperSlide>
                     <div className=" md:flex flex-col text-center gap-2">
                         <img src={Noticias2} alt="" className="lg:h-96 2xl:h-Max" />
-                        <a href={DinamicaNews2} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 2ª edição</a>
+                        <a onClick={()=>{DinamicaNews2}} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 2ª edição</a>
                     </div>
                     </SwiperSlide>
                     <SwiperSlide>
                     <div className=" md:flex flex-col text-center gap-2">
                         <img src={Noticias3} alt="" className="lg:h-96 2xl:h-Max" />
-                        <a href={DinamicaNews3} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 3ª edição</a>
+                        <a onClick={()=>{handleClick(DinamicaNews1)}} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 3ª edição</a>
                     </div>
                     </SwiperSlide>
                 </Swiper>
                 <div className="hidden sm:flex flex-col sm:flex-row gap-20">
                     <div className=" md:flex flex-col text-center gap-2">
                         <img src={Noticias} alt="" className="lg:h-96 2xl:h-Max" />
-                        <a href={DinamicaNews1} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 2ª edição</a>
+                        <a onClick={()=>{
+                            handleClick(DinamicaNews1)
+                        }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
                     </div>
                     <div className="flex flex-col text-center gap-2">
                         <img src={Noticias2} alt="" className="lg:h-96 2xl:h-Max" />
-                        <a href={DinamicaNews2} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 2ª edição</a>
+                        <a onClick={()=>{handleClick(DinamicaNews2)}} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 2ª edição</a>
                     </div>
                     <div className="flex flex-col text-center gap-2">
                         <img src={Noticias3} alt="" className="lg:h-96 2xl:h-Max" />
-                        <a href={DinamicaNews3} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 3° edição</a>
+                        <a onClick={()=>{handleClick(DinamicaNews3)}}  className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 3° edição</a>
                     </div>
                 </div>
             </div>
@@ -101,10 +107,10 @@ export default function Conteudos() {
 
                 <div className="flex flex-col lg:flex-row md:px-24 lg:px-40 gap-4">
                     <div className="rounded-2xl p-6 bg-white">
-                        <a href={Pdf1} className="underline" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 5.764/71 -</span> Define a Política Nacional de Cooperativismo, institui o regime jurídico das sociedades cooperativas, e dá outras providências.</a>
+                        <a onClick={()=>{handleClick(Pdf1)}} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 5.764/71 -</span> Define a Política Nacional de Cooperativismo, institui o regime jurídico das sociedades cooperativas, e dá outras providências.</a>
                     </div>
                     <div className="rounded-2xl p-6 bg-white">
-                        <a href={Pdf2} className="underline" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 12.690/12 -</span>Lei nº 12.690/12 - Dispõe sobre a organização e o funcionamento das Cooperativas de Trabalho, direitos e deveres dos cooperados. </a>
+                        <a onClick={()=>{handleClick(Pdf2)}} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 12.690/12 -</span>Lei nº 12.690/12 - Dispõe sobre a organização e o funcionamento das Cooperativas de Trabalho, direitos e deveres dos cooperados. </a>
                     </div>
                 </div>
             </section>

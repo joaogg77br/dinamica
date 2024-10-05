@@ -39,10 +39,10 @@ export default function Educacao() {
                         da equipe de trabalho e trazendo melhores resultados para os
                         Tomadores de Serviços.</p>
                 </div>
-                <div className="hidden 2xl:w-2/4 pr-40 h-80 grid-rows-2 grid-cols-3 gap-2 sm:grid">
-                    <img src={Aula} alt="dkajsdj" className="w-full max-w-96 h-full bg-cinza rounded-lg" />
-                    <img src={CourseCongratilation} alt="heheh" className="w-full h-full row-span-2 col-span-2 rounded-lg bg-blue-500" />
-                    <img src={Barbeiro} alt="dklasj" className="w-full h-full bg-cinza rounded-lg" />
+                <div className="hidden 2xl:w-1/2 pr-40 h-80 grid-rows-2 grid-cols-3 gap-2 sm:grid">
+                    <img src={Aula} alt="dkajsdj" className="w-full max-w-80 h-full bg-cinza rounded-lg " />
+                    <img src={CourseCongratilation} alt="heheh" className="w-full max-w-96 h-full row-span-2 col-span-2 rounded-lg bg-blue-500" />
+                    <img src={Barbeiro} alt="dklasj" className="w-full max-w-80 h-full bg-cinza rounded-lg" />
                 </div>
             </div>
             <Footer/>

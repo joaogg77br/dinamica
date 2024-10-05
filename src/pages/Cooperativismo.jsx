@@ -6,7 +6,7 @@ import Scrolltop from "../components/ScrollTop";
 export default function Cooperativismo() {
     return (
         <div className="font-nunitoSans">
-            <Scrolltop/>
+            <Scrolltop />
             <div className="sm:px-20 lg:px-40">
                 <Header />
                 <Info Title={"Cooperativismo, Cooperativa e Cooperado"} />
@@ -26,8 +26,8 @@ export default function Cooperativismo() {
                         <h1 className="font-bold text-3xl p-2 pb-4 text-green-800 ">Cooperativa</h1>
                         <p>Cooperativa é uma associação de pessoas com interesses comuns, economicamente organizada de forma democrática,
                             que objetiva desempenhar a prestação de serviços através dos seus cooperados, sem fins lucrativos.
-                        <br/>
-                        <br/>
+                            <br />
+                            <br />
                             A Cooperativa protege os mais diversos interesses econômicos e sociais dos trabalhadores. Diferente de empresas capitalistas, constituídas para gerar lucro e concentrar capital, uma cooperativa não tem fins lucrativos. Assim, o que
                             visam é a satisfação das atividades econômicas e qualidade dos serviços prestados.
                         </p>
@@ -41,9 +41,17 @@ export default function Cooperativismo() {
                         <br />
                         <ul className="flex flex-col gap-4 list-disc mt-2">
                             <li>O Cooperado é sócio proprietário e possui participação ativa nas decisões da Instituição. Na cooperativa ele recebe por PRODUÇÃO, sendo autônomo, sem vínculo empregatício.  </li>
-                            <li>A Cooperativa dispõe de escritório administrativo, em cada município de atuação, para proporcionar atendimento especializado aos cooperados.  </li>
-                            <li>A cooperativa realiza o recolhimento do INSS para que os cooperados tenham acesso aos benefícios previdenciários como a exemplo da Licença Maternidade, Auxílio doença e Aposentadoria.  </li>
-                            <li>A Dinâmica fornece Fardamentos e EPI’S padronizados, além de oferecer qualificação profissional e cursos profissionalizantes.</li>
+                            <li>O Cooperado deve integralizar uma quantidade mínima de quota-parte para
+                                assumir sua posição de associado. Dessa forma, o capital social da Cooperativa é
+                                completamente formado de quotas-partes dos Cooperados.
+                            </li>
+                            <li>O cooperado contribui para o INSS, a fim de garantir seus direitos previdenciários, tais
+                                como a Licença Maternidade, Auxílio doença, Aposentadoria, dentre outros
+                            </li>
+                            <li>
+                                O cooperado é dono e proprietário da Cooperativa. Por essa razão, tem direitos e deveres
+                                a cumprir no intuito de colaborar para o bom desempenho dos serviços prestados.
+                            </li>
                         </ul>
                     </div>
                 </div>
