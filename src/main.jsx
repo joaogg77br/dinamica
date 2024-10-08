@@ -16,8 +16,9 @@ import Conteudos from './pages/Conteudos.jsx'
 import Details from './pages/Details.jsx'
 import FaleConosco from './pages/Faleconosco.jsx'
 import Educacao from './pages/Educação.jsx'
-
-
+import PageNoticesA from './pages/PageNoticesA.jsx'
+import PageNoticesn from './pages/PageNoticesn.jsx'
+import PageNotice from './pages/PageNotice.jsx'
 
 const router = createBrowserRouter([
   {
@@ -80,11 +81,23 @@ const router = createBrowserRouter([
   {
     path:"/Educacao continuada",
     element:<Educacao/>
+  },
+  {
+    path:"/notices/outubro_rosa",
+    element:<PageNoticesA/>
+  },
+  {
+    path:"/notices/cooperados",
+    element:<PageNoticesn/>
+  },
+  {
+    path:"/notices/cooperativa",
+    element:<PageNotice/>
   }
 
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
 )

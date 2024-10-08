@@ -28,10 +28,12 @@ export default {
     },
     extend: {
       height:{
-          "Max":"500px"
+          "Max":"500px",
+        "noticesBanner":"404px"
       },
       width:{
-        "Max":"490px"
+        "Max":"490px",
+        "noticesBanner":"300px"
       },
       borderRadius:{
           "custom":"50px"

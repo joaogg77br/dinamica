@@ -1,7 +1,7 @@
 
 import React from 'react';
-import Header from './Header';
-import Scrolltop from './ScrollTop';
+import Header from '../components/Header';
+import Scrolltop from '../components/ScrollTop';
 
 export default function PageNews ({ title, imageUrl, txt }){
   return (

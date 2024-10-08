@@ -17,6 +17,8 @@ import Banner2 from "./assets/Banners/Headline2.svg"
 import Banner3 from "./assets/Banners/Headline3.svg"
 import Brif from "./assets/brifecase-tick.svg"
 import Security from "./assets/security-user.svg"
+import InstagramQrCode from "./assets/Banners/InstagramQrcode.svg"
+import InstagramScreenShot from "./assets/Banners/Captura de tela 2024-10-05 181728 1.svg"
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -30,35 +32,39 @@ import Scrolltop from './components/ScrollTop'
 function App() {
   return (
     <>
-      <div className='sm:px-10 lg:px-40 font-nunitoSans'>
-        <Scrolltop/>
+      <div className='sm:px-10 lg:px-40 font-nunitoSans '>
+        <Scrolltop />
         <Header />
         <Swiper className='mt-10 p-5 mr-5 pb-10 '
           effect={'coverflow'}
           spaceBetween={50}
           autoplay={{
-            delay:4000,
-            disableOnInteraction:false,
+            delay: 4000,
+            disableOnInteraction: false,
           }}
           grabCursor={true}
           Navigation={true}
           pagination={true}
-          modules={[ Pagination,Autoplay]}
+          modules={[Pagination, Autoplay]}
         >
           <SwiperSlide>
-            <img src={Banner3} alt="" />
+            <img src={Banner3} alt=""  className='w-full'/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Banner} alt="" />
+            <img src={Banner} alt="" className='w-full'/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Banner2} alt="" />
+            <img src={Banner2} alt="" className='w-full'/>
           </SwiperSlide>
         </Swiper>
 
         <div className='p-4 lg:mb-10'>
-          <div className='px-5 p-12 flex justify-end items-center flex-col  bg-laranja rounded-3xl sm:flex-row sm:justify-around lg:px-10 mr-4'>
-          <h1 className='text-white text-3xl font-semibold m-4 sm:text-3xl lg:pl-2'><a href='https://www.instagram.com/cooperativadinamica/'>Acesse nossas Redes Sociais</a></h1>
+          <div className='px-5 p-12 flex  items-center  flex-col   bg-laranja rounded-3xl lg:flex-row sm:justify- lg:px-10 mr-4'>
+            <h1 className='text-white text-3xl m-4 font-semibold md:text-3xl w-auto lg:w-2/5 text-wrap'><a href='https://www.instagram.com/cooperativadinamica/'>Acesse nossas<br className='hidden md:block'/> Redes Sociais</a></h1>
+            <div className="flex flex-col lg:flex-row flex-wrap xl:flex-nowrap justify-center w-auto gap-2 md:w-1/2">
+              <img src={InstagramScreenShot} alt=""className='w-full sm:h-40 ' />
+              <img src={InstagramQrCode} alt="" className='w-full sm:h-40' />
+            </div>
           </div>
         </div>
         <div className='flex flex-col gap-10 lg:gap-32 px-2 pb-10 lg:px-5 pt-10'>
