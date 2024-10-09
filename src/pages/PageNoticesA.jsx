@@ -13,10 +13,12 @@ export default function PageNoticesA() {
                 <Header />
                 <Info Title={"OUTUBRO ROSA: UM GESTO DE CUIDADO, UMA ATITUDE DE AMOR!"} />
             </div>
-            <main className="md:px-20 lg:px-40 font-nunitoSans py-10">
-                <img src={secondImage} alt="" className="w-full md:w-1/2 mx-auto md:rounded-custom" />
+            <main className="md:px-20 lg:px-40 font-nunitoSans py-10 ">
+                <div className="">
+                    <img src={secondImage} alt="" className="w-full  md:rounded-custom" />
+                </div>
                 <div className="w-full p-4 pt-10  md:px-40 flex md:items-center md:justify-center flex-col gap-4">
-                    <p className="text-xl">O mês de outubro é dedicado à
+                    <p className="text-xl lg:text-2xl font-bold">O mês de outubro é dedicado à
                         conscientização sobre o câncer de mama,
                         reforçando a importância da prevenção e do
                         diagnóstico precoce.

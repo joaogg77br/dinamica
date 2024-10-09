@@ -2,9 +2,9 @@ import { useState } from 'react'
 import './font.css'
 import Header from './components/Header'
 import Explain from './components/Explain'
-import ImageExplain1 from "./assets/explain1.png"
-import ImageExplain2 from "./assets/explain2.png"
-import ImageExplain3 from "./assets/explain3.png"
+import ImageExplain1 from "./assets/Nova pasta/AmigosDePapel.jpg"
+import ImageExplain2 from "./assets/Nova pasta/cabeçasLaranjas.jpg"
+import ImageExplain3 from "./assets/Nova pasta/Unidos.jpg"
 import Advantagens from './components/Advantages'
 import LastNews from './components/LastNews'
 import Footer from './components/Footer'
@@ -67,7 +67,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='flex flex-col gap-10 lg:gap-32 px-2 pb-10 lg:px-5 pt-10'>
+        <div className='flex flex-col gap-10 lg:gap-32 px-2 pb-10 lg:px-7 pt-10'>
           <Explain
             title={"Cooperativismo: juntos construímos uma sociedade mais próspera"}
             text={"Você sabe o que é cooperativismo? A estrutura é baseada na colaboração e na parceria para promover o auxílio mútuo. Hoje, faz parte do cotidiano de milhares de pessoas."}

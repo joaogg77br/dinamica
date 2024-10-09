@@ -1,9 +1,9 @@
 import Header from "../components/Header";
 import Info from "../components/Info";
 import Conselho from "../assets/image 2.jpg"
-import Persons from "../assets/undraw_term_sheet_re_ju7s 1.svg"
-import Analitc from "../assets/undraw_engineering_team_a7n2 1.svg"
-import Folder from "../assets/undraw_folder_re_apfp 1.svg"
+import Persons from "../assets/Nova pasta/Project-planning.svg"
+import Analitc from "../assets/Nova pasta/Video-call.svg"
+import Folder from "../assets/Nova pasta/Meeting (1).svg"
 import Footer from "../components/Footer";
 import Scrolltop from "../components/ScrollTop";
 export default function Conselhos() {

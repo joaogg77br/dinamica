@@ -14,9 +14,11 @@ export default function PageNoticessA() {
                 <Info Title={"COOPERADOS REALIZAM TREINAMENTO E CAPACITAÇÃO DAS NR 10 E NR 35 "} />
             </div>
             <main className="md:px-20 lg:px-40 font-nunitoSans py-10">
-                <img src={secondImage} alt="" className="w-full md:w-3/4 h-auto mx-auto md:rounded-custom" />
+                <div className="">
+                    <img src={secondImage} alt="" className="w-full  md:rounded-custom" />
+                </div>
                 <div className="w-full p-4 pt-10  md:px-40 md:items-center md:justify-center flex-col gap-4">
-                    <p className="text-xl">Na última sexta-feira (10), a Dinâmica Cooperativa em
+                    <p className="text-xl lg:text-2xl font-bold">Na última sexta-feira (10), a Dinâmica Cooperativa em
                         parceria com a Empresa @threynnare realizou mais
                         uma edição do treinamento e capacitação das NR 10
                         e NR 35, com os cooperados eletricistas atuantes em
