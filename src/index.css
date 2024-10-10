@@ -7,3 +7,17 @@
         @apply bg-laranja;
     }
 }
+
+.força{
+    animation: animation .3s ease-in-out;
+}
+
+@keyframes animation{
+    0%{
+        height: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    
+}

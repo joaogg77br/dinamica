@@ -14,7 +14,6 @@ export default function FaleConosco() {
             </div>
             <main className="flex flex-col w-full  sm:px-20 lg:px-40 gap-10 bg-cinza text-zinc-800">
                 <form action="" className="flex flex-col gap-5 items-start p-4">
-                <h1 className="text-2xl font-bold py-5">Entre em contato conosco</h1>
                     <input type="text" placeholder="Primeiro nome" className="w-full p-3 rounded-xl" />
                     <input type="text" placeholder="Segundo nome" className="w-full p-3 rounded-xl" />
                     <input type="email" placeholder="E-mail" className="w-full p-3 rounded-xl" />

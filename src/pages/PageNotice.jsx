@@ -15,7 +15,7 @@ export default function PageNoticesA() {
             </div>
             <main className="md:px-20 lg:px-40 font-nunitoSans py-10">
                 <div className="">
-                    <img src={secondImage} alt="" className="w-full  md:rounded-custom" />
+                    <img src={secondImage} alt="" className="w-full h-720  md:rounded-custom" />
                 </div>
                 <div className="w-full p-4 pt-10  md:px-40 flex md:items-center md:justify-center flex-col gap-4">
                     <p className="text-xl lg:text-2xl font-bold">
