@@ -61,11 +61,12 @@ export default function Conteudos() {
             </div>
             <div className="flex flex-col justify-center items-center p-4 py-10">
                 <h1 className="text-3xl font-bold p-10">Dinâmica <span className="text-orange-500">News</span></h1>
-                <Swiper className="w-full sm:hidden" 
+                <div className="block sm:hidden w-auto">
+                <Swiper className="w-80" 
                 spaceBetween={20}
                 >
                     <SwiperSlide>
-                    <div className=" md:flex flex-col text-center gap-2">
+                    <div className="md:flex flex-col text-center gap-2 ">
                         <img src={Noticias} alt="" className="lg:h-96 2xl:h-Max" />
                         <a onClick={()=>{DinamicaNews1}} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
                     </div>
@@ -83,6 +84,7 @@ export default function Conteudos() {
                     </div>
                     </SwiperSlide>
                 </Swiper>
+                </div>
                 <div className="hidden sm:flex flex-col sm:flex-row gap-20">
                     <div className=" md:flex flex-col text-center gap-2">
                         <img src={Noticias} alt="" className="lg:h-96 2xl:h-Max" />

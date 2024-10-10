@@ -29,7 +29,8 @@ export default {
     extend: {
       height:{
           "Max":"500px",
-        "noticesBanner":"404px"
+        "noticesBanner":"404px",
+        "720":"720px"
       },
       width:{
         "Max":"490px",
