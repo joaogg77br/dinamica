@@ -99,7 +99,7 @@ function App() {
           <p> de  ser um cooperado</p>
         </div>
         <div className='flex justify-center items-center m-5 my-10'>
-          <div className='grid grid-cols-2 gap-6 xl:gap-8 sm:grid-cols-3 '>
+          <div className='grid grid-cols-2 gap-6 xl:gap-8 lg:grid-cols-3 '>
             <Advantagens number={1} text={"Ser Sócio-cotista"} img={Award} />
             <Advantagens number={2} text={"Opinar e votar nas decisões"} img={TaskSquare} />
             <Advantagens number={3} text={"Oportunidade  de trabalho"} img={Wallet} />
