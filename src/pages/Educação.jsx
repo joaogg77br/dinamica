@@ -15,14 +15,14 @@ export default function Educacao() {
                 <Info Title={"Educação Continuada"} />
             </div>
             <div className="flex flex-col items-center w-full bg-cinza gap-10 sm:flex-row md:px-20 lg:px-60 2xl:px-80 py-10">
-                <div className="w-full  flex flex-col p-2 px-4 gap-2  sm:hidden ">
+                <div className="w-full  flex flex-col p-2 gap-2  sm:hidden ">
                     <div className="flex gap-2 ">
                         <img src={Aula} alt="dkajsdj" className="w-1/2 max-w-80  bg-cinza rounded-lg " />
                         <img src={Barbeiro} alt="dklasj" className="w-1/2 h-40 bg-cinza rounded-lg" />
                     </div>
                     <img src={CourseCongratilation} alt="heheh" className="w-full h-80 max-w-96  rounded-lg lg:object-cover" />
                 </div>
-                <div className=" flex items-center justify-center flex-col px-4 lg:py-5 sm:w-1/2  text-sm">
+                <div className=" flex items-center justify-center flex-col p-4 lg:py-5 sm:w-1/2  text-sm">
                     <p>A Educação Continuada é uma prática
                         na qual o desenvolvimento pessoal e profissional dos trabalhadores é fundamental para o aperfeiçoamento
                         das habilidades, bem como, maior
