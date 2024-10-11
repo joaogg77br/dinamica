@@ -14,12 +14,12 @@ export default function Principios() {
     return (
         <div className="font-nunitoSans">
             <Scrolltop/>
-            <div className="sm:px-10 lg:px-52 2xl:px-80">
+            <div className="sm:px-10 lg:px-40 2xl:px-80">
                 <Header />
                 <Info Title={"7 Príncipios do Cooperativismo"} />
             </div>
             <div className="flex flex-col p-2 bg-cinza sm:pt-10 pb-10 xl:text-2xl py-10 text-zinc-800">
-                <section className="flex flex-col px-5 lg:px-52 2xl:px-80 sm:flex-row sm:h-52">
+                <section className="flex flex-col px-5 lg:px-40 2xl:px-80 sm:flex-row sm:h-52">
                     <div className="sm:hidden ">
                         <div className="bg-laranja h-10 w-10 p-2 flex  rounded-t-xl justify-center items-center text-white">1</div>
                     </div>
@@ -33,7 +33,7 @@ export default function Principios() {
                         <div className="bg-laranja h-10 w-10 p-2 ronded-t-xl rounded-r-xl flex justify-center items-center text-white">1</div>
                     </div>
                 </section>
-                <section className="flex flex-col px-5 lg:px-52 2xl:px-80 sm:flex-row">
+                <section className="flex flex-col px-5 lg:px-40 2xl:px-80 sm:flex-row">
                     <div className="sm:w-1/2 flex items-start justify-end">
                         <div className="bg-laranja h-10 w-10 p-2  flex justify-center items-center sm:rounded-bl-xl text-white">2</div>
                     </div>
@@ -47,7 +47,7 @@ export default function Principios() {
                         <div className="bg-laranja h-10 w-10 p-2 ronded-t-xl rounded-r-xl flex justify-center items-center text-white">1</div>
                     </div>
                 </section>
-                <section className="flex flex-col px-5 lg:px-52 2xl:px-80 sm:flex-row">
+                <section className="flex flex-col px-5 lg:px-40 2xl:px-80 sm:flex-row">
                     <div className="sm:hidden">
                         <div className="bg-laranja h-10 w-10 p-2   flex justify-center items-center text-white">3</div>
                     </div>
@@ -61,7 +61,7 @@ export default function Principios() {
                         <div className="bg-laranja h-10 w-10 p-2  rounded-br-xl flex justify-center items-center text-white">3</div>
                     </div>
                 </section>
-                <section className="flex flex-col px-5 lg:px-52 2xl:px-80 sm:flex-row">
+                <section className="flex flex-col px-5 lg:px-40 2xl:px-80 sm:flex-row">
                     <div className=" flex justify-end sm:w-1/2  items-end sm:justify-end sm:items-start ">
                         <div className="bg-laranja h-10 w-10 p-2 flex justify-center sm:rounded-bl-xl items-end text-white">4</div>
                     </div>
@@ -75,7 +75,7 @@ export default function Principios() {
                         <div className="bg-laranja h-10 w-10 p-2 ronded-t-xl rounded-r-xl flex justify-center items-center text-white">3</div>
                     </div>
                 </section>
-                <section className="flex flex-col px-5 lg:px-52 2xl:px-80 sm:flex-row">
+                <section className="flex flex-col px-5 lg:px-40 2xl:px-80 sm:flex-row">
                     <div className="sm:hidden flex">
                         <div className="bg-laranja h-10 w-10 p-2 flex justify-center items-center text-white">5</div>
                     </div>
@@ -89,7 +89,7 @@ export default function Principios() {
                         <div className="bg-laranja h-10 w-10 p-2  rounded-br-xl flex justify-center items-center text-white">5</div>
                     </div>
                 </section>
-                <section className="flex flex-col px-5 lg:px-52 2xl:px-80 sm:flex-row">
+                <section className="flex flex-col px-5 lg:px-40 2xl:px-80 sm:flex-row">
                     <div className=" flex justify-end sm:justify-end sm:w-1/2">
                         <div className="bg-laranja h-10 w-10 p-2  sm:rounded-bl-xl flex justify-center items-center text-white">6</div>
                     </div>
@@ -103,7 +103,7 @@ export default function Principios() {
                         <div className="bg-laranja h-10 w-10 p-2 ronded-t-xl rounded-r-xl flex justify-center items-center text-white">1</div>
                     </div>
                 </section>
-                <section className="flex flex-col px-5 lg:px-52 2xl:px-80 sm:flex-row">
+                <section className="flex flex-col px-5 lg:px-40 2xl:px-80 sm:flex-row">
                     <div className="sm:hidden">
                         <div className="bg-laranja h-10 w-10 p-2  flex justify-center items-center text-white">7</div>
                     </div>

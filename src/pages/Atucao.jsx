@@ -8,7 +8,7 @@ export default function Atuacao() {
     return (
         <div className="font-nunitoSans">
             <Scrolltop/>
-            <div className="sm:px-10 lg:px-52 2xl:px-80">
+            <div className="sm:px-10 lg:px-40 2xl:px-80">
                 <Header/>
                 <Info Title={"Onde atuamos"}/>
             </div>

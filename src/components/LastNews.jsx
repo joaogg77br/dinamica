@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 export default function LastNews() {
   return (
 
-    <div className="w-full bg-zinc-100 p-4 md:px-20 lg:px-56 2xl:px-80 py-20">
+    <div className="w-full bg-zinc-100 p-4 md:px-20 lg:px-40 2xl:px-80 py-20">
       <div className="w-48">
         <Link to="/noticias" className="w-auto">
           <button className="flex gap-2 text-white  p-2 rounded-2xl duration-300 justify-center bg-laranja w-48 border-2 border-laranja hover:bg-white hover:text-laranja 2xl:mx-6 ">Ultimas nóticias <ChevronRight /></button>

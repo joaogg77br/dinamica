@@ -32,10 +32,11 @@ import Scrolltop from './components/ScrollTop'
 function App() {
   return (
     <>
-      <div className='md:px-20 lg:px-52 2xl:px-80 font-nunitoSans '>
+      <div className='md:px-20 lg:px-40 2xl:px-80 font-nunitoSans '>
         <Scrolltop />
         <Header />
-        <Swiper className='mt-10  mr-10 pb-10 '
+        <div className='pr-2 lg:px-0'>
+        <Swiper className='mt-10 mx-10 pb-10 '
           spaceBetween={50}
           autoplay={{
             delay: 4000,
@@ -46,7 +47,7 @@ function App() {
           pagination={true}
           modules={[Pagination, Autoplay]}
         >
-          <SwiperSlide className='lg:pr-8 pl-2   lg:pt-5'>
+          <SwiperSlide className='lg:pr-8 pl-2 mx-   lg:pt-5'>
             <img src={Banner3} alt="" className='w-full' />
           </SwiperSlide>
           <SwiperSlide className='lg:pr-8 pl-2   lg:pt-5'>
@@ -56,17 +57,18 @@ function App() {
             <img src={Banner2} alt="" className='w-full' />
           </SwiperSlide>
         </Swiper>
+        </div>
 
         <div className='px-2 lg:pt-10'>
           <a href='https://www.instagram.com/cooperativadinamica/'>
-            <div className='px-5 pb-10 mt-5 lg:pt-10 pl-20 lg:mt-0 flex  items-center  flex-col  bg-laranja rounded-custom lg:flex-row sm:justify-center lg:px-14 lg:mr-5'>
-              <h1 className='font-sans text-white text-xl m-4 font-semibold md:text-2xl w-auto lg:w-2/5 text-wrap 2xl:text-3xl'>
+            <div className='px-5 pb-10 mt-5 lg:pt-10 lg:pl-10 lg:mt-0 flex  items-center flex-col  bg-laranja rounded-custom lg:flex-row  lg:mr-5'>
+              <h1 className='font-sans text-white  text-xl m-4 font-semibold md:text-2xl w-auto text-nowrap bg-red-500 lg:w-2/5 text-wrap 2xl:text-3xl '>
                 Acesse nossas
                 <br className='hidden md:block' /> Redes Sociais
               </h1>
-              <div className="flex flex-col lg:flex-row flex-wrap xl:flex-nowrap justify-center gap-4 w-auto">
-                <img src={InstagramScreenShot} alt="" className='w-full sm:h-40 2xl:h-48 object-cover' />
-                <img src={InstagramQrCode} alt="" className='w-full sm:h-40 2xl:h-48 object-cover lg:mr-10' />
+              <div className="flex flex-col lg:flex-row flex-wrap xl:flex-nowrap justify-center gap-4 w-full">
+                <img src={InstagramScreenShot} alt="" className='w-full md:h-40 2xl:h-48 ' />
+                <img src={InstagramQrCode} alt="" className='w-full md:h-40 2xl:h-48  lg:mr-10' />
               </div>
             </div>
           </a>

@@ -49,17 +49,17 @@ export default function Conteudos() {
     return (
         <div className="font-nunitoSans">
             <Scrolltop />
-            <div className="md:px-20 lg:px-60 2xl:px-80">
+            <div className="md:px-20 lg:px-40 2xl:px-80">
                 <Header />
                 <Info Title={"Conteúdos"} />
             </div>
-            <div className="flex flex-col justify-start items-center w-full bg-zinc-100 gap-10  lg:px-60 2xl:px-72 py-20 lg:text-2xl lg:flex-row">
+            <div className="flex flex-col justify-start items-center w-full bg-zinc-100 gap-10  lg:px-40 2xl:px-72 py-20 lg:text-2xl lg:flex-row">
                 <h1 className=" text-cente text-2xl lg:text-3xl font-bold md:text-3xl">Filme institucional</h1>
                 <video  className="w-full lg:w-4/6  lg:rounded-custom" controls autoPlay>
                     <source src={Video} />
                 </video>
             </div>
-            <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-60 2xl:px-80">
+            <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-40 2xl:px-80">
                 <h1 className="text-3xl font-bold p-10">Dinâmica <span className="text-orange-500">News</span></h1>
                 <div className="block sm:hidden w-auto">
                 <Swiper className="w-80" 
@@ -102,7 +102,7 @@ export default function Conteudos() {
                     </div>
                 </div>
             </div>
-            <section className="flex flex-col gap-6 justify-center items-center pt-12 bg-zinc-100 p-4 lg:pb-32 lg:px-24 2xl:px-40">
+            <section className="flex flex-col gap-6 justify-center items-center pt-12 bg-zinc-100 p-4 lg:pb-32 lg:px-10 2xl:px-40">
                 <img src={WhiteHome} alt="" />
                 <h1 className="text-xl font-medium">Leis do <span className="text-orange-500">Cooperativismo</span></h1>
                 <p className="text-center">A Cooperativa Dinâmica é regida pelas<br /><span className="font-bold">Leis nº 5.764/71 e Lei nº 12.690/12.</span></p>

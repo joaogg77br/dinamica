@@ -16,7 +16,7 @@ export default function Notices() {
   const [news, setNews] = useState([])
     return(
         <>
-        <div className="md:px-20 lg:px-60 2xl:px-80">
+        <div className="md:px-20 lg:px-40 2xl:px-80">
           <Scrolltop/>
           <Header />
           <Info Title={"Notícias"} />

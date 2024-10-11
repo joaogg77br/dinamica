@@ -88,7 +88,7 @@ export default function FaleConosco() {
                                     <h1 className="text-xl font-bold">Ouro Branco/AL</h1>
                                     <br />
                                     <p>(82) 98222-4211 </p>                        
-                                    <p>ourobranco@dinamicacooperativa.com.br</p>
+                                    <p>ourobranco@dinamicacooperativa.<br className="sm:hidden"/>com.br</p>
                                 </div>
                                 <div>
                                     <h1 className="text-xl font-bold">Jacaré dos Homens/AL </h1>
@@ -127,19 +127,19 @@ export default function FaleConosco() {
                                     <h1 className="text-xl font-bold">Marechal Deodoro/AL </h1>
                                     <br />
                                     <p>(82) 99363-7724 </p>                        
-                                    <p>marechal@dinamicacooperativa.com.br </p>
+                                    <p>marechal@dinamicacooperativa.<br className="sm:hidden"/>com.br </p>
                                 </div>
                                 <div>
                                     <h1 className="text-xl font-bold">Major Izidoro/AL</h1>
                                     <br />
                                     <p>(82) 99604-3795</p>                        
-                                    <p>majorizidoro@dinamicacooperativa.com.br </p>
+                                    <p>majorizidoro@dinamicacooperativa.<br className="sm:hidden"/>com.br </p>
                                 </div>
                                 <div>
                                     <h1 className="text-xl font-bold">Princesa Isabel/PB</h1>
                                     <br />
                                     <p>(83) 99692-3758 </p>                        
-                                    <p>princesaisabe@dinamicacooperativa.com.br </p>
+                                    <p>princesaisabe@dinamicacooperativa.<br className="sm:hidden"/>com.br </p>
                                 </div>
                                 <div>
                                     <h1 className="text-xl font-bold">Santa Luzia do Norte/AL </h1>
