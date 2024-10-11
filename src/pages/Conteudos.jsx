@@ -86,18 +86,18 @@ export default function Conteudos() {
                 </Swiper>
                 </div>
                 <div className="hidden sm:flex flex-col sm:flex-row gap-20">
-                    <div className=" md:flex flex-col text-center gap-2">
-                        <img src={Noticias} alt="" className="lg:h-96 2xl:h-Max" />
+                    <div className=" md:flex flex-col text-center gap-">
+                        <img src={Noticias} alt="" className=" 2xl:h-Max" />
                         <a onClick={()=>{
                             handleClick(DinamicaNews1)
                         }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
                     </div>
                     <div className="flex flex-col text-center gap-2">
-                        <img src={Noticias2} alt="" className="lg:h-96 2xl:h-Max" />
+                        <img src={Noticias2} alt="" className="2xl:h-Max" />
                         <a onClick={()=>{handleClick(DinamicaNews2)}} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 2ª edição</a>
                     </div>
                     <div className="flex flex-col text-center gap-2">
-                        <img src={Noticias3} alt="" className="lg:h-96 2xl:h-Max" />
+                        <img src={Noticias3} alt="" className="2xl:h-Max" />
                         <a onClick={()=>{handleClick(DinamicaNews3)}}  className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 3° edição</a>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ export default function Conteudos() {
                 </div>
             </section>
 
-            <section className="flex flex-col gap-5  items-center py-10 pb-20 sm:px-20 lg:px-60 2xl:px-80">
+            <section className="flex flex-col gap-5  items-center py-10 pb-20 sm:px-20 lg:px-40 2xl:px-80">
                 <h1 className="font-bold text-2xl">Parceiros Locais</h1>
                 <div className="flex flex-wrap p-2 gap-2 justify-center">
                     <img src={FrameSkin} alt="" className="h-16 w-28 rounded-xl" />

@@ -61,7 +61,7 @@ function App() {
 
         <div className='px-2 lg:pt-10'>
           <a href='https://www.instagram.com/cooperativadinamica/'>
-            <div className='px-5 pb-10 mt-5 lg:pt-5 lg:pl-10 lg:mt-0 flex  items-center flex-col  bg-laranja rounded-custom 2xl:flex-row  lg:mr-5'>
+            <div className='px-5 pb-10 mt-5 lg:pt-5 lg:pl-10 lg:mt-0 flex  items-center flex-col  bg-laranja rounded-custom lg:mr-5'>
               <h1 className='font-sans text-white  text-xl m-4 font-semibold md:text-3xl w-auto text-nowrap 2xl:text-3xl '>
                 Acesse nossas Redes Sociais
               </h1>
