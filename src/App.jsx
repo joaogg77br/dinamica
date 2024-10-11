@@ -61,14 +61,13 @@ function App() {
 
         <div className='px-2 lg:pt-10'>
           <a href='https://www.instagram.com/cooperativadinamica/'>
-            <div className='px-5 pb-10 mt-5 lg:pt-10 lg:pl-10 lg:mt-0 flex  items-center flex-col  bg-laranja rounded-custom lg:flex-row  lg:mr-5'>
-              <h1 className='font-sans text-white  text-xl m-4 font-semibold md:text-2xl w-auto text-nowrap bg-red-500 lg:w-2/5 text-wrap 2xl:text-3xl '>
-                Acesse nossas
-                <br className='hidden md:block' /> Redes Sociais
+            <div className='px-5 pb-10 mt-5 lg:pt-5 lg:pl-10 lg:mt-0 flex  items-center flex-col  bg-laranja rounded-custom 2xl:flex-row  lg:mr-5'>
+              <h1 className='font-sans text-white  text-xl m-4 font-semibold md:text-3xl w-auto text-nowrap 2xl:text-3xl '>
+                Acesse nossas Redes Sociais
               </h1>
-              <div className="flex flex-col lg:flex-row flex-wrap xl:flex-nowrap justify-center gap-4 w-full">
-                <img src={InstagramScreenShot} alt="" className='w-full md:h-40 2xl:h-48 ' />
-                <img src={InstagramQrCode} alt="" className='w-full md:h-40 2xl:h-48  lg:mr-10' />
+              <div className="flex flex-col lg:flex-row items-center  justify-center gap-4 w-full">
+                <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-40 2xl:h-48 ' />
+                <img src={InstagramQrCode} alt="" className='w-full md:w-auto md:h-40 2xl:h-48  ' />
               </div>
             </div>
           </a>

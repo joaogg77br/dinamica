@@ -7,12 +7,12 @@ import Call from "../assets/call-calling.svg"
 export default function FaleConosco() {
     return (
         <>
-            <div className="md:px-20 lg:px-60 2xl:px-80">
+            <div className="md:px-20 lg:px-40 2xl:px-80">
                 <Scrolltop/>
                 <Header />
                 <Info Title={"Fale Conosco"} />
             </div>
-            <main className="flex flex-col w-full  sm:px-20 lg:px-60 2xl:px-80 gap-10 bg-cinza text-zinc-800">
+            <main className="flex flex-col w-full  sm:px-20 lg:px-40 2xl:px-80 gap-10 bg-cinza text-zinc-800">
                 <form action="" className="flex flex-col gap-5 items-start p-4">
                     <input type="text" placeholder="Primeiro nome" className="w-full p-3 rounded-xl" />
                     <input type="text" placeholder="Segundo nome" className="w-full p-3 rounded-xl" />
