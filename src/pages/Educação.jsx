@@ -9,12 +9,12 @@ import CourseCongratilation from "../assets/CourseCongratulation.png"
 export default function Educacao() {
     return (
         <>
-            <div className="md:px-20 lg:px-60 2xl:px-80">
+            <div className="md:px-20 lg:px-52 2xl:px-80">
                 <Scrolltop />
                 <Header />
                 <Info Title={"Educação Continuada"} />
             </div>
-            <div className="flex flex-col items-center w-full bg-cinza gap-10 sm:flex-row md:px-20 lg:px-60 2xl:px-80 py-10">
+            <div className="flex flex-col items-center w-full bg-cinza gap-10 sm:flex-row md:px-20 lg:px-52 2xl:px-80 py-10">
                 <div className="w-full  flex flex-col p-2 gap-2  sm:hidden ">
                     <div className="flex gap-2 ">
                         <img src={Aula} alt="dkajsdj" className="w-1/2 max-w-80  bg-cinza rounded-lg " />

@@ -13,7 +13,7 @@ export default function Header() {
     return (
         <>
             <div className="flex w-full  justify-center mb-20">
-                <header className="flex w-full justify-between p-3 fixed z-50 bg-white sm:px-20 lg:px-60 2xl:px-80 ">
+                <header className="flex w-full justify-between p-3 fixed z-50 bg-white sm:px-20 lg:px-52 2xl:px-80 ">
                     <div className={`fixed ${menu}   justify-end top-0 left-0  bg-black bg-opacity-50 w-full h-screen z-50`}>
                         <div className="bg-verde flex flex-col h-screen overflow-hidden animate-wiggle w-11/12 p-2 pt-4">
                             <div className="flex w-full justify-end">

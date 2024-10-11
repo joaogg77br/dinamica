@@ -24,7 +24,7 @@ export default function Atividades() {
         
         <div className="font-nunitoSans">
             <Scrolltop/>
-            <div className="sm:px-10 md:px-20 lg:px-60 2xl:px-80">
+            <div className="sm:px-10 md:px-20 lg:px-52 2xl:px-80">
                 <Header />
                 <Info Title={"Atividades desenvolvidas pela Dinâmica"} />
             </div>
