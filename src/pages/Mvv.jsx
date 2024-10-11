@@ -11,11 +11,11 @@ export default function Mvv() {
     return (
         <div className="font-nunitoSans">
             <Scrolltop />
-            <div className="sm:px-10 md:px-40">
+            <div className="sm:px-10 md:px-60 2xl:px-80">
                 <Header />
                 <Info Title={"Missão, Visão e Valores"} text={""} />
             </div>
-            <section className=" w-full p-4 lg:px-44  grid grid-cols-1  gap-10 bg-cinza pb-14 md:pt-20">
+            <section className=" w-full p-4 lg:px-60 2xl:px-80  grid grid-cols-1  gap-10 bg-cinza pb-14 md:pt-20">
                 <div className="p-10 bg-laranja text-white rounded-2xl flex flex-col sm:flex-row sm:items-center gap-10 lg:justify-start lg:p-10">
                     <img src={Interative} alt="" className=" flex justify-center max-w-40 items-center rounded-2xl  " />
                     <div className="flex  gap-4 flex-col text-start ">

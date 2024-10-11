@@ -17,7 +17,7 @@ export default function PageNoticesA() {
                 <div className="lg:ml-4 lg:mr-9">
                     <img src={secondImage} alt="" className="w-full  md:h-1/2 lg:h-720 md:rounded-custom object-cover" />
                 </div>
-                <div className="w-full p-4 pt-10  md:px-40 flex md:items-center md:justify-center flex-col gap-4">
+                <div className="text-zinc-800 w-full p-4 pt-10  md:px-40 flex md:items-center md:justify-center flex-col gap-4">
                     <p className="text-xl lg:text-2xl font-bold">
                         Esse é o lema do Dia C - Dia de Cooperar, celebrado anualmente todo primeiro sábado de
                         julho.

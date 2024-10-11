@@ -13,7 +13,7 @@ export default function Header() {
     return (
         <>
             <div className="flex w-full  justify-center mb-20">
-                <header className="flex w-full justify-between p-3 fixed z-50 bg-white sm:px-20 lg:px-40 ">
+                <header className="flex w-full justify-between p-3 fixed z-50 bg-white sm:px-20 lg:px-60 2xl:px-80 ">
                     <div className={`fixed ${menu}   justify-end top-0 left-0  bg-black bg-opacity-50 w-full h-screen z-50`}>
                         <div className="bg-verde flex flex-col h-screen overflow-hidden animate-wiggle w-11/12 p-2 pt-4">
                             <div className="flex w-full justify-end">
@@ -125,7 +125,7 @@ export default function Header() {
                             </div>
                         </Link>
                         <div className="flex gap-5 xl:gap-10 text-zinc-800">
-                            <ul className="hidden justify-center text-sm mt-4 lg:gap-5 lg:flex xl:gap-10 font-bold">
+                            <ul className="hidden justify-center text-sm mt-4 lg:gap-5 lg:flex xl:gap-5 font-bold">
                                 <li><Link to="/" className="pb-2 border-b border-white   hover:text-orange-500 hover:underline decoration-2 underline-offset-8">Home</Link></li>
                                 <li className="group  pb-6">
                                     <Link to="" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap decoration-2 underline-offset-8">Institucional</Link>

@@ -32,10 +32,10 @@ import Scrolltop from './components/ScrollTop'
 function App() {
   return (
     <>
-      <div className='md:px-20 lg:px-40 font-nunitoSans '>
+      <div className='md:px-20 lg:px-60 2xl:px-80 font-nunitoSans '>
         <Scrolltop />
         <Header />
-        <Swiper className='mt-10 p-5 mr-20 pb-10'
+        <Swiper className='mt-10  mr-10 pb-10 '
           spaceBetween={50}
           autoplay={{
             delay: 4000,
@@ -46,32 +46,33 @@ function App() {
           pagination={true}
           modules={[Pagination, Autoplay]}
         >
-          <SwiperSlide className='lg:pr-7 lg:pt-5'>
+          <SwiperSlide className='lg:pr-8 pl-2   lg:pt-5'>
             <img src={Banner3} alt="" className='w-full' />
           </SwiperSlide>
-          <SwiperSlide className='lg:pr-7 lg:pt-5'>
+          <SwiperSlide className='lg:pr-8 pl-2   lg:pt-5'>
             <img src={Banner} alt="" className='w-full' />
           </SwiperSlide>
-          <SwiperSlide className='lg:pr-7 lg:pt-5'>
+          <SwiperSlide className='lg:pr-8 pl-2   lg:pt-5'>
             <img src={Banner2} alt="" className='w-full' />
           </SwiperSlide>
         </Swiper>
 
-        <div className='p-4 lg:pt-10'>
+        <div className='px-2 lg:pt-10'>
           <a href='https://www.instagram.com/cooperativadinamica/'>
-            <div className='px-5 p-12 flex  items-center  flex-col   bg-laranja rounded-3xl lg:flex-row sm:justify-center lg:px-10 lg:mr-5'>
-              <h1 className='text-white text-3xl m-4 font-semibold md:text-3xl w-auto lg:w-2/5 text-wrap 2xl:text-5xl'>
+            <div className='px-5 pb-14 mt-5 lg:mt-0 flex  items-center  flex-col  bg-laranja rounded-custom lg:flex-row sm:justify-center lg:px-14 lg:mr-5'>
+              <h1 className='font-sans text-white text-xl m-4 font-semibold md:text-2xl w-auto lg:w-2/5 text-wrap 2xl:text-3xl'>
                 Acesse nossas
                 <br className='hidden md:block' /> Redes Sociais
               </h1>
               <div className="flex flex-col lg:flex-row flex-wrap xl:flex-nowrap justify-center gap-4 w-auto">
-                <img src={InstagramScreenShot} alt="" className='w-full sm:h-40 2xl:h-60 object-cover' />
-                <img src={InstagramQrCode} alt="" className='w-full sm:h-40 2xl:h-60 object-cover' />
+                <img src={InstagramScreenShot} alt="" className='w-full sm:h-40 2xl:h-48 object-cover' />
+                <img src={InstagramQrCode} alt="" className='w-full sm:h-40 2xl:h-48 object-cover' />
               </div>
             </div>
           </a>
         </div>
-        <div className='flex flex-col gap-10 lg:gap-16 px-2 pb-10 lg:pr-8 pt-10'>
+        
+        <div className='flex px-4 flex-col gap-10 lg:gap-16 pl-3 pb-10 lg:pr-6 pt-10'>
           <Explain
             title={"Cooperativismo: juntos construímos uma sociedade mais próspera"}
             text={"Você sabe o que é cooperativismo? A estrutura é baseada na colaboração e na parceria para promover o auxílio mútuo. Hoje, faz parte do cotidiano de milhares de pessoas."}
@@ -97,7 +98,7 @@ function App() {
           <p> de  ser um cooperado</p>
         </div>
         <div className='flex justify-center items-center m-5 my-10'>
-          <div className='grid grid-cols-2 gap-6 xl:gap-14 sm:grid-cols-3 lg:pr-6'>
+          <div className='grid grid-cols-2 gap-6 xl:gap-8 sm:grid-cols-3 '>
             <Advantagens number={1} text={"Ser Sócio-cotista"} img={Award} />
             <Advantagens number={2} text={"Opinar e votar nas decisões"} img={TaskSquare} />
             <Advantagens number={3} text={"Oportunidade  de trabalho"} img={Wallet} />

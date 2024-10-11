@@ -9,12 +9,12 @@ export default function Dinamica() {
     return (
         <div className="font-nunitoSans">
             <Scrolltop/>
-            <div className="sm:px-10 md:px-20 lg:px-40">
+            <div className="sm:px-10 md:px-20 lg:px-60 2xl:px-80">
                 <Header />
                 <Info Title={"A Dinâmica"} text={"Cooperativa de trabalho, serviços gerais e administrativos."} />
             </div>
             <section className=" flex justify-center items-center">
-                <div className="flex flex-col justify-center items-center lg:flex-row gap-4 bg-cinza  lg:p-10  lg:px-40 w-full md:pt-10 md:pb-10">
+                <div className="flex flex-col justify-center items-start lg:flex-row gap-4 bg-cinza  lg:p-10  lg:px-60 2xl:px-80 w-full md:pt-10 md:pb-10">
                     <img src={reuniao} alt="" className="sm:h-80 w-full sm:w-auto" />
                     <div className="flex flex-col gap-4 lg:ml-10 sm:text-center lg:text-start md:px-40 lg:px-0 px-7 pb-8">
                         <p className="mt-4">Constituída em 2021, a Dinâmica Cooperativa de Trabalho foi fundada por 9 profissionais

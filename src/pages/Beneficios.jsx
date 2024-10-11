@@ -20,11 +20,11 @@ export default function Beneficios() {
     return (
         <div className="font-nunitoSans">
             <Scrolltop/>
-            <div className="sm:px-10 lg:px-40">
+            <div className="sm:px-10 lg:px-60 2xl:px-80">
                 <Header />
                 <Info Title={"Benéficios exclusivos da Dinâmica"} />
             </div>
-            <section className="flex flex-col gap-8 mt-10 p-4 bg-zinc-100 lg:px-40">
+            <section className="flex flex-col gap-8 mt-10 p-4 bg-zinc-100 lg:px-60 2xl:px-80">
                 <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full p-6 font-medium">
                     <img src={Teacher} alt="" />
                     <p>Cursos de capacitação e profissionalizantes</p>

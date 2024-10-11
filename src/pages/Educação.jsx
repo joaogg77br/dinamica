@@ -2,25 +2,27 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
 import Scrolltop from "../components/ScrollTop";
-import Barbeiro from "../assets/BarbeiroCurse.jpeg"
-import Aula from "../assets/IMG_1703.jpeg"
-import CourseCongratilation from "../assets/CourseCongratulation.jpg"
+import Barbeiro from "../assets/BarbeiroCurse.png"
+import Aula from "../assets/IMG_1703.png"
+import CourseCongratilation from "../assets/CourseCongratulation.png"
 
 export default function Educacao() {
     return (
         <>
-            <div className="md:px-20 lg:px-40">
+            <div className="md:px-20 lg:px-60 2xl:px-80">
                 <Scrolltop />
                 <Header />
                 <Info Title={"Educação Continuada"} />
             </div>
-            <div className="flex flex-col items-center w-full bg-cinza gap-10 sm:flex-row md:px-20 lg:px-10 py-10">
-                <div className="w-full grid grid-rows-3 grid-cols-2 gap-2 p-4 h-Max sm:px-10  sm:hidden ">
-                    <img src={Aula} alt="dkajsdj" className="w-full h-full bg-cinza rounded-lg" />
-                    <img src={Barbeiro} alt="dklasj" className="w-full h-full bg-cinza rounded-lg" />
-                    <img src={CourseCongratilation} alt="heheh" className="w-full h-full row-span-2 col-span-2 rounded-lg bg-blue-500" />
+            <div className="flex flex-col items-center w-full bg-cinza gap-10 sm:flex-row md:px-20 lg:px-60 2xl:px-80 py-10">
+                <div className="w-full  flex flex-col p-2 px-4 gap-2  sm:hidden ">
+                    <div className="flex gap-2 ">
+                        <img src={Aula} alt="dkajsdj" className="w-1/2 max-w-80  bg-cinza rounded-lg " />
+                        <img src={Barbeiro} alt="dklasj" className="w-1/2 h-40 bg-cinza rounded-lg" />
+                    </div>
+                    <img src={CourseCongratilation} alt="heheh" className="w-full h-80 max-w-96  rounded-lg lg:object-cover" />
                 </div>
-                <div className=" flex items-center justify-center flex-col p-4 py-5 sm:w-3/5 lg:px-32  text-sm">
+                <div className=" flex items-center justify-center flex-col px-4 lg:py-5 sm:w-1/2  text-sm">
                     <p>A Educação Continuada é uma prática
                         na qual o desenvolvimento pessoal e profissional dos trabalhadores é fundamental para o aperfeiçoamento
                         das habilidades, bem como, maior
@@ -39,13 +41,15 @@ export default function Educacao() {
                         da equipe de trabalho e trazendo melhores resultados para os
                         Tomadores de Serviços.</p>
                 </div>
-                <div className="hidden 2xl:w-1/2 pr-40 h-80 grid-rows-2 grid-cols-3 gap-2 sm:grid">
-                    <img src={Aula} alt="dkajsdj" className="w-full max-w-80 h-full bg-cinza rounded-lg " />
-                    <img src={CourseCongratilation} alt="heheh" className="w-full max-w-96 h-full row-span-2 col-span-2 rounded-lg bg-blue-500" />
-                    <img src={Barbeiro} alt="dklasj" className="w-full max-w-80 h-full bg-cinza rounded-lg" />
+                <div className="hidden w-1/2 h-40 lg:flex items-center justify-center sm:flex gap-2">
+                    <div className="flex gap-2 flex-col ">
+                        <img src={Aula} alt="dkajsdj" className="w-40 max-w-80  bg-cinza rounded-lg  object-cover" />
+                        <img src={Barbeiro} alt="dklasj" className="h-40 bg-cinza rounded-lg" />
+                    </div>
+                    <img src={CourseCongratilation} alt="heheh" className="h-72 row-span-2 col-span-2 object-cover rounded-lg bg-blue-500" />
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }
