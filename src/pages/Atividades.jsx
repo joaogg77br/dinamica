@@ -29,7 +29,7 @@ export default function Atividades() {
                 <Info Title={"Atividades desenvolvidas pela Dinâmica"} />
             </div>
 
-        <div className="flex items-center justify-center w-full p-0 bg-black">
+        <div className="flex items-center justify-center w-full p-0 bg-zinc-100">
             <div className="grid grid-cols-1 sm:grid-cols-2  p-2 lg:grid-cols-3 2xl:grid-cols-4 items-center gap-5 py-10 flex-row flex-wrap bg-zi1nc-100 2xl:gap-12">
                 <Ativiti Txt={"Serviço de preparação de terreno, cultivo e colheita"} imagem={Imagem14}/>
                 <Ativiti Txt={"Coleta de resíduos não-perigosos"} imagem={Imagem1}/>
@@ -43,8 +43,11 @@ export default function Atividades() {
                 <Ativiti Txt={"Fornecimento e gestão de recursos humanos para terceiros "} imagem={Imagem9}/>
                 <Ativiti Txt={"Serviços combinados para apoio a edifícios, exceto condomínios prediais"} imagem={Imagem10}/>
                 <Ativiti Txt={"Atividades de limpeza não especificadas anteriormente "} imagem={Imagem11}/>
+                <div className="hidden 2xl:block"></div>
                 <Ativiti Txt={"Atividade paisagísticas"} imagem={Imagem12}/>
                 <Ativiti Txt={"Serviços combinados de escritório e apoio administrativo"} imagem={Imagem13} />
+                <div className="hidden 2xl:block"></div>
+
             </div>
             </div>
             <Footer />

@@ -47,7 +47,7 @@ function App() {
           pagination={true}
           modules={[Pagination, Autoplay]}
         >
-          <SwiperSlide className='lg:pr-8 pl-2    lg:pt-5'>
+          <SwiperSlide className='lg:pr-8 pl-2 lg:pt-5'>
             <img src={Banner3} alt="" className='w-full' />
           </SwiperSlide>
           <SwiperSlide className='lg:pr-8 pl-2   lg:pt-5'>

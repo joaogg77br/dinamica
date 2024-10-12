@@ -22,7 +22,7 @@ export default function Notices() {
           <Info Title={"Notícias"} />
         </div>
         <main className="flex flex-col items-center justify-center lg:flex-row gap-14 w-full bg-zinc-100  py-10 2xl:gap-12">
-      <div className="w-full flex items-center justify-center bg-green-300 lg:px-10">
+      <div className="w-full flex items-center justify-center lg:px-10">
         <main className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:flex-row  gap-10 bg-zinc-100  py-10 
           2xl:gap-16
         ">
