@@ -14,7 +14,7 @@ export default function Conselhos() {
                 <Header />
                 <Info Title="Conselhos" />
             </div>
-            <section className="flex flex-col gap-8 bg-zinc-100 sm:px-32 2xl:px-52 py-10">
+            <section className="flex flex-col gap-8 bg-zinc-100 sm:px-32 2xl:px-72 py-10">
                 <div className="flex flex-col  justify-center p-6 pt-8 bg-zinc-100 text-zinc-800  lg:px-14 xl:flex-row sm:gap-10 lg:border-b lg:border-zinc-300 lg:pb-20">
                     <img src={Persons} alt="persons" className="hidden lg:block xl:hidden xl:h-60" />
                     <img src={Persons} alt="persons" className="block lg:hidden xl:h-60" />

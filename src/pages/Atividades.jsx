@@ -29,8 +29,8 @@ export default function Atividades() {
                 <Info Title={"Atividades desenvolvidas pela Dinâmica"} />
             </div>
 
-        <div className="flex items-center justify-center bg-blue-500 w-full">
-            <div className="grid grid-cols-1 sm:grid-cols-2  p-2 lg:grid-cols-3 items-center bg-red-500 gap-5 py-10 flex-row flex-wrap bg-zinc-100  ">
+        <div className="flex items-center justify-center w-full p-0 bg-black">
+            <div className="grid grid-cols-1 sm:grid-cols-2  p-2 lg:grid-cols-3 2xl:grid-cols-4 items-center gap-5 py-10 flex-row flex-wrap bg-zi1nc-100 2xl:gap-12">
                 <Ativiti Txt={"Serviço de preparação de terreno, cultivo e colheita"} imagem={Imagem14}/>
                 <Ativiti Txt={"Coleta de resíduos não-perigosos"} imagem={Imagem1}/>
                 <Ativiti Txt={"Obras de urbanização - ruas, praças e calçadas"} imagem={Imagem2}/>

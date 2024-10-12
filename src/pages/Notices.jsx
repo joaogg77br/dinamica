@@ -21,10 +21,16 @@ export default function Notices() {
           <Header />
           <Info Title={"Notícias"} />
         </div>
-        <main className="flex flex-col items-center p-10 md:p-20 justify-center lg:flex-row gap-14 md:px-20 lg:px-60 w-full bg-zinc-100  py-10 2xl:gap-12">
-          <ComponentNews Title={"OUTUBRO ROSA: UM GESTO DE CUIDADO, UMA ATITUDE DE AMOR!"} Imagem={Imagem1} link={"/notices/outubro_rosa"}/>
-          <ComponentNews Title={"COOPERADOS REALIZAM TREINAMENTO E CAPACITAÇÃO DAS NR 10 E NR 35 "} Imagem={Imagem2} link={"/notices/cooperados"}/>
-          <ComponentNews Title={"COOPERATIVA DINÂMICA REALIZA O DIA C 2024 EM PORTO DE PEDRAS/AL"} Imagem={Imagem3} link={"/notices/cooperativa"}/>
+        <main className="flex flex-col items-center justify-center lg:flex-row gap-14 w-full bg-zinc-100  py-10 2xl:gap-12">
+      <div className="w-full flex items-center justify-center bg-green-300 lg:px-10">
+        <main className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:flex-row  gap-10 bg-zinc-100  py-10 
+          2xl:gap-16
+        ">
+          <ComponentNews Title={"OUTUBRO ROSA: UM GESTO DE CUIDADO, UMA ATITUDE DE AMOR!"} Imagem={Imagem1} link={"/notices/outubro_rosa"} />
+          <ComponentNews Title={"COOPERADOS REALIZAM TREINAMENTO E CAPACITAÇÃO DAS NR 10 E NR 35 "} Imagem={Imagem2} link={"/notices/cooperados"} />
+          <ComponentNews Title={"COOPERATIVA DINÂMICA REALIZA O DIA C 2024 EM PORTO DE PEDRAS/AL"} Imagem={Imagem3} link={"/notices/cooperativa"} />
+        </main>
+      </div>
         </main>
         <Footer/>
         </>

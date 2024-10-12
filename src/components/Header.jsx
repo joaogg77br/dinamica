@@ -13,7 +13,7 @@ export default function Header() {
     return (
         <>
             <div className="flex w-full  justify-center mb-20">
-                <header className="flex w-full justify-between p-3 fixed z-50 bg-white md:px-20 lg:px-40 2xl:px-80 ">
+                <header className="flex w-full justify-between p-3 fixed z-50 bg-white md:px-20 lg:px-40  2xl:px-80 ">
                     <div className={`fixed ${menu}   justify-end top-0 left-0  bg-black bg-opacity-50 w-full h-screen z-50`}>
                         <div className="bg-verde flex flex-col h-screen overflow-hidden animate-wiggle w-11/12 p-2 pt-4">
                             <div className="flex w-full justify-end">
@@ -117,9 +117,9 @@ export default function Header() {
                     }
 
 
-                    <div className="flex gap-10 p-2 justify-between w-full items-center lg:pr-10">
+                    <div className="flex gap-10 p-2 justify-between w-full items-center lg:pr-10 ">
                         <Link to="/">
-                            <div className="flex gap-2 xl:mr-20 items-center min-w-10">
+                            <div className="flex gap-2 items-center xl:w-72">
                                 <img src={MyImage} alt="Logo" className="h-10 xl:hidden" />
                                 <img src={Dinamic} alt="" className="hidden xl:block" />
                             </div>
@@ -167,11 +167,11 @@ export default function Header() {
                                 </li>
                                 <li><Link to="/noticias" className="pb-2 border-b border-white hover:text-orange-500 hover:underline decoration-2 underline-offset-8">Nóticias</Link></li>
                             </ul>
-                            <div className="flex gap-4 justify-end lg:pt-3">
+                            <div className="flex  justify-end lg:pt-3 ">
                                 <Link to={"/fale conosco"}>
-                                    <button className="text-white h-7 bg-laranja rounded-xl p-4 flex justify-center items-center text-nowrap duration-300 border-2 border-laranja hover:text-laranja  hover:bg-white" >Fale conosco</button>
+                                    <button className="text-white h-7 bg-laranja mr-5 lg:m-0 rounded-xl p-4 flex justify-center items-center text-nowrap duration-300 border-2 border-laranja hover:text-laranja  hover:bg-white" >Fale conosco</button>
                                 </Link>
-                                <div onClick={() => setMenu("flex")} className="bg-verde rounded-xl flex items-center p-2 lg:hidden">
+                                <div onClick={() => setMenu("flex")} className="bg-verde rounded-xl flex items-center  p-2 lg:hidden">
                                     <Menu color="white" />
                                 </div>
                             </div>

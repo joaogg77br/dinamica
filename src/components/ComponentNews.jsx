@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 export default  function ComponentNews({Title,link,Imagem}) {
   return (
-    <section>
+    <section className="flex flex-col gap-0 p-0">
    <Link to={link}>
-    <div className="font-nunitoSans lg:h-96 lg:w-80 flex flex-col  items-center gap-2 rounded-2xl justify-start bg-white 2xl:w-80">
-            <img src={Imagem} className="w-full h-3/5 rounded-t-2xl object-cover" />
-            <h1 className="font-semibold font-nunitoSans text-zinc-800 lg:pt-5 m-4">{Title}</h1>
+    <div className="font-nunitoSans w-96 h-80 flex flex-col  items-center  rounded-2xl justify-start bg-white ">
+            <img src={Imagem} className="w-96 h-80 rounded-t-2xl object-cover " />
         </div>
+            <h1 className="font-semibold bg-white w-96 h-44 rounded-b-2xl font-nunitoSans text-zinc-800 lg:pt-5 p-4 text-2xl">{Title}</h1>
       </Link>
     </section>
 

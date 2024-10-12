@@ -47,7 +47,7 @@ function App() {
           pagination={true}
           modules={[Pagination, Autoplay]}
         >
-          <SwiperSlide className='lg:pr-8 pl-2 mx-   lg:pt-5'>
+          <SwiperSlide className='lg:pr-8 pl-2    lg:pt-5'>
             <img src={Banner3} alt="" className='w-full' />
           </SwiperSlide>
           <SwiperSlide className='lg:pr-8 pl-2   lg:pt-5'>
@@ -61,13 +61,13 @@ function App() {
 
         <div className='px-2 lg:pt-10'>
           <a href='https://www.instagram.com/cooperativadinamica/'>
-            <div className='px-5 pb-10 mt-5 lg:pt-5 lg:pl-10 lg:mt-0 flex  items-center flex-col  bg-laranja rounded-custom lg:mr-5'>
-              <h1 className='font-sans text-white  text-xl m-4 font-semibold md:text-3xl w-auto text-nowrap 2xl:text-3xl '>
-                Acesse nossas Redes Sociais
+            <div className='px-5 pb-10 mt-5 lg:pt-5 lg:pl-10 lg:mt-0 flex rounded-3xl  items-center flex-col  bg-laranja lg:rounded-custom lg:mr-5'>
+              <h1 className='font-sans text-white text-xl m-4 font-semibold md:text-3xl w-auto text-nowrap 2xl:text-5xl 2xl:mb-10'>
+                Acesse nosso Instagram
               </h1>
               <div className="flex flex-col lg:flex-row items-center  justify-center gap-4 w-full">
-                <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-40 2xl:h-48 ' />
-                <img src={InstagramQrCode} alt="" className='w-full md:w-auto md:h-40 2xl:h-48  ' />
+                <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-40 2xl:h-60' />
+                <img src={InstagramQrCode} alt="" className='w-full md:w-auto md:h-40 2xl:h-60' />
               </div>
             </div>
           </a>

@@ -53,7 +53,7 @@ export default function Conteudos() {
                 <Header />
                 <Info Title={"Conteúdos"} />
             </div>
-            <div className="flex flex-col justify-start items-center w-full bg-zinc-100 gap-10  lg:px-40 2xl:px-72 py-20 lg:text-2xl lg:flex-row">
+            <div className="flex flex-col justify-start items-center w-full bg-zinc-100 gap-10  lg:px-40 2xl:px-96 py-20 lg:text-2xl lg:flex-row">
                 <h1 className=" text-cente text-2xl lg:text-3xl font-bold md:text-3xl">Filme institucional</h1>
                 <video  className="w-full lg:w-4/6  lg:rounded-custom" controls autoPlay>
                     <source src={Video} />
@@ -93,11 +93,11 @@ export default function Conteudos() {
                         }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
                     </div>
                     <div className="flex flex-col text-center gap-2">
-                        <img src={Noticias2} alt="" className="2xl:h-Max" />
+                        <img src={Noticias2} alt="" className=" 2xl:h-Max" />
                         <a onClick={()=>{handleClick(DinamicaNews2)}} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 2ª edição</a>
                     </div>
                     <div className="flex flex-col text-center gap-2">
-                        <img src={Noticias3} alt="" className="2xl:h-Max" />
+                        <img src={Noticias3} alt="" className=" 2xl:h-Max" />
                         <a onClick={()=>{handleClick(DinamicaNews3)}}  className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 3° edição</a>
                     </div>
                 </div>
