@@ -9,20 +9,22 @@ import CourseCongratilation from "../assets/CourseCongratulation.png"
 export default function Educacao() {
     return (
         <>
-            <div className="md:px-20 lg:px-52 2xl:px-80">
+            <div className="md:px-20 lg:px-40 2xl:px-80">
                 <Scrolltop />
                 <Header />
                 <Info Title={"Educação Continuada"} />
             </div>
-            <div className="flex flex-col items-center w-full bg-cinza gap-10 sm:flex-row md:px-20 lg:px-52 2xl:px-80 py-10">
-                <div className="w-full  flex flex-col p-2 gap-2  sm:hidden ">
-                    <div className="flex gap-2 ">
-                        <img src={Aula} alt="dkajsdj" className="w-1/2 max-w-80  bg-cinza rounded-lg " />
-                        <img src={Barbeiro} alt="dklasj" className="w-1/2 h-40 bg-cinza rounded-lg" />
+            <div className="flex flex-col items-center w-full bg-verde md:gap-10 sm:flex-row md:px-20 lg:px-40 2xl:px-80 py-10">
+                <div className="w-full  flex flex-col items-center p-2 gap-2  sm:hidden bg-red-500">
+                    <div className=" bg-fuchsia-600 gap-2 flex flex-col">
+                        <div className="flex gap-2  w-80">
+                            <img src={Aula} alt="dkajsdj" className="w-1/2 h-40  bg-cinza rounded-lg " />
+                            <img src={Barbeiro} alt="dklasj" className="w-full h-40 bg-cinza rounded-lg" />
+                        </div>
+                        <img src={CourseCongratilation} alt="heheh" className="w-full h-80 max-w-96  rounded-lg lg:object-cover" />
                     </div>
-                    <img src={CourseCongratilation} alt="heheh" className="w-full h-80 max-w-96  rounded-lg lg:object-cover" />
                 </div>
-                <div className=" flex items-center justify-center flex-col p-4 lg:py-5 sm:w-1/2  text-sm">
+                <div className=" flex items-center justify-center px-4 sm:px-0 flex-col bg-laranja  lg:py-5 sm:w-1/2  text-sm">
                     <p>A Educação Continuada é uma prática
                         na qual o desenvolvimento pessoal e profissional dos trabalhadores é fundamental para o aperfeiçoamento
                         das habilidades, bem como, maior
@@ -41,7 +43,7 @@ export default function Educacao() {
                         da equipe de trabalho e trazendo melhores resultados para os
                         Tomadores de Serviços.</p>
                 </div>
-                <div className="hidden w-1/2 h-40 lg:flex items-center justify-center sm:flex gap-2">
+                <div className="hidden w-1/2 h-40 lg:flex items-center justify-center sm:flex gap-2 bg-blue-400">
                     <div className="flex gap-2 flex-col ">
                         <img src={Aula} alt="dkajsdj" className="w-40 max-w-80  bg-cinza rounded-lg  object-cover" />
                         <img src={Barbeiro} alt="dklasj" className="h-40 bg-cinza rounded-lg" />

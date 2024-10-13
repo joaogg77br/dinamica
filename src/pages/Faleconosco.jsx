@@ -12,16 +12,16 @@ export default function FaleConosco() {
                 <Header />
                 <Info Title={"Fale Conosco"} />
             </div>
-            <main className="flex flex-col w-full  sm:px-20 lg:px-40 2xl:px-80 gap-10 bg-cinza text-zinc-800">
-                <form action="" className="flex flex-col gap-5 items-start p-4">
+            <main className="flex flex-col w-full  md:px-20 lg:px-40 2xl:px-80 gap-5 bg-black text-zinc-800">
+                <form action="" className="flex flex-col px-2 gap-3 items-start pt-4 bg-red-600">
                     <input type="text" placeholder="Primeiro nome" className="w-full p-3 rounded-xl" />
                     <input type="text" placeholder="Segundo nome" className="w-full p-3 rounded-xl" />
                     <input type="email" placeholder="E-mail" className="w-full p-3 rounded-xl" />
                     <textarea name="" id="" placeholder="Mensagem" className="w-full p-3 rounded-xl"></textarea>
                     <button className="p-2 w-32 border-2 border-laranja duration-300 bg-laranja text-white rounded-xl">Enviar</button>
                 </form>
-                <hr className="bg-zinc-800 my-5"/>
-                <div className="flex flex-col text-zinc-800 bg-cinza gap-10 p-2">
+                <hr className="bg-zinc-800 "/>
+                <div className="flex flex-col text-zinc-800 bg-cinza gap-10 ">
                     <section className="bg-white px-4 py-10 rounded-2xl ">
                         <div className="flex gap-4">
                             <img src={Call} alt="" />

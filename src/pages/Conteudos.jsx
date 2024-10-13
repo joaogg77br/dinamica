@@ -36,7 +36,7 @@ import FrameSkin22 from "../assets/Parceiros/Frame 82.svg"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Video from "../../public/filme.mp4"
-import {UseState} from "react"
+import { UseState } from "react"
 
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -53,73 +53,75 @@ export default function Conteudos() {
                 <Header />
                 <Info Title={"Conteúdos"} />
             </div>
-            <div className="flex flex-col justify-start items-center w-full bg-zinc-100 gap-10  lg:px-40 2xl:px-96 py-20 lg:text-2xl lg:flex-row">
-                <h1 className=" text-cente text-2xl lg:text-3xl font-bold md:text-3xl">Filme institucional</h1>
-                <video  className="w-full lg:w-4/6  lg:rounded-custom" controls autoPlay>
-                    <source src={Video} />
-                </video>
+            <div className="flex flex-col justify-start items-center w-full bg-yellow-400 gap-10  lg:px-40  2xl:px-80 py-20 lg:text-2xl lg:flex-row">
+                <div className="bg-emerald-600 flex flex-col items-center gap-4">
+                    <h1 className=" text-center text-2xl lg:text-3xl font-bold md:text-3xl bg-slate-900">Filme institucional</h1>
+                    <video className="w-full lg:w-4/5  lg:rounded-custom" controls autoPlay>
+                        <source src={Video} />
+                    </video>
+                </div>
             </div>
             <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-40 2xl:px-80">
                 <h1 className="text-3xl font-bold p-10">Dinâmica <span className="text-orange-500">News</span></h1>
                 <div className="block sm:hidden w-auto">
-                <Swiper className="w-80" 
-                spaceBetween={20}
-                >
-                    <SwiperSlide>
-                    <div className="md:flex flex-col text-center gap-2 ">
-                        <img src={Noticias} alt="" className="lg:h-96 2xl:h-Max" />
-                        <a onClick={()=>{DinamicaNews1}} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
-                    </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                    <div className=" md:flex flex-col text-center gap-2">
-                        <img src={Noticias2} alt="" className="lg:h-96 2xl:h-Max" />
-                        <a onClick={()=>{DinamicaNews2}} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 2ª edição</a>
-                    </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                    <div className=" md:flex flex-col text-center gap-2">
-                        <img src={Noticias3} alt="" className="lg:h-96 2xl:h-Max" />
-                        <a onClick={()=>{handleClick(DinamicaNews1)}} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 3ª edição</a>
-                    </div>
-                    </SwiperSlide>
-                </Swiper>
+                    <Swiper className="w-80"
+                        spaceBetween={20}
+                    >
+                        <SwiperSlide>
+                            <div className="md:flex flex-col text-center gap-2 ">
+                                <img src={Noticias} alt="" className="lg:h-96 2xl:h-Max" />
+                                <a onClick={() => { DinamicaNews1 }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=" md:flex flex-col text-center gap-2">
+                                <img src={Noticias2} alt="" className="lg:h-96 2xl:h-Max" />
+                                <a onClick={() => { DinamicaNews2 }} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 2ª edição</a>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className=" md:flex flex-col text-center gap-2">
+                                <img src={Noticias3} alt="" className="lg:h-96 2xl:h-Max" />
+                                <a onClick={() => { handleClick(DinamicaNews1) }} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 3ª edição</a>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
-                <div className="hidden sm:flex flex-col sm:flex-row gap-20">
-                    <div className=" md:flex flex-col text-center gap-">
-                        <img src={Noticias} alt="" className=" 2xl:h-Max" />
-                        <a onClick={()=>{
+                <div className="hidden sm:flex flex-row gap-10">
+                    <div className=" md:flex flex-col text-center gap-2">
+                        <img src={Noticias} alt="" className="" />
+                        <a onClick={() => {
                             handleClick(DinamicaNews1)
                         }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
                     </div>
                     <div className="flex flex-col text-center gap-2">
-                        <img src={Noticias2} alt="" className=" 2xl:h-Max" />
-                        <a onClick={()=>{handleClick(DinamicaNews2)}} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 2ª edição</a>
+                        <img src={Noticias2} alt="" className="" />
+                        <a onClick={() => { handleClick(DinamicaNews2) }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 2ª edição</a>
                     </div>
                     <div className="flex flex-col text-center gap-2">
-                        <img src={Noticias3} alt="" className=" 2xl:h-Max" />
-                        <a onClick={()=>{handleClick(DinamicaNews3)}}  className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 3° edição</a>
+                        <img src={Noticias3} alt="" className="" />
+                        <a onClick={() => { handleClick(DinamicaNews3) }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 3° edição</a>
                     </div>
                 </div>
             </div>
-            <section className="flex flex-col gap-6 justify-center items-center pt-12 bg-zinc-100 p-4 lg:pb-32 lg:px-10 2xl:px-40">
+            <section className="flex flex-col gap-6 justify-center items-center pt-12 bg-zinc-100 p-4 lg:pb-32 lg:px-10">
                 <img src={WhiteHome} alt="" />
                 <h1 className="text-xl font-medium">Leis do <span className="text-orange-500">Cooperativismo</span></h1>
                 <p className="text-center">A Cooperativa Dinâmica é regida pelas<br /><span className="font-bold">Leis nº 5.764/71 e Lei nº 12.690/12.</span></p>
 
-                <div className="flex flex-col lg:flex-row md:px-24 lg:px-40 gap-4">
+                <div className="flex flex-col lg:flex-row md:mx-20 lg:mx-40 2xl:mx-80 gap-4 bg-blue-500">
                     <div className="rounded-2xl p-6 bg-white">
-                        <a onClick={()=>{handleClick(Pdf1)}} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 5.764/71 -</span> Define a Política Nacional de Cooperativismo, institui o regime jurídico das sociedades cooperativas, e dá outras providências.</a>
+                        <a onClick={() => { handleClick(Pdf1) }} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 5.764/71 -</span> Define a Política Nacional de Cooperativismo, institui o regime jurídico das sociedades cooperativas, e dá outras providências.</a>
                     </div>
                     <div className="rounded-2xl p-6 bg-white">
-                        <a onClick={()=>{handleClick(Pdf2)}} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 12.690/12 -</span>Lei nº 12.690/12 - Dispõe sobre a organização e o funcionamento das Cooperativas de Trabalho, direitos e deveres dos cooperados. </a>
+                        <a onClick={() => { handleClick(Pdf2) }} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 12.690/12 -</span>Lei nº 12.690/12 - Dispõe sobre a organização e o funcionamento das Cooperativas de Trabalho, direitos e deveres dos cooperados. </a>
                     </div>
                 </div>
             </section>
 
             <section className="flex flex-col gap-5  items-center py-10 pb-20 sm:px-20 lg:px-40 2xl:px-80">
                 <h1 className="font-bold text-2xl">Parceiros Locais</h1>
-                <div className="flex flex-wrap p-2 gap-2 justify-center">
+                <div className="flex flex-wrap gap-2 justify-center ">
                     <img src={FrameSkin} alt="" className="h-16 w-28 rounded-xl" />
                     <img src={FrameSkin2} alt="" className="h-16 w-28 rounded-xl" />
                     <img src={FrameSkin3} alt="" className="h-16 w-28 rounded-xl" />

@@ -14,17 +14,17 @@ export default function Conselhos() {
                 <Header />
                 <Info Title="Conselhos" />
             </div>
-            <section className="flex flex-col gap-8 bg-zinc-100 sm:px-32 2xl:px-72 py-10">
-                <div className="flex flex-col  justify-center p-6 pt-8 bg-zinc-100 text-zinc-800  lg:px-14 xl:flex-row sm:gap-10 lg:border-b lg:border-zinc-300 lg:pb-20">
+            <section className="flex flex-col gap-8 bg-zinc-100 sm:px-40 2xl:px-80 py-10 ">
+                <div className="flex flex-col  justify-center  px-6 lg:px-0 pt-8 bg-zinc-100 text-zinc-800 xl:flex-row sm:gap-10 lg:border-b lg:border-zinc-300 lg:pb-20">
                     <img src={Persons} alt="persons" className="hidden lg:block xl:hidden xl:h-60" />
-                    <img src={Persons} alt="persons" className="block lg:hidden xl:h-60" />
+                    <img src={Persons} alt="persons" className="block lg:hidden xl:h-52" />
                     <div className="flex flex-col">
                         <h1 className="text-start font-bold mt-4 text-2xl mb-4">Conselho Administrativo</h1>
                         <p>O <span className="font-bold">Conselho de Administração</span> da sociedade cooperativa deve atender às decisões assembleares e cumprir o caráter estratégico de sua função, por meio de decisões que auxiliem o fortalecimento dos negócios, atuando com visão empreendedora e com capacidade de fazer uma leitura mais ampla dos ambientes interno e externo da cooperativa. É fundamental ter foco nos resultados sociais e econômicos para os seus cooperados, a partir de processos de governança que garantam a sustentabilidade do empreendimento cooperativo.</p>
                     </div>
                     <img src={Persons} alt="persons" className="hidden xl:block xl:h-52" />
                 </div>
-                <div className="flex flex-col  justify-center p-6 pt-8 bg-zinc-100 text-zinc-800 lg:px-14 xl:flex-row sm:gap-10 lg:border-b lg:border-zinc-300 lg:pb-20">
+                <div className="flex flex-col  justify-center px-6 lg:px-0 pt-8 bg-zinc-100 text-zinc-800 xl:flex-row sm:gap-10 lg:border-b lg:border-zinc-300 lg:pb-20">
                     <img src={Folder} alt="persons" className="block  xl:h-52" />
                     <div className="flex flex-col">
                         <h1 className="text-start font-bold mt-4 text-2xl mb-4">Conselho Fiscal</h1>
@@ -32,7 +32,7 @@ export default function Conselhos() {
                     </div>
                     <img src={Folder} alt="persons" className="hidden  xl:h-52" />
                 </div>
-                <div className="flex flex-col  justify-center p-6 pt-8 bg-zinc-100 text-zinc-800 lg:px-14 xl:flex-row sm:gap-10">
+                <div className="flex flex-col  justify-center px-6 lg:px-0 pt-8 bg-zinc-100 text-zinc-800  xl:flex-row sm:gap-10">
                     <img src={Analitc} alt="persons" className="hidden lg:block xl:hidden lg:h-52" />
                     <img src={Analitc} alt="persons" className="block lg:hidden xl:h-52" />
                     <div className="flex flex-col">

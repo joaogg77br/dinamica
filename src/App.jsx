@@ -35,8 +35,8 @@ function App() {
       <div className='md:px-20 lg:px-40 2xl:px-80 font-nunitoSans '>
         <Scrolltop />
         <Header />
-        <div className='pr-2 lg:px-0'>
-        <Swiper className='mt-10 mx-10 pb-10 '
+        <div className=''>
+        <Swiper className='mt-2 '
           spaceBetween={50}
           autoplay={{
             delay: 4000,
@@ -47,25 +47,25 @@ function App() {
           pagination={true}
           modules={[Pagination, Autoplay]}
         >
-          <SwiperSlide className='lg:pr-8 pl-2 lg:pt-5'>
+          <SwiperSlide className='px-2 md:px-0 '>
             <img src={Banner3} alt="" className='w-full' />
           </SwiperSlide>
-          <SwiperSlide className='lg:pr-8 pl-2   lg:pt-5'>
+          <SwiperSlide className='px-2 md:px-0'>
             <img src={Banner} alt="" className='w-full' />
           </SwiperSlide>
-          <SwiperSlide className='lg:pr-8 pl-2   lg:pt-5'>
+          <SwiperSlide className='px-2 md:px-0'>
             <img src={Banner2} alt="" className='w-full' />
           </SwiperSlide>
         </Swiper>
         </div>
 
-        <div className='px-2 lg:pt-10'>
+        <div className='lg:pt-10 p-4 lg:p-0 '>
           <a href='https://www.instagram.com/cooperativadinamica/'>
-            <div className='px-5 pb-10 mt-5 lg:pt-5 lg:pl-10 lg:mt-0 flex rounded-3xl  items-center flex-col  bg-laranja lg:rounded-custom lg:mr-5'>
+            <div className='p-4  pb-10 mt-5 lg:pt-5 lg:mt-0 flex rounded-3xl  items-center flex-col  bg-laranja lg:rounded-custom'>
               <h1 className='font-sans text-white text-xl m-4 font-semibold md:text-3xl w-auto text-nowrap 2xl:text-5xl 2xl:mb-10'>
                 Acesse nosso Instagram
               </h1>
-              <div className="flex flex-col lg:flex-row items-center  justify-center gap-4 w-full">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
                 <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-40 2xl:h-60' />
                 <img src={InstagramQrCode} alt="" className='w-full md:w-auto md:h-40 2xl:h-60' />
               </div>
@@ -73,7 +73,7 @@ function App() {
           </a>
         </div>
         
-        <div className='flex px-4 flex-col gap-10 lg:gap-16 pl-3 pb-10 lg:pr-6 pt-10'>
+        <div className='flex flex-col px-4 md:px-0 gap-10 lg:gap-16  pb-10 pt-10'>
           <Explain
             title={"Cooperativismo: juntos construímos uma sociedade mais próspera"}
             text={"Você sabe o que é cooperativismo? A estrutura é baseada na colaboração e na parceria para promover o auxílio mútuo. Hoje, faz parte do cotidiano de milhares de pessoas."}
@@ -98,7 +98,7 @@ function App() {
           <p className='text-orange-500 '>6 vantagens</p>
           <p> de  ser um cooperado</p>
         </div>
-        <div className='flex justify-center items-center m-5 my-10'>
+        <div className='flex justify-center items-center  my-10'>
           <div className='grid grid-cols-2 gap-6 xl:gap-8 lg:grid-cols-3 '>
             <Advantagens number={1} text={"Ser Sócio-cotista"} img={Award} />
             <Advantagens number={2} text={"Opinar e votar nas decisões"} img={TaskSquare} />

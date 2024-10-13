@@ -117,9 +117,9 @@ export default function Header() {
                     }
 
 
-                    <div className="flex gap-10 p-2 justify-between w-full items-center lg:pr-10 ">
+                    <div className="flex gap-10 justify-between w-full items-center bg-fuchsia-400">
                         <Link to="/">
-                            <div className="flex gap-2 items-center xl:w-72">
+                            <div className="flex gap-2 items-center xl:w-72 2xl:w-auto bg-red-400">
                                 <img src={MyImage} alt="Logo" className="h-10 xl:hidden" />
                                 <img src={Dinamic} alt="" className="hidden xl:block" />
                             </div>
@@ -169,7 +169,7 @@ export default function Header() {
                             </ul>
                             <div className="flex  justify-end lg:pt-3 ">
                                 <Link to={"/fale conosco"}>
-                                    <button className="text-white h-7 bg-laranja mr-5 lg:m-0 rounded-xl p-4 flex justify-center items-center text-nowrap duration-300 border-2 border-laranja hover:text-laranja  hover:bg-white" >Fale conosco</button>
+                                    <button className="mx-2 text-white h-7 bg-laranja  lg:m-0 rounded-xl p-4 flex justify-center items-center text-nowrap duration-300 border-2 border-laranja hover:text-laranja  hover:bg-white" >Fale conosco</button>
                                 </Link>
                                 <div onClick={() => setMenu("flex")} className="bg-verde rounded-xl flex items-center  p-2 lg:hidden">
                                     <Menu color="white" />
