@@ -18,7 +18,7 @@ export default function PageNoticesA() {
                     <img src={secondImage} alt="" className="w-full  md:h-1/2 lg:h-720 md:rounded-custom object-cover" />
                 </div>
                 <div className="text-zinc-800 w-full  pt-10  md:px-40 flex md:items-center md:justify-center flex-col gap-4">
-                    <p className="text-xl lg:text-2xl font-bold">O mês de outubro é dedicado à
+                    <p className="text-xl lg:text-md">O mês de outubro é dedicado à
                         conscientização sobre o câncer de mama,
                         reforçando a importância da prevenção e do
                         diagnóstico precoce.

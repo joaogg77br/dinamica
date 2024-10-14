@@ -24,7 +24,7 @@ export default function Beneficios() {
                 <Header />
                 <Info Title={"Benéficios exclusivos da Dinâmica"} />
             </div>
-            <section className="flex flex-col gap-8 mt-10 py-10 bg-zinc-100 md:px-20 lg:px-40 2xl:px-80">
+            <section className="flex flex-col gap-8 py-10 bg-zinc-100 md:px-20 lg:px-40 2xl:px-80">
                 <div className="flex flex-row gap-4 border-b-2 border-opacity-25 border-zinc-400  w-full py-6 font-medium">
                     <img src={Teacher} alt="" />
                     <p>Cursos de capacitação e profissionalizantes</p>

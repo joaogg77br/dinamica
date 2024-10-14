@@ -35,7 +35,7 @@ function App() {
       <div className='md:px-20 lg:px-40 2xl:px-80 font-nunitoSans '>
         <Scrolltop />
         <Header />
-        <div className=''>
+        <div className='mt-2'>
         <Swiper className='mt-2 '
           spaceBetween={50}
           autoplay={{
@@ -47,13 +47,13 @@ function App() {
           pagination={true}
           modules={[Pagination, Autoplay]}
         >
-          <SwiperSlide className='px-2 md:px-0 '>
+          <SwiperSlide className='px-2 md:px-0 py-2 '>
             <img src={Banner3} alt="" className='w-full' />
           </SwiperSlide>
-          <SwiperSlide className='px-2 md:px-0'>
+          <SwiperSlide className='px-2 md:px-0 py-2'>
             <img src={Banner} alt="" className='w-full' />
           </SwiperSlide>
-          <SwiperSlide className='px-2 md:px-0'>
+          <SwiperSlide className='px-2 md:px-0 py-2'>
             <img src={Banner2} alt="" className='w-full' />
           </SwiperSlide>
         </Swiper>
@@ -61,13 +61,13 @@ function App() {
 
         <div className='lg:pt-10 p-4 lg:p-0 '>
           <a href='https://www.instagram.com/cooperativadinamica/'>
-            <div className='p-4  pb-10 mt-5 lg:pt-5 lg:mt-0 flex rounded-3xl  items-center flex-col  bg-laranja lg:rounded-custom'>
-              <h1 className='font-sans text-white text-xl m-4 font-semibold md:text-3xl w-auto text-nowrap 2xl:text-5xl 2xl:mb-10'>
+            <div className='p-4 mt-5 lg:pt-5 lg:mt-0 flex rounded-3xl  items-center  justify-around flex-col xl:flex-row  bg-laranja lg:rounded-custom'>
+              <h1 className='font-sans text-white text-xl font-semibold sm:text-2xl md:text-4xl  text-center w-auto text-wrap  '>
                 Acesse nosso Instagram
               </h1>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
-                <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-40 2xl:h-60' />
-                <img src={InstagramQrCode} alt="" className='w-full md:w-auto md:h-40 2xl:h-60' />
+              <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 gap-4 p-2">
+                <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-36' />
+                <img src={InstagramQrCode} alt="" className='w-full md:w-auto md:h-36 ' />
               </div>
             </div>
           </a>

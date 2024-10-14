@@ -18,7 +18,7 @@ export default function PageNoticessA() {
                     <img src={secondImage} alt="" className="w-full  md:h-1/2 lg:h-720 md:rounded-custom object-cover" />
                 </div>
                 <div className="w-full pt-10  md:px-20 lg:px-40 2xl:px-80 md:items-center md:justify-center flex-col gap-4">
-                    <p className="text-xl lg:text-2xl font-bold">Na última sexta-feira (10), a Dinâmica Cooperativa em
+                    <p className="text-xl lg:text-md">Na última sexta-feira (10), a Dinâmica Cooperativa em
                         parceria com a Empresa @threynnare realizou mais
                         uma edição do treinamento e capacitação das NR 10
                         e NR 35, com os cooperados eletricistas atuantes em
