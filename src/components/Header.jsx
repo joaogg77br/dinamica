@@ -117,9 +117,9 @@ export default function Header() {
                     }
 
 
-                    <div className="flex gap-10 justify-between w-full items-center bg-fuchsia-400">
+                    <div className="flex gap-10 justify-between w-full items-center">
                         <Link to="/">
-                            <div className="flex gap-2 items-center xl:w-72 2xl:w-auto bg-red-400">
+                            <div className="flex gap-2 items-center xl:w-72 2xl:w-auto">
                                 <img src={MyImage} alt="Logo" className="h-10 xl:hidden" />
                                 <img src={Dinamic} alt="" className="hidden xl:block" />
                             </div>
@@ -128,12 +128,12 @@ export default function Header() {
                             <ul className="hidden justify-center text-sm mt-4 lg:gap-5 lg:flex xl:gap-5 font-bold">
                                 <li><Link to="/" className="pb-2 border-b border-white   hover:text-orange-500 hover:underline decoration-2 underline-offset-8">Home</Link></li>
                                 <li className="group  pb-6">
-                                    <Link to="" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap decoration-2 underline-offset-8">Institucional</Link>
-                                    <section className="força h-96 hidden flex-col overflow-hidden transition bg-white  hover:flex group-hover:flex duration-300 text-center absolute animate-downside  pb-10 w-full z-20 left-0 top-20 pt-10 px-20">
+                                    <Link to="" className="pb-4 hover:text-orange-500 hover:underline text-nowrap decoration-2 underline-offset-8">Institucional</Link>
+                                    <section className="força  h-96 hidden flex-col overflow-hidden transition bg-white  hover:flex group-hover:flex duration-300 text-center absolute animate-downside  pb-10 w-full z-20 left-0 top-header pt-10 px-20">
                                         <div className="px-28">
                                             <hr className="mb-10 border-10 border-gray bg-white h-0 w-full" />
                                         </div>
-                                        <div className="flex gap-20 p-10 px-32 overflow-hidden">
+                                        <div className="flex gap-20 p-10 md:px-20 lg:px-40 2xl:px-60 overflow-hidden">
                                             <div className=" text-4xl font-medium text-zinc-400  decoration-2 underline-offset-8">Institucional</div>
                                             <ul className="flex flex-col mt-2 text-start gap-4 ">
                                                 <li className="hover:text-orange-500 duration-300 "><Link to="/dinamica">A Dinâmica</Link></li>
@@ -148,11 +148,11 @@ export default function Header() {
                                 </li>
                                 <li className="group pb-6">
                                     <Link className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap decoration-2 underline-offset-8">Cooperativismo</Link>
-                                    <section className="hidden flex-col bg-white overflow-hidden hover:flex group-hover:flex duration-300 text-center absolute pb-10 w-full z-20 left-0 top-20 pt-10 px-20 força h-96">
+                                    <section className="hidden flex-col bg-white overflow-hidden hover:flex group-hover:flex duration-300 text-center absolute pb-10 w-full z-20 left-0 top-header pt-10 px-20 força h-96">
                                         <div className="px-28">
                                             <hr className="mb-10 border-10 border-cinza bg-white h-0 w-full" />
                                         </div>
-                                        <div className="flex gap-20 p-10 px-32">
+                                        <div className="flex gap-20 p-10 md:px-20 lg:px-40 2xl:px-60 overflow-hidden">
                                             <div className=" text-4xl font-medium text-zinc-400">Cooperativismo</div>
                                             <ul className="flex flex-col gap-4 text-start mt-2 ">
                                                 <li className="hover:text-orange-500 duration-300"><Link to="/cooperativismo">Cooperativismo, Cooperativa e Cooperado</Link></li>

@@ -53,13 +53,13 @@ export default function Conteudos() {
                 <Header />
                 <Info Title={"Conteúdos"} />
             </div>
-            <div className="flex flex-col justify-start items-center w-full bg-yellow-400 gap-10  lg:px-40  2xl:px-80 py-20 lg:text-2xl lg:flex-row">
-                <div className="bg-emerald-600 flex flex-col items-center gap-4">
-                    <h1 className=" text-center text-2xl lg:text-3xl font-bold md:text-3xl bg-slate-900">Filme institucional</h1>
+                <div className="bg-zinc-100 flex flex-col items-center gap-4 md:px-20 lg:px-40 2xl:px-80 py-2 pb-4">
+                    <h1 className=" text-center text-2xl lg:text-3xl font-bold md:text-3xl ">Filme institucional</h1>
                     <video className="w-full lg:w-4/5  lg:rounded-custom" controls autoPlay>
                         <source src={Video} />
                     </video>
                 </div>
+            <div className="flex flex-col justify-start items-center w-full gap-10  lg:px-40  2xl:px-80 py-20 lg:text-2xl lg:flex-row">
             </div>
             <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-40 2xl:px-80">
                 <h1 className="text-3xl font-bold p-10">Dinâmica <span className="text-orange-500">News</span></h1>
@@ -104,12 +104,12 @@ export default function Conteudos() {
                     </div>
                 </div>
             </div>
-            <section className="flex flex-col gap-6 justify-center items-center pt-12 bg-zinc-100 p-4 lg:pb-32 lg:px-10">
+            <section className="flex flex-col gap-6 justify-center items-center pt-12 bg-zinc-100 p-4 lg:pb-32 lg:px-40 2xl:px-80">
                 <img src={WhiteHome} alt="" />
                 <h1 className="text-xl font-medium">Leis do <span className="text-orange-500">Cooperativismo</span></h1>
                 <p className="text-center">A Cooperativa Dinâmica é regida pelas<br /><span className="font-bold">Leis nº 5.764/71 e Lei nº 12.690/12.</span></p>
 
-                <div className="flex flex-col lg:flex-row md:mx-20 lg:mx-40 2xl:mx-80 gap-4 bg-blue-500">
+                <div className="flex flex-col lg:flex-row   w-full gap-4">
                     <div className="rounded-2xl p-6 bg-white">
                         <a onClick={() => { handleClick(Pdf1) }} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 5.764/71 -</span> Define a Política Nacional de Cooperativismo, institui o regime jurídico das sociedades cooperativas, e dá outras providências.</a>
                     </div>

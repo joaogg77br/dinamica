@@ -30,25 +30,26 @@ export default {
       height:{
           "Max":"500px",
         "noticesBanner":"404px",
-        "720":"720px"
+        "720":"720px",
       },
       width:{
         "Max":"490px",
         "noticesBanner":"300px"
       },
       borderRadius:{
-          "custom":"50px"
+        "custom":"50px"
       },
       fontFamily:{
           'nunitoSans':['nunitoSans', 'sans-serif']
       },
       colors:{
-          "verde":"#13524A",
-          "laranja":"#F58634",
-          "cinza":"#EEEEEF"
+        "verde":"#13524A",
+        "laranja":"#F58634",
+        "cinza":"#EEEEEF"
       },
       spacing:{
-          "fifityMin":'-5%'
+        "fifityMin":'-5%',
+        "header":"4rem"
       },
         animation: {
           wiggle: 'wiggle .3s ease-in-out',
