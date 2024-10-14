@@ -59,10 +59,10 @@ function App() {
         </Swiper>
         </div>
 
-        <div className='lg:pt-10 p-4 lg:p-0 '>
+        <div className='lg:pt-10 p-4 lg:p-0'>
           <a href='https://www.instagram.com/cooperativadinamica/'>
             <div className='p-4 mt-5 lg:pt-5 lg:mt-0 flex rounded-3xl  items-center  justify-around flex-col xl:flex-row  bg-laranja lg:rounded-custom'>
-              <h1 className='font-sans text-white text-xl font-semibold sm:text-2xl md:text-4xl  text-center w-auto text-wrap  '>
+              <h1 className='font-sans text-white text-xl font-semibold sm:text-2xl md:text-3xl    text-center w-auto text-wrap'>
                 Acesse nosso Instagram
               </h1>
               <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 gap-4 p-2">
