@@ -59,8 +59,6 @@ export default function Conteudos() {
                         <source src={Video} />
                     </video>
                 </div>
-            <div className="flex flex-col justify-start items-center w-full gap-10  lg:px-40  2xl:px-80 py-20 lg:text-2xl lg:flex-row">
-            </div>
             <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-40 2xl:px-80">
                 <h1 className="text-3xl font-bold p-10">Dinâmica <span className="text-orange-500">News</span></h1>
                 <div className="block sm:hidden w-auto">
