@@ -14,7 +14,7 @@ export default function Educacao() {
                 <Header />
                 <Info Title={"Educação Continuada"} />
             </div>
-            <div className="flex flex-col items-center w-full md:gap-10 sm:flex-row md:px-20 lg:px-40 2xl:px-80 py-10">
+            <div className="flex flex-col items-center w-full md:gap-10 sm:flex-row md:px-20 lg:px-40 2xl:px-80 py-10 bg-zinc-100">
                 <div className="w-full  flex flex-col items-center p-2 gap-2  sm:hidden">
                     <div className="gap-2 flex flex-col">
                         <div className="flex gap-2  w-80">

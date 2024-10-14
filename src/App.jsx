@@ -18,7 +18,7 @@ import Banner3 from "./assets/Banners/Headline.png"
 import Brif from "./assets/brifecase-tick.svg"
 import Security from "./assets/security-user.svg"
 import InstagramQrCode from "./assets/Banners/InstagramQrcode.svg"
-import InstagramScreenShot from "./assets/Banners/Captura de tela 2024-10-05 181728 1.svg"
+import InstagramScreenShot from "./assets/Banners/Print Insta.png"
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -61,13 +61,13 @@ function App() {
 
         <div className='lg:pt-10 p-4 lg:p-0'>
           <a href='https://www.instagram.com/cooperativadinamica/'>
-            <div className='p-4 mt-5 lg:pt-5 lg:mt-0 flex rounded-3xl  items-center  justify-around flex-col xl:flex-row  bg-laranja lg:rounded-custom'>
+            <div className='p-4 mt-5 lg:pt-5 lg:mt-0 flex rounded-3xl  items-center  justify-around flex-col xl:flex-row  bg-laranja lg:rounded-custom 2xl:flex-col 2xl:gap-5'>
               <h1 className='font-sans text-white text-xl font-semibold sm:text-2xl md:text-3xl    text-center w-auto text-wrap'>
                 Acesse nosso Instagram
               </h1>
-              <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-auto gap-4 p-2 bg-red-500">
-                <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-36' />
-                <img src={InstagramQrCode} alt="" className='w-full md:w-auto md:h-36 ' />
+              <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-auto gap-4 p-2">
+                <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-36 rounded-2xl 2xl:h-64'/>
+                <img src={InstagramQrCode} alt="" className='w-full md:w-auto md:h-36 xl:h-36 2xl:h-64' />
               </div>
             </div>
           </a>
