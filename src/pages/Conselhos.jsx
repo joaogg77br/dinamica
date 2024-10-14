@@ -36,7 +36,7 @@ export default function Conselhos() {
                     <img src={Analitc} alt="persons" className="hidden lg:block xl:hidden xl:h-60" />
                     <img src={Analitc} alt="persons" className="block lg:hidden xl:h-52" />
                     <div className="flex flex-col">
-                        <h1 className="text-start font-bold mt-4 text-2xl mb-4">Conselho Administrativo</h1>
+                        <h1 className="text-start font-bold mt-4 text-2xl mb-4">Conselho Local</h1>
                         <p>O <span className="font-bold">Conselho de Administração</span>é uma inovação da Dinâmica, conforme a Lei 12.690/2012, que determina a eleição de um Cooperado Coordenador.<br /> <br />O Conselho Local é composto não só
                             por 1, mas 3 Cooperados Coordenadores, em cada contrato firmado, que além da sua produtividade habitual atuarão junto
                             a Dinâmica e aos Tomadores de Serviços como elo de comunicação, fiscalização e execução dos direitos, deveres e serviços prestados.</p>
