@@ -65,7 +65,7 @@ function App() {
               <h1 className='font-sans text-white text-xl font-semibold sm:text-2xl md:text-3xl    text-center w-auto text-wrap'>
                 Acesse nosso Instagram
               </h1>
-              <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-1/2 gap-4 p-2">
+              <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-auto gap-4 p-2 bg-red-500">
                 <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-36' />
                 <img src={InstagramQrCode} alt="" className='w-full md:w-auto md:h-36 ' />
               </div>
