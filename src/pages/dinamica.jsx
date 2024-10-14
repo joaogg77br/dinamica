@@ -2,7 +2,7 @@ import Explain from "../components/Explain";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
-import reuniao from "../assets/sede.png"
+import reuniao from "../assets/residencia.png"
 import Scrolltop from "../components/ScrollTop";
 
 export default function Dinamica() {
