@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { X } from "lucide-react"
 import Dinamica1 from "../assets/Pdfs/Dinâmica News - 1 EDIÇÃO.pdf"
-export default function NewPagepdf() {
+export default function PagecontainerA() {
     return (
            
                 <div className="w-full h-screen text-white top-2 left-0 z-50 ">
