@@ -105,7 +105,7 @@ function App() {
             <Advantagens number={3} text={"Oportunidade  de trabalho"} img={Wallet} />
             <Advantagens number={4} text={"Qualificação profissional"} img={Teacher} />
             <Advantagens number={5} text={"Direitos previdenciários"} img={Brif} />
-            <Advantagens number={6} text={"Jalecos e calçados profissionais"} img={Security} />
+            <Advantagens number={6} text={"Uniformes profissionais e EP'is"} img={Security} />
           </div>
         </div>
       </div >
