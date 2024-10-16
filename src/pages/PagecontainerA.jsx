@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { X } from "lucide-react"
-import Dinamica1 from "../assets/Pdfs/Dinâmica News - 1 EDIÇÃO.pdf"
+import Dinamica from "../assets/Pdfs/Dinâmica News - 2ª edição.pdf"
+
 export default function PagecontainerA() {
     return (
            
