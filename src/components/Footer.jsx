@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import LogoGray from '../assets/LogoGray.svg'
 import { ListCollapse } from "lucide-react";
-
+import Coop from "../assets/Banners/logo-somo-coop-removebg-preview.png"
 
 export default function Footer() {
     return (
 
         <footer className="sm:px-20 lg:px-32 2xl:px-72 sm:flex sm:justify-between">
             <div className="md:flex md:flex-col sm:items-start  sm:gap-4 flex-col text-zinc-400 sm:flex-row p-10 hidden">
-                <img src={LogoGray} alt="" className="w-40" />
+                <img src={LogoGray} alt="" className="w-40 " />
                 <p>Dinâmica Cooperativa © 2024. Todos os diretos reservados</p>
+                <img src={Coop} alt="Coop logo" className="w-60" />
             </div>
 
             <main className="grid grid-cols-2 p-10 gap-4 lg:w-3/4">
@@ -39,7 +40,10 @@ export default function Footer() {
                 <h1 className="font-medium lg:hidden hover:text-laranja"><Link to="/">Conteúdos</Link></h1>
             </main>
             <div className="flex sm:items-start  sm:gap-4 flex-col text-zinc-400 sm:flex-row p-10 sm:hidden">
-                <img src={LogoGray} alt="" className="w-40" />
+                <div>
+                    <img src={LogoGray} alt="" className="w-40" />
+                    <img src={Coop} alt="Coop logo" className="w-60" />
+                </div>
                 <p>Dinâmica Cooperativa © 2024. Todos os diretos reservados</p>
             </div>
         </footer>

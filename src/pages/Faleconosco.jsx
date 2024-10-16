@@ -32,15 +32,15 @@ export default function FaleConosco() {
                         <section className="grid mt-10 lg:grid-cols-2">
                             <article className="grid gap-10 pb-10  px-4 border-l-2 border-laranja ">
                                 <div>
-                                    <h1 className="text-xl font-bold"> Setor Financeiro</h1>
+                                    <h1 className="text-xl font-bold">Setor Financeiro</h1>
                                     <br />
-                                    <p>(82) 99330-8989 </p>
+                                    <p>(82) 98806-4993</p>
                                     <p>financeiro@dinamicacooperativa.com.br </p>
                                 </div>
                                 <div>
                                     <h1 className="text-xl font-bold">Setor de Contrato e Cooperativismo </h1>
                                     <br />
-                                    <p>(82) 99604-6673 </p>
+                                    <p>(82) 98806-5241 </p>
                                     <p>cadastro@dinamicacooperativa.com.br </p>
                                 </div>
                                 <div>
@@ -48,6 +48,12 @@ export default function FaleConosco() {
                                     <br />
                                     <p>(82) 99600-2599 </p>
                                     <p>contabil@dinamicacooperativa.com.br </p>
+                                </div>
+                                <div>
+                                    <h1 className="text-xl font-bold">Setor de RH</h1>
+                                    <br />
+                                    <p>(82) 9938-2734</p>
+                                    <p>rh@dinamicacooperativa.com.br </p>
                                 </div>
 
                             </article>
@@ -61,14 +67,20 @@ export default function FaleConosco() {
                                 <div>
                                     <h1 className="text-xl font-bold">Setor Administrativo </h1>
                                     <br />
-                                    <p>(82) 99137-9086 </p>
+                                    <p>(82) 98806-5159 </p>
                                     <p>gestao@dinamicacooperativa.com.br </p>
                                 </div>
                                 <div>
                                     <h1 className="text-xl font-bold">Setor Jurídico </h1>
                                     <br />
-                                    <p>(82) 99435-6982 </p>
+                                    <p>(82) 99380-1294</p>
                                     <p>juridico@dinamicacooperativa.com.br</p>
+                                </div>
+                                <div>
+                                    <h1 className="text-xl font-bold">Contabilidade</h1>
+                                    <br />
+                                    <p>(82) 99380-1837</p>
+                                    <p>rh@dinamicacooperativa.com.br </p>
                                 </div>
                             </article>
                         </section>

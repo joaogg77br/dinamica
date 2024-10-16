@@ -36,18 +36,23 @@ import FrameSkin22 from "../assets/Parceiros/Frame 82.svg"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Video from "../../public/filme.mp4"
-import { UseState } from "react"
+import { useState, UseState } from "react"
 
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from 'swiper/react'
+import PDFviwer from "../components/PDFviwer";
 
 export default function Conteudos() {
+    const [pdf,setpdf] = useState(false)
     function handleClick(pdf) {
-        window.open(pdf, '_blank');
+        setArquivo(pdf)
+        setpdf(true)
     }
 
     return (
         <div className="font-nunitoSans">
+            <div className="relative w-full ">
+            </div>
             <Scrolltop />
             <div className="md:px-20 lg:px-40 2xl:px-80">
                 <Header />
@@ -58,6 +63,7 @@ export default function Conteudos() {
                     <video className="w-full lg:w-4/5  lg:rounded-custom" controls autoPlay>
                         <source src={Video} />
                     </video>
+            <PDFviwer pdfFile={Noticias} />   
                 </div>
             <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-40 2xl:px-80">
                 <h1 className="text-3xl font-bold p-10">Dinâmica <span className="text-orange-500">News</span></h1>

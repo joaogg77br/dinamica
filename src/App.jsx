@@ -76,7 +76,7 @@ function App() {
         <div className='flex flex-col px-4 md:px-0 gap-10 lg:gap-16  pb-10 pt-10'>
           <Explain
             title={"Cooperativismo: juntos construímos uma sociedade mais próspera"}
-            text={"Você sabe o que é cooperativismo? A estrutura é baseada na colaboração e na parceria para promover o auxílio mútuo. Hoje, faz parte do cotidiano de milhares de pessoas."}
+            text={"O cooperativismo é um ciclo virtuoso de desenvolvimento, que começa com  pessoas que se unem por um propósito e crescem juntas. Esse crescimento gere mais trabalho e renda na região e aquece a economia local"}
             img={ImageExplain1}
             side={true}
           />
@@ -87,7 +87,7 @@ function App() {
           />
           <Explain
             title={"Qual é o objetivo do cooperativismo?"}
-            text={'O modelo busca maior integração com a sociedade, por isso, o objetivo é representar uma união de justiça com economia e sustentabilidade. A ideia é equilibrar os princípios respeitando a coletividade.'}
+            text={'O principio do cooperativismo é promover, ao mesmo tempo, o desenvolvimento econômico e social e o individual coletivo, de maneira sustetável e equilibrada.'}
             img={ImageExplain3}
             side={true}
           />
