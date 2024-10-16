@@ -13,7 +13,7 @@ export default function PagecontainerA() {
                     <Link to="/conteudos" className="text-white">
                     <button className="position rounded absolute bg-laranja p-2"><X/></button>
                     </Link>
-                    <div id="pdf-viewer" style={{ width: '100%', height: '800px' }}></div>
+                    <div id="pdf-viewer" style={{ width: '100%', height: '100vh' }}></div>
                 </div>
         )
     }

@@ -37,8 +37,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import Video from "../../public/filme.mp4"
 import { X } from "lucide-react";
-import { useState, UseState } from "react"
-
+import { useEffect, useState, UseState } from "react"
+import Pdfobject from "pdfobject";
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import PDFviwer from "../components/PDFviwer";
@@ -47,6 +47,10 @@ import { Link } from "react-router-dom";
 export default function Conteudos() {
     const [pdfTrue, setpdfTrue] = useState(false)
     const [pdfCurrent, setpdfCurrent] = useState(null)
+    useEffect(()=>{
+        Pdfobject.embed(DinamicaNews1,"#oo")
+    })
+    
 
     return (
         <div className="font-nunitoSans">
@@ -61,7 +65,7 @@ export default function Conteudos() {
                     <source src={Video} />
                 </video>
             </div>
-                <embed src={DinamicaNews1} type="application/pdf" className="w-full h-screen" />
+                <div className="p-2 bg-red-500 text-center" id="oo"></div>
             <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-40 2xl:px-80">
                 <h1 className="text-3xl font-bold p-10">Dinâmica <span className="text-orange-500">News</span></h1>
                 <div className="block sm:hidden w-auto">
