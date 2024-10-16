@@ -20,7 +20,6 @@ import PageNoticesA from './pages/PageNoticesA.jsx'
 import PageNoticesn from './pages/PageNoticesn.jsx'
 import PageNotice from './pages/PageNotice.jsx'
 import PageContainerA from './pages/PagecontainerA.jsx'
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -97,7 +96,7 @@ const router = createBrowserRouter([
   },
   {
     path:"/conteudos/pdfs",
-    element:<NewPagepdf/>
+    element:<PageContainerA/>
   }
 
 ])
