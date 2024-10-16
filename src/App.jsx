@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Explain from './components/Explain'
 import ImageExplain1 from "./assets/Nova pasta/AmigosDePapel.jpg"
 import ImageExplain2 from "./assets/Nova pasta/cabeçasLaranjas.jpg"
-import ImageExplain3 from "./assets/Nova pasta/Unidos.jpg"
+import ImageExplain3 from "./assets/comunidade.jpg"
 import Advantagens from './components/Advantages'
 import LastNews from './components/LastNews'
 import Footer from './components/Footer'

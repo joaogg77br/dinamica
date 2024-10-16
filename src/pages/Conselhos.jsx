@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Info from "../components/Info";
 import Conselho from "../assets/image 2.jpg"
-import Persons from "../assets/Nova pasta/Project-planning.svg"
+import Persons from "../assets/Project-planning 1.svg"
 import Analitc from "../assets/Nova pasta/Video-call.svg"
 import Folder from "../assets/Nova pasta/Meeting (1).svg"
 import Footer from "../components/Footer";
