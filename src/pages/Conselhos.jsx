@@ -37,7 +37,12 @@ export default function Conselhos() {
                     <img src={Analitc} alt="persons" className="block lg:hidden xl:h-52" />
                     <div className="flex flex-col">
                         <h1 className="text-start font-bold mt-4 text-2xl mb-4">Conselho Local</h1>
-                        <p>O <span className="font-bold">Conselho de Local</span><br /><br /></p>
+                        <p>O <span className="font-bold">Conselho de Local</span> é uma inovação da Dinâmica, comforme a lei <br /><br />
+                            que determina a eleição de um Cooperado Coordenador. O Conselho local é composto não só por 1, mas 3 Cooperados Coordenadores, em cada contrato firmado,
+                            que além da sua produtividade habitual atuarão junto a dinâmica e oos Tomadores de Serviços como elo de comunicação na fiscalização  e execução dos direitos
+                            , deveres e serviços prestados.
+                        
+                        </p>
                     </div>
                     <img src={Analitc} alt="persons" className="hidden xl:block xl:h-52" />
                 </div>

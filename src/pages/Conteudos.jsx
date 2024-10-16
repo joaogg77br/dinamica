@@ -61,6 +61,7 @@ export default function Conteudos() {
                     <source src={Video} />
                 </video>
             </div>
+                <embed src={Dinamica1} type="application/pdf" className="w-full h-screen" />
             <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-40 2xl:px-80">
                 <h1 className="text-3xl font-bold p-10">Dinâmica <span className="text-orange-500">News</span></h1>
                 <div className="block sm:hidden w-auto">
