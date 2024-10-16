@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { X } from "lucide-react"
-import Dinamica from "../assets/Pdfs/Dinâmica News - 2ª edição.pdf"
+import Dinamica from "../assets/Pdfs/"
 
 export default function PagecontainerA() {
     return (
@@ -9,7 +9,7 @@ export default function PagecontainerA() {
                     <Link to="/conteudos" className="text-white">
                     <button className="position rounded absolute bg-laranja p-2"><X/></button>
                     </Link>
-                    <embed src={Dinamica1} type="application/pdf" className="w-full h-screen" />
+                    <embed src={Dinamica} type="application/pdf" className="w-full h-screen" />
                 </div>
         )
     }
