@@ -36,35 +36,31 @@ import FrameSkin22 from "../assets/Parceiros/Frame 82.svg"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Video from "../../public/filme.mp4"
+import { X } from "lucide-react";
 import { useState, UseState } from "react"
 
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import PDFviwer from "../components/PDFviwer";
+import { Link } from "react-router-dom";
 
 export default function Conteudos() {
-    const [pdf,setpdf] = useState(false)
-    function handleClick(pdf) {
-        setArquivo(pdf)
-        setpdf(true)
-    }
+    const [pdfTrue, setpdfTrue] = useState(false)
+    const [pdfCurrent, setpdfCurrent] = useState(null)
 
     return (
         <div className="font-nunitoSans">
-            <div className="relative w-full ">
-            </div>
             <Scrolltop />
             <div className="md:px-20 lg:px-40 2xl:px-80">
                 <Header />
                 <Info Title={"Conteúdos"} />
             </div>
-                <div className="bg-zinc-100 flex flex-col items-center gap-4 md:px-20 lg:px-40 2xl:px-80 py-2 pb-4">
-                    <h1 className=" text-center text-2xl lg:text-3xl font-bold md:text-3xl ">Filme institucional</h1>
-                    <video className="w-full lg:w-4/5  lg:rounded-custom" controls autoPlay>
-                        <source src={Video} />
-                    </video>
-            <PDFviwer pdfFile={Noticias} />   
-                </div>
+            <div className="bg-zinc-100 flex flex-col items-center gap-4 md:px-20 lg:px-40 2xl:px-80 py-2 pb-4">
+                <h1 className=" text-center text-2xl lg:text-3xl font-bold md:text-3xl ">Filme institucional</h1>
+                <video className="w-full lg:w-4/5  lg:rounded-custom" controls autoPlay>
+                    <source src={Video} />
+                </video>
+            </div>
             <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-40 2xl:px-80">
                 <h1 className="text-3xl font-bold p-10">Dinâmica <span className="text-orange-500">News</span></h1>
                 <div className="block sm:hidden w-auto">
@@ -92,19 +88,21 @@ export default function Conteudos() {
                     </Swiper>
                 </div>
                 <div className="hidden sm:flex flex-row gap-10">
+                    <Link to="/conteudos/pdfs">
                     <div className=" md:flex flex-col text-center gap-2">
                         <img src={Noticias} alt="" className="" />
                         <a onClick={() => {
-                            handleClick(DinamicaNews1)
+                            console.log("ola")
                         }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
                     </div>
+                    </Link>
                     <div className="flex flex-col text-center gap-2">
                         <img src={Noticias2} alt="" className="" />
-                        <a onClick={() => { handleClick(DinamicaNews2) }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 2ª edição</a>
+                        <a onClick={() => {console.log("ola")}} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 2ª edição</a>
                     </div>
                     <div className="flex flex-col text-center gap-2">
                         <img src={Noticias3} alt="" className="" />
-                        <a onClick={() => { handleClick(DinamicaNews3) }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 3° edição</a>
+                        <a onClick={() => { console.log("ola")}} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 3° edição</a>
                     </div>
                 </div>
             </div>
@@ -114,11 +112,13 @@ export default function Conteudos() {
                 <p className="text-center">A Cooperativa Dinâmica é regida pelas<br /><span className="font-bold">Leis nº 5.764/71 e Lei nº 12.690/12.</span></p>
 
                 <div className="flex flex-col lg:flex-row   w-full gap-4">
+                    <Link to={"/notices/conteudos/pdfs"}>
                     <div className="rounded-2xl p-6 bg-white">
-                        <a onClick={() => { handleClick(Pdf1) }} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 5.764/71 -</span> Define a Política Nacional de Cooperativismo, institui o regime jurídico das sociedades cooperativas, e dá outras providências.</a>
+                        <a onClick={() => { }} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 5.764/71 -</span> Define a Política Nacional de Cooperativismo, institui o regime jurídico das sociedades cooperativas, e dá outras providências.</a>
                     </div>
+                    </Link>
                     <div className="rounded-2xl p-6 bg-white">
-                        <a onClick={() => { handleClick(Pdf2) }} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 12.690/12 -</span>Lei nº 12.690/12 - Dispõe sobre a organização e o funcionamento das Cooperativas de Trabalho, direitos e deveres dos cooperados. </a>
+                        <a onClick={() => {}} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 12.690/12 -</span>Lei nº 12.690/12 - Dispõe sobre a organização e o funcionamento das Cooperativas de Trabalho, direitos e deveres dos cooperados. </a>
                     </div>
                 </div>
             </section>
@@ -153,5 +153,6 @@ export default function Conteudos() {
 
             <Footer />
         </div>
+        
     )
 }

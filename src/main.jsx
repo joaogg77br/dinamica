@@ -19,6 +19,7 @@ import Educacao from './pages/Educação.jsx'
 import PageNoticesA from './pages/PageNoticesA.jsx'
 import PageNoticesn from './pages/PageNoticesn.jsx'
 import PageNotice from './pages/PageNotice.jsx'
+import NewPagepdf from './pages/nEwPAgepdf.jsx'
 
 const router = createBrowserRouter([
   {
@@ -93,6 +94,10 @@ const router = createBrowserRouter([
   {
     path:"/notices/cooperativa",
     element:<PageNotice/>
+  },
+  {
+    path:"/conteudos/pdfs",
+    element:<NewPagepdf/>
   }
 
 ])
