@@ -1,7 +1,7 @@
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"
 import { Link } from "react-router-dom"
 import { useState } from "react"
-import MyImage from '../assets/Logo.png'
+import MyImage from '../assets/Logo.svg'
 import Dinamic from '../assets/Vector.svg'
 import "../index.css"
 export default function Header() {

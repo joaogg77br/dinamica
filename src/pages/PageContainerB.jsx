@@ -1,12 +1,13 @@
+
 import { Link } from "react-router-dom"
 import { X,ChevronLeft,ChevronRight } from "lucide-react"
-import Dinamica from "../assets/Pdfs/DINÂMICA NEWS - 1 EDIÇÃO.pdf"
+import Dinamica from "../assets/Pdfs/Dinâmica News - 2ª edição.pdf"
 import { useEffect, useState } from "react"
 import Scrolltop from "../components/ScrollTop"
 import { Worker, Viewer } from "@react-pdf-viewer/core"
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import { pageNavigationPlugin } from '@react-pdf-viewer/page-navigation';
-export default function PagecontainerA() {
+export default function PagecontainerB() {
     const pageNavigationPluginInstance = pageNavigationPlugin();
     const [currentPage, setCurrentPage] = useState(0)
     const [totalPages, setTotalPages] = useState(0)

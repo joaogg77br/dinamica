@@ -67,26 +67,26 @@ export default function Conteudos() {
                         spaceBetween={20}
                     >
                         <SwiperSlide>
-                            <Link to={"/components/pdfs"}>
+                            <Link to={"/conteudos/pdfs"}>
                                 <div className="md:flex flex-col text-center gap-2 ">
                                     <img src={Noticias} alt="" className="lg:h-96 2xl:h-Max" />
-                                    <a onClick={() => { DinamicaNews1 }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
+                                    <p className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</p>
                                 </div>
                             </Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Link to={"/components/pdfs"}>
+                            <Link to={"/conteudos/pdfs/1"}>
                                 <div className=" md:flex flex-col text-center gap-2">
                                     <img src={Noticias2} alt="" className="lg:h-96 2xl:h-Max" />
-                                    <a onClick={() => { DinamicaNews2 }} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 2ª edição</a>
+                                    <p className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 2ª edição</p>
                                 </div>
                             </Link>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Link to={"/components/pdfs"}>
+                            <Link to={"/conteudos/pdfs/2"}>
                                 <div className=" md:flex flex-col text-center gap-2">
                                     <img src={Noticias3} alt="" className="lg:h-96 2xl:h-Max" />
-                                    <a onClick={() => { handleClick(DinamicaNews1) }} className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 3ª edição</a>
+                                    <p className="underline text-xl" target="_blank" rel="noopener noreferrer" download>Dinâmica News - 3ª edição</p>
                                 </div>
                             </Link>
                         </SwiperSlide>
@@ -101,13 +101,13 @@ export default function Conteudos() {
                             }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 1ª edição</a>
                         </div>
                     </Link>
-                    <Link to="/conteudos/pdfs">
+                    <Link to="/conteudos/pdfs/1">
                         <div className="flex flex-col text-center gap-2">
                             <img src={Noticias2} alt="" className="" />
                             <a onClick={() => { console.log("ola") }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 2ª edição</a>
                         </div>
                     </Link>
-                    <Link to={"/conteudos/pdfs"}>
+                    <Link to={"/conteudos/pdfs/2"}>
                         <div className="flex flex-col text-center gap-2">
                             <img src={Noticias3} alt="" className="" />
                             <a onClick={() => { console.log("ola") }} className="underline text-xl" target="_blank" rel="noopener noreferrer">Dinâmica News - 3° edição</a>
@@ -121,14 +121,16 @@ export default function Conteudos() {
                 <p className="text-center">A Cooperativa Dinâmica é regida pelas<br /><span className="font-bold">Leis nº 5.764/71 e Lei nº 12.690/12.</span></p>
 
                 <div className="flex flex-col lg:flex-row   w-full gap-4">
-                    <Link to={"/notices/conteudos/pdfs"}>
+                    <Link to={"/conteudos/pdfs/3"}>
                         <div className="rounded-2xl p-6 bg-white">
                             <a onClick={() => { }} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 5.764/71 -</span> Define a Política Nacional de Cooperativismo, institui o regime jurídico das sociedades cooperativas, e dá outras providências.</a>
                         </div>
                     </Link>
-                    <div className="rounded-2xl p-6 bg-white">
-                        <a onClick={() => { }} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 12.690/12 -</span>Lei nº 12.690/12 - Dispõe sobre a organização e o funcionamento das Cooperativas de Trabalho, direitos e deveres dos cooperados. </a>
-                    </div>
+                    <Link to={"/conteudos/pdfs/4"}>
+                        <div className="rounded-2xl p-6 bg-white">
+                            <a onClick={() => { }} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 12.690/12 -</span>Lei nº 12.690/12 - Dispõe sobre a organização e o funcionamento das Cooperativas de Trabalho, direitos e deveres dos cooperados. </a>
+                        </div>
+                    </Link>k
                 </div>
             </section>
 

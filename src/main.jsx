@@ -20,6 +20,10 @@ import PageNoticesA from './pages/PageNoticesA.jsx'
 import PageNoticesn from './pages/PageNoticesn.jsx'
 import PageNotice from './pages/PageNotice.jsx'
 import PageContainerA from './pages/PagecontainerA.jsx'
+import PagecontainerB from './pages/PageContainerB.jsx'
+import PagecontainerC from './pages/PageContainerC.jsx'
+import PagecontainerD from './pages/PageContainerD.jsx'
+import PagecontainerE from './pages/PageContainerE.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -97,6 +101,22 @@ const router = createBrowserRouter([
   {
     path:"/conteudos/pdfs",
     element:<PageContainerA/>
+  },
+  {
+    path:"/conteudos/pdfs/1",
+    element:<PagecontainerB/>
+  },
+  {
+    path:"/conteudos/pdfs/2",
+    element:<PagecontainerC/>
+  },
+  {
+    path:"/conteudos/pdfs/3",
+    element:<PagecontainerD/>
+  },
+  {
+    path:"/conteudos/pdfs/4",
+    element:<PagecontainerD/>
   }
 
 ])
