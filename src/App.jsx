@@ -87,7 +87,7 @@ function App() {
           />
           <Explain
             title={"Qual é o objetivo do cooperativismo?"}
-            text={'O principio do cooperativismo é promover, ao mesmo tempo, o desenvolvimento econômico e social e o individual coletivo, de maneira sustetável e equilibrada.'}
+            text={'O principal objetivo do cooperativismo é promover, ao mesmo tempo, o desenvolvimento econômico e social e o individual coletivo, de maneira sustetável e equilibrada.'}
             img={ImageExplain3}
             side={true}
           />

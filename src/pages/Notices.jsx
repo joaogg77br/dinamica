@@ -20,8 +20,7 @@ export default function Notices() {
           <Scrolltop/>
           <Header />
           <Info Title={"Notícias"} />
-        </div>
-        <main className="flex flex-col px-4 md:px-0 items-center justify-center lg:flex-row gap-14 w-full bg-zinc-100  py-10 2xl:gap-12">
+        </div><main className="flex flex-col px-4 md:px-0 items-center justify-center lg:flex-row gap-14 w-full bg-zinc-100  py-10 2xl:gap-12">
       <div className="w-full flex items-center justify-center lg:px-10">
         <main className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 lg:flex-row  gap-8 bg-zinc-100  py-10 2xl:gap-14 ">
           <ComponentNews Title={"OUTUBRO ROSA: UM GESTO DE CUIDADO, UMA ATITUDE DE AMOR!"} Imagem={Imagem1} link={"/notices/outubro_rosa"} />

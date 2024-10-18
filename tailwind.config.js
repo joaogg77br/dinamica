@@ -31,6 +31,8 @@ export default {
           "Max":"500px",
         "noticesBanner":"404px",
         "720":"720px",
+        "80viewew":"90vh",
+        "20viewew":"10vh",
       },
       width:{
         "Max":"490px",
