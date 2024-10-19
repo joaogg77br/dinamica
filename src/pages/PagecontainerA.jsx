@@ -19,8 +19,24 @@ export default function PagecontainerA() {
             </button>
         </Link>
             <div className="w-full absolute h-80viewew">
+                
                 <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
-                    <Viewer fileUrl={Dinamica} className="" 
+                <div className="hidden lg:block h-80viewew">
+                    <Viewer fileUrl={Dinamica} 
+                    onDocumentLoad={(e)=>{
+                        setTotalPages(e.doc.numPages)
+                    }}
+
+                    defaultScale={1}
+                    onPageChange={(e)=>{
+                        setCurrentPage(e.currentPage)
+                        
+                    }}
+                    plugins={[pageNavigationPluginInstance]}
+                    />
+                </div>
+                <div className="block lg:hidden h-80viewew">
+                    <Viewer fileUrl={Dinamica} 
                     onDocumentLoad={(e)=>{
                         setTotalPages(e.doc.numPages)
                     }}
@@ -30,6 +46,7 @@ export default function PagecontainerA() {
                     }}
                     plugins={[pageNavigationPluginInstance]}
                     />
+                </div>
                 </Worker>
             <div className="font-nunitoSans z-10 w-full flex items-center  justify-center">
                 <div className="p-4 w-96 bg-slate-900  h-20viewew items-center flex justify-around sm:rounded-t">
