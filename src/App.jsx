@@ -3,7 +3,7 @@ import './font.css'
 import Header from './components/Header'
 import Explain from './components/Explain'
 import ImageExplain1 from "./assets/Nova pasta/AmigosDePapel.jpg"
-import ImageExplain2 from "./assets/Nova pasta/cabeçasLaranjas.jpg"
+import ImageExplain2 from "./assets/Nova pasta/cabecasLaranjas.jpg"
 import ImageExplain3 from "./assets/comunidade.jpg"
 import Advantagens from './components/Advantages'
 import LastNews from './components/LastNews'
@@ -13,7 +13,7 @@ import TaskSquare from './assets/task-square.svg'
 import Wallet from './assets/wallet-add.svg'
 import Teacher from './assets/teacher.svg'
 import Banner from "./assets/Banners/Headline.svg"
-import Banner2 from "./assets/Banners/Headline2.svg"
+import Banner2 from "./assets/Banners/Headline (1).png"
 import Banner3 from "./assets/Banners/Headline.png"
 import Brif from "./assets/brifecase-tick.svg"
 import Security from "./assets/security-user.svg"

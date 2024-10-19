@@ -130,7 +130,7 @@ export default function Conteudos() {
                         <div className="rounded-2xl p-6 bg-white">
                             <a onClick={() => { }} className="underline cursor-pointer" target="_blank" rel="noopener noreferrer" download><span className="font-bold">Lei nº 12.690/12 -</span>Lei nº 12.690/12 - Dispõe sobre a organização e o funcionamento das Cooperativas de Trabalho, direitos e deveres dos cooperados. </a>
                         </div>
-                    </Link>k
+                    </Link>
                 </div>
             </section>
 

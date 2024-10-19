@@ -2,8 +2,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
 import Scrolltop from "../components/ScrollTop";
-import Imagem1 from "../assets/Nova pasta/iStock-1212669780.jpg"
-import Imagem2 from "../assets/Nova pasta/QuebraCabeça.jpg"
+import Imagem1 from "../assets/Nova pasta/caraAleatorio.jpg"
+import Imagem2 from "../assets/Nova pasta/QuebraCabeca.jpg"
 import Imagem3 from "../assets/Nova pasta/Gari.jpg"
 
 export default function Cooperativismo() {
@@ -44,7 +44,6 @@ export default function Cooperativismo() {
                     <div className="text-zinc-700">
                         <h1 className="font-bold text-3xl p-2 pb-4 text-zinc-400 ">Cooperado</h1>
                         <p>O sócio cooperado é aquele que colabora para o crescimento coletivo da cooperativa, acreditando em sua condição autônoma, a fim de trabalhar por resultados e pela excelência do serviço prestado, participando ativamente de todas as decisões da cooperativa em cumprimento aos seus deveres e fiscalização dos seus direitos.</p>
-                        <br />
                         <ul className="flex flex-col gap-4 list-disc mt-2">
                             <li>O Cooperado é sócio proprietário e possui participação ativa nas decisões da Instituição. Na cooperativa ele recebe por PRODUÇÃO, sendo autônomo, sem vínculo empregatício.  </li>
                             <li>O Cooperado deve integralizar uma quantidade mínima de quota-parte para
