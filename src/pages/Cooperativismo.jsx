@@ -16,7 +16,7 @@ export default function Cooperativismo() {
             </div>
 
             <section className="flex  justify-center items-center gap-4 flex-col p-4 md:px-20 lg:px-40 2xl:px-80 bg-zinc-100 md:py-20 lg:pb-20">
-                <div className="relative flex flex-col lg:flex-row items-center justify-center  bg-white p-4 rounded-2xl pl-20 lg:p-10 lg:pl-20 lg:pr-32">
+                <div className="relative flex flex-col lg:flex-row items-start justify-center  bg-white p-4 rounded-2xl pl-20 lg:p-10 lg:pl-20 lg:pr-32">
                     <img src={Imagem3} alt="" className="rounded-2xl lg:w-60 lg:h-60  mr-4 object-cover w-full mb-5 lg:mr-10"/>
                     <div className="absolute w-5 top-0 left-0 rounded-l-3xl bg-orange-500 h-full lg:w-10"></div>
                     <div className="text-zinc-700">
@@ -24,7 +24,7 @@ export default function Cooperativismo() {
                         <p>É um movimento social/econômico baseado na cooperação entre pessoas que atuam em diversas atividades do mercado para propor aos envolvidos: melhoria da qualidade de vida; esforço individual por benefícios para o grupo; gestão coletiva e participativa. “Mais que um modelo de negócios, o cooperativismo é uma filosofia de vida que busca transformar o mundo em um lugar mais justo, feliz, equilibrado e com melhores oportunidades para todos”. <span className="text-zinc-500">(fonte: Sistema OCB).</span></p>
                     </div>
                 </div>
-                <div className="relative flex flex-col lg:flex-row items-center justify-center bg-white p-4 rounded-2xl pl-20 lg:p-10 lg:pl-20 lg:pr-32">
+                <div className="relative flex flex-col lg:flex-row items-start justify-center bg-white p-4 rounded-2xl pl-20 lg:p-10 lg:pl-20 lg:pr-32">
                     <img src={Imagem2} alt="" className="rounded-2xl lg:w-60 lg:h-60  mr-4 object-cover w-full mb-5 lg:mr-10"/>
                     <div className="absolute w-5 top-0 left-0 rounded-l-3xl bg-green-800 h-full lg:w-10"></div>
                     <div className="text-zinc-700">

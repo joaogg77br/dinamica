@@ -4,12 +4,12 @@ import Info from "../components/Info";
 import WhiteHome from "../assets/Frame 55.svg"
 import Pdf1 from "../assets/Pdfs/LEI 5.764.pdf"
 import Pdf2 from "../assets/Pdfs/Lei 12.690-12.pdf"
-import Noticias from "../assets/Parceiros/Noticias.svg"
+import Noticias from "../assets/Parceiros/Noticias1.svg"
 import Noticias2 from "../assets/Parceiros/Noticias2.svg"
 import Noticias3 from "../assets/Parceiros/Noticias3.svg"
-import DinamicaNews1 from "../assets/Pdfs/DINÂMICA NEWS - 1 EDIÇÃO.pdf"
-import DinamicaNews2 from "../assets/Pdfs/Dinâmica News - 2ª edição.pdf"
-import DinamicaNews3 from "../assets/Pdfs/Dinâmica News - 3ª edição .pdf"
+import DinamicaNews1 from "../assets/Pdfs/dinamica_news-1_ED.pdf"
+import DinamicaNews2 from "../assets/Pdfs/dinamica_news-2_ED.pdf"
+import DinamicaNews3 from "../assets/Pdfs/dinamica_news-3_ED.pdf"
 import Scrolltop from "../components/ScrollTop";
 import FrameSkin from "../assets/Parceiros/Frame 56.svg"
 import FrameSkin2 from "../assets/Parceiros/Frame 57.svg"
@@ -35,7 +35,7 @@ import FrameSkin21 from "../assets/Parceiros/Frame 81.svg"
 import FrameSkin22 from "../assets/Parceiros/Frame 82.svg"
 import 'swiper/css';
 import 'swiper/css/pagination';
-import Video from "../../public/filme.mp4"
+import Video from "../assets/filme.mp4"
 import { X } from "lucide-react";
 import { useEffect, useState, UseState } from "react"
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"

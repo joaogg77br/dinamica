@@ -7,8 +7,8 @@ import { useState, useEffect } from "react";
 import Scrolltop from "../components/ScrollTop";
 import ComponentNews from "../components/ComponentNews";
 import Imagem1 from "../assets/Banners/MATERIA 1.jpg"
-import Imagem2 from "../assets/Banners/MATÉRIA-2.jpg"
-import Imagem3 from "../assets/Banners/MATÉRIA-3_2.png"
+import Imagem2 from "../assets/Banners/MATERIA-2.jpg"
+import Imagem3 from "../assets/Banners/MATERIA-3_2.png"
 
 export default function Notices() {
 

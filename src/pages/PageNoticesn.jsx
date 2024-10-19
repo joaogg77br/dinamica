@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Info from "../components/Info";
 import Scrolltop from "../components/ScrollTop";
-import secondImage from "../assets/Banners/MATÉRIA-2.jpg"
+import secondImage from "../assets/Banners/MATERIA-2.jpg"
 import Footer from "../components/Footer";
 
 

@@ -1,8 +1,8 @@
 import { ChevronRight } from "lucide-react"
 import ComponentNews from "./ComponentNews"
 import Imagem from "../assets/Banners/MATERIA 1.jpg"
-import Imagem2 from "../assets/Banners/MATÉRIA-2.jpg"
-import Imagem3 from "../assets/Banners/MATÉRIA-3_2.png"
+import Imagem2 from "../assets/Banners/MATERIA-2.jpg"
+import Imagem3 from "../assets/Banners/MATERIA-3_2.png"
 import { Link } from "react-router-dom"
 export default function LastNews() {
   return (

@@ -2,7 +2,7 @@
 
 import { Link } from "react-router-dom"
 import { X,ChevronLeft,ChevronRight } from "lucide-react"
-import Dinamica from "../assets/Pdfs/Dinâmica News - 3ª edição .pdf"
+import Dinamica from "../assets/Pdfs/dinamica_news-3_ED.pdf"
 import { useEffect, useState } from "react"
 import Scrolltop from "../components/ScrollTop"
 import { Worker, Viewer } from "@react-pdf-viewer/core"

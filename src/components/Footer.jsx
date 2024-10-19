@@ -42,9 +42,9 @@ export default function Footer() {
             <div className="flex sm:items-start  sm:gap-4 flex-col text-zinc-400 sm:flex-row p-10 sm:hidden">
                 <div>
                     <img src={LogoGray} alt="" className="w-40" />
+                <p>Dinâmica Cooperativa © 2024. Todos os diretos reservados</p>
                     <img src={Coop} alt="Coop logo" className="w-60" />
                 </div>
-                <p>Dinâmica Cooperativa © 2024. Todos os diretos reservados</p>
             </div>
         </footer>
     )
