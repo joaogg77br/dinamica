@@ -91,7 +91,7 @@ export default function Header() {
                                 </li>
 
                                 <li className="font-medium">
-                                    <Link to={"/noticias"}>Nóticias</Link>
+                                    <Link to={"/noticias"}>Notícias</Link>
                                 </li>
                             </ul>
                         </div>
