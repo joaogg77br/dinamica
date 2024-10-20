@@ -56,8 +56,8 @@ export default function Conteudos() {
             </div>
             <div className="bg-zinc-100 flex flex-col items-center gap-4 md:px-20 lg:px-40 2xl:px-80 py-2 pb-4">
                 <h1 className=" text-center text-2xl lg:text-3xl font-bold md:text-3xl ">Filme institucional</h1>
-                <video className="w-full lg:w-4/5  lg:rounded-custom" controls autoPlay>
-                    <source src={Video} />
+                <video className="w-full lg:w-4/5  lg:rounded-custom" controls autoPlay  >
+                    <source src={Video}  type="video/mp4"/>
                 </video>
             </div>
             <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-40 2xl:px-80">
