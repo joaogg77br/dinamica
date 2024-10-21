@@ -29,7 +29,7 @@ export default function Footer() {
                     <h1 className="font-medium">Cooperativismo</h1>
                     <ul className="grid gap-5 text-start grid-cols-1 mt-5 duration-300 sm:gap-4 w-full mb-10 text-zinc-400">
                         <li className="hover:text-orange-500"><Link to="/cooperativismo">Cooperativismo, Cooperativa e Cooperado</Link></li>
-                        <li className="hover:text-orange-500"><Link to="/principios">7 Principios do Cooperativismo</Link></li>
+                        <li className="hover:text-orange-500"><Link to="/principios">7 Princípios do Cooperativismo</Link></li>
                         <li className="hover:text-orange-500"><Link to="/beneficios">Educação Continuada</Link></li>
                         <li className="font-medium text-black hidden lg:block mt-4 duration-300 hover:text-laranja"><Link to="/noticias">Notícias</Link></li>
                         <li className="font-medium text-black hidden lg:block hover:text-laranja duration-300"><Link to="/conteudos">Conteúdos</Link></li>
