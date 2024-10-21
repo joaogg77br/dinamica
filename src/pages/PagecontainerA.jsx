@@ -29,7 +29,7 @@ export default function PagecontainerA() {
 
                     defaultScale={1}
                     onPageChange={(e)=>{
-                        setCurrentPage(e.currentPage)
+                        setCurrentPage(e.currentPage+1)
                         
                     }}
                     plugins={[pageNavigationPluginInstance]}
