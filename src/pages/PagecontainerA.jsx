@@ -10,7 +10,25 @@ export default function PagecontainerA() {
     const pageNavigationPluginInstance = pageNavigationPlugin();
     const [currentPage, setCurrentPage] = useState(0)
     const [totalPages, setTotalPages] = useState(0)
+    const [disebleButton,setDisebleButton] = useState(false)
+    const [disebleButtonEnd,setDisebleButtonEnd] = useState(false)
     const {jumpToNextPage,jumpToPreviousPage} = pageNavigationPluginInstance;
+
+        
+    useEffect(()=>{
+        if(currentPage == 1){
+            setDisebleButton(true)
+        }else{
+            setDisebleButton(false)
+        }},[currentPage])
+
+    useEffect(()=>{
+        if(currentPage >= totalPages){
+            setDisebleButtonEnd(true)
+        }else{
+            setDisebleButtonEnd(false)
+        }},[currentPage])
+
     return (
         <>
         <Link to={"/conteudos"}>
@@ -19,7 +37,6 @@ export default function PagecontainerA() {
             </button>
         </Link>
             <div className="w-full absolute h-80viewew">
-                
                 <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
                 <div className="hidden lg:block h-80viewew">
                     <Viewer fileUrl={Dinamica} 
@@ -41,7 +58,7 @@ export default function PagecontainerA() {
                         setTotalPages(e.doc.numPages)
                     }}
                     onPageChange={(e)=>{
-                        setCurrentPage(e.currentPage)
+                        setCurrentPage(e.currentPage+1)
                         
                     }}
                     plugins={[pageNavigationPluginInstance]}
@@ -50,14 +67,14 @@ export default function PagecontainerA() {
                 </Worker>
             <div className="font-nunitoSans z-10 w-full flex items-center  justify-center">
                 <div className="p-4 w-96 bg-slate-900  h-20viewew items-center flex justify-around sm:rounded-t">
-                    <button className="bg-laranja text-white p-2 px-10 rounded hover:bg-orange-600 duration-300" 
+                    <button  disabled={disebleButton}  className="disabled:bg-red-500  bg-laranja text-white p-2 px-10 rounded hover:bg-orange-600 duration-300" 
                     onClick={ ()=>{
                         jumpToPreviousPage()
                         console.log("previus")
                     }}
                     ><ChevronLeft/></button>
                     <p className="text-white text-xl"> {`${currentPage} / ${totalPages}`} </p>
-                    <button className="bg-laranja text-white p-2 rounded px-10 hover:bg-orange-600 duration-300"
+                    <button disabled={disebleButtonEnd} className="disabled:bg-red-500 bg-laranja text-white p-2 rounded px-10 hover:bg-orange-600 duration-300"
                     onClick={()=>{
                         jumpToNextPage()
                         console.log("next")

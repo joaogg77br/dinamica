@@ -165,7 +165,7 @@ export default function Header() {
                                 <li className="group pb-6">
                                     <Link to="/conteudos" className="pb-2 border-b border-white hover:text-orange-500 hover:underline text-nowrap decoration-2 underline-offset-8">Contéudos</Link>
                                 </li>
-                                <li><Link to="/noticias" className="pb-2 border-b border-white hover:text-orange-500 hover:underline decoration-2 underline-offset-8">Nóticias</Link></li>
+                                <li><Link to="/noticias" className="pb-2 border-b border-white hover:text-orange-500 hover:underline decoration-2 underline-offset-8">Notícias</Link></li>
                             </ul>
                             <div className="flex  justify-end lg:pt-3 ">
                                 <Link to={"/fale conosco"}>

@@ -12,6 +12,23 @@ export default function PagecontainerC() {
     const [currentPage, setCurrentPage] = useState(0)
     const [totalPages, setTotalPages] = useState(0)
     const {jumpToNextPage,jumpToPreviousPage} = pageNavigationPluginInstance;
+    const [disebleButton,setDisebleButton] = useState(false)
+    const [disebleButtonEnd,setDisebleButtonEnd] = useState(false)
+
+    useEffect(()=>{
+        if(currentPage == 1){
+            setDisebleButton(true)
+        }else{
+            setDisebleButton(false)
+        }},[currentPage])
+
+    useEffect(()=>{
+        if(currentPage >= totalPages){
+            setDisebleButtonEnd(true)
+        }else{
+            setDisebleButtonEnd(false)
+        }},[currentPage])
+
     return (
         <>
         <Link to={"/conteudos"}>
@@ -29,7 +46,7 @@ export default function PagecontainerC() {
                     }}
                     defaultScale={1}
                     onPageChange={(e)=>{
-                        setCurrentPage(e.currentPage)
+                        setCurrentPage(e.currentPage+1)
                         
                     }}
                     plugins={[pageNavigationPluginInstance]}
@@ -51,14 +68,14 @@ export default function PagecontainerC() {
                 </Worker>
             <div className="font-nunitoSans z-10 w-full flex items-center  justify-center">
                 <div className="p-4 w-96 bg-slate-900  h-20viewew items-center flex justify-around sm:rounded-t">
-                    <button className="bg-laranja text-white p-2 px-10 rounded hover:bg-orange-600 duration-300" 
+                    <button disabled={disebleButton} className="disabled:bg-red-500 bg-laranja text-white p-2 px-10 rounded hover:bg-orange-600 duration-300" 
                     onClick={ ()=>{
                         jumpToPreviousPage()
                         console.log("previus")
                     }}
                     ><ChevronLeft/></button>
                     <p className="text-white text-xl"> {`${currentPage} / ${totalPages}`} </p>
-                    <button className="bg-laranja text-white p-2 rounded px-10 hover:bg-orange-600 duration-300"
+                    <button disabled={disebleButtonEnd} className="disabled:bg-red-500 bg-laranja text-white p-2 rounded px-10 hover:bg-orange-600 duration-300"
                     onClick={()=>{
                         jumpToNextPage()
                         console.log("next")
