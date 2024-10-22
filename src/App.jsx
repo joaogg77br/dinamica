@@ -86,7 +86,7 @@ function App() {
             img={ImageExplain2}
           />
           <Explain
-            title={"Qua o objetivo do cooperativismo?"}
+            title={"Qual o objetivo do cooperativismo?"}
             text={'O principal objetivo do cooperativismo é promover, ao mesmo tempo, o desenvolvimento econômico e social e o individual coletivo, de maneira sustetável e equilibrada.'}
             img={ImageExplain3}
             side={true}
