@@ -86,8 +86,8 @@ function App() {
             img={ImageExplain2}
           />
           <Explain
-            title={"Qual é o objetivo do cooperativismo?"}
-            text={'O principal objetivo do cooperativismo é promover, ao mesmo tempo, o desenvolvimento econômico e social e o individual coletivo, de maneira sustetável e equilibrada.'}
+            title={"Oque é uma Cooperativa?"}
+            text={'O principal objetivo do cooperativismo é promover, ao mesmo tempo, o desenvolvimento econômico e social e o individual coletivo, de maneira sustetável e equilibrada. A Cooperativa protege  os diversos interesses econômicos e sociais dos trabalhadores. Diferente de empresas capitalistas, constituidas para gerar lucro e concentrar capital, uma cooperativa não tem fins lucrativos. Assim, o que visam é a satisfação das atividades econômicas e qualidade dos serviços prestados.'}
             img={ImageExplain3}
             side={true}
           />
