@@ -81,13 +81,13 @@ function App() {
             side={true}
           />
           <Explain
-            title={"O que é cooperativismo?"}
-            text={'O cooperativismo a é a união de pessoas com interesses em comum que colaboram entre si, nela, os cooperados são considerados "donos do negócio", dessa forma, as decisões são tomadas em assembleias.'}
+            title={"O que é uma Cooperativa?"}
+            text={'A Cooperativa protege os diversos interesses econômicos e sociais dos trabalhadores. Diferente de empresas capitalistas, constituidas para gerar lucro e concentrar capital, uma cooperativa não tem fins lucrativos. Assim, o que visam é a satisfação das atividades econômicas e qualidade dos serviços prestados.'}
             img={ImageExplain2}
           />
           <Explain
-            title={"Oque é uma Cooperativa?"}
-            text={'O principal objetivo do cooperativismo é promover, ao mesmo tempo, o desenvolvimento econômico e social e o individual coletivo, de maneira sustetável e equilibrada. A Cooperativa protege  os diversos interesses econômicos e sociais dos trabalhadores. Diferente de empresas capitalistas, constituidas para gerar lucro e concentrar capital, uma cooperativa não tem fins lucrativos. Assim, o que visam é a satisfação das atividades econômicas e qualidade dos serviços prestados.'}
+            title={"Qua o objetivo do cooperativismo?"}
+            text={'O principal objetivo do cooperativismo é promover, ao mesmo tempo, o desenvolvimento econômico e social e o individual coletivo, de maneira sustetável e equilibrada.'}
             img={ImageExplain3}
             side={true}
           />
