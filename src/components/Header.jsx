@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { useState } from "react"
 import MyImage from '../assets/Logo.svg'
 import Dinamic from '../assets/Vector.svg'
+import { motion, AnimatePresence } from "framer-motion"
 import "../index.css"
 export default function Header() {
     const [menu, setMenu] = useState("hidden")
@@ -25,7 +26,7 @@ export default function Header() {
                                 </li>
                                 <li className="flex gap-2 flex-col border-b-zinc-50 border-b-2 pb-4 pr-4 border-opacity-25 overflow-hidden">
                                     <div className="flex justify-between overflow-hidden">
-                                        <Link to="/noticias" className="relative border-white hover:left-4 font-medium">Institucional</Link>
+                                        <Link className="relative border-white hover:left-4 font-medium">Institucional</Link>
                                         {openIns ?
                                             <ChevronUp className="cursor-pointer" onClick={() => {
                                                 console.log(openIns)
@@ -38,22 +39,33 @@ export default function Header() {
                                             }} />
                                         }
                                     </div>
-                                    {openIns ?
-                                        <ul className="flex flex-col gap-4 mt-4 animate-downside">
-                                            <li className="underline"><Link to="/dinamica">Sobre A Dinâmica</Link></li>
-                                            <li className="underline"><Link to="/mvv">Visão, Missão e vetores</Link></li>
-                                            <li className="underline"><Link to="/atividades">Atividades Desenvolvidas pela Dinâmica</Link></li>
-                                            <li className="underline"><Link to="/beneficios">Benefício Excluidos da Dinâmica</Link></li>
-                                            <li className="underline"><Link to="/area de atuacao">Onde atuamos</Link></li>
-                                            <li className="underline"><Link to="/conselhos">Conselhos</Link></li>
-                                        </ul>
-                                        : null
-                                    }
+                                    <AnimatePresence>
+                                        {openIns ?
+                                            <motion.div
+                                                initial={{ height: 0, opacity: 0 }}
+                                                animate={{
+                                                    height: openIns ? "auto" : 0,
+                                                    opacity: openIns ? 1 : 0,
+                                                }}
+                                                exit={{ height: 0, opacity: 0 }}
+                                                transition={{ duration: 0.3 }}
+                                            >
+                                                <ul className="flex flex-col mt-2 text-start gap-4 ">
+                                                    <li className="hover:text-orange-500 duration-300 "><Link to="/dinamica">A Dinâmica</Link></li>
+                                                    <li className="hover:text-orange-500 duration-300"><Link to="/mvv">Missão, Visão e Valores</Link></li>
+                                                    <li className="hover:text-orange-500 duration-300"><Link to="/atividades">Atividades Desenvolvidas Pela Dinâmica</Link></li>
+                                                    <li className="hover:text-orange-500 duration-300"><Link to="/beneficios">Benefícios exclusivos da Dinâmica</Link></li>
+                                                    <li className="hover:text-orange-500 duration-300"><Link to="/area de atuacao">Onde atuamos</Link></li>
+                                                    <li className="hover:text-orange-500 duration-300"><Link to="/conselhos">Conselhos</Link></li>
+                                                </ul>
+                                            </motion.div>
+                                            : null
+                                        }
+                                    </AnimatePresence>
                                 </li>
                                 <li className="flex gap-2 flex-col border-b-2 border-zinc-50 pb-4 border-opacity-25 overflow-hidden">
                                     <div className="flex justify-between pr-4">
                                         <Link to="/dinamica" className="relative border-white hover:left-4 font-medium">Cooperativismo</Link>
-
                                         {openCoop ?
                                             <ChevronUp className="cursor-pointer" onClick={() => {
                                                 setOpenCoop(!openCoop)
@@ -64,21 +76,33 @@ export default function Header() {
                                             }} />
                                         }
                                     </div>
-                                    {openCoop ?
-                                        <ul className="flex flex-col gap-4 animate-downside pt-4">
-                                            <li className="underline"><Link to="/cooperativismo">Cooperativismo, Cooperativa e Cooperado</Link></li>
-                                            <li className="underline"><Link to="/principios">7 Princípios do Cooperativismo</Link></li>
-                                            <li className="underline"><Link to="/Educacao continuada">Educação Continuada</Link></li>
-                                        </ul>
-                                        : null
-                                    }
+                                    <AnimatePresence>
+                                        {openCoop ?
+                                            <motion.div
+                                                initial={{ height: 0, opacity: 0 }}
+                                                animate={{
+                                                    height: openCoop ? "auto" : 0,
+                                                    opacity: openCoop ? 1 : 0,
+                                                }}
+                                                exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }}
+                                            >
+                                                <ul className="flex flex-col gap-4  pt-4">
+                                                    <li className="underline"><Link to="/cooperativismo">Cooperativismo, Cooperativa e Cooperado</Link></li>
+                                                    <li className="underline"><Link to="/principios">7 Princípios do Cooperativismo</Link></li>
+                                                    <li className="underline"><Link to="/Educacao continuada">Educação Continuada</Link></li>
+                                                </ul>
+
+                                            </motion.div>
+                                            : null
+                                        }
+                                    </AnimatePresence>
                                 </li>
                                 <li className="flex gap-2 flex-col border-b-zinc-50 border-b-2 pb-4 pr-4 border-opacity-25">
                                     <div className="flex justify-between ">
                                         <Link to="/conteudos" className="relative border-white hover:left-4 font-medium">Contéudos</Link>
                                     </div>
                                     {openCon ?
-                                        <ul className="flex flex-col gap-4 mt-4 animate-wiggle">
+                                        <ul className="flex flex-col gap-4 mt-4">
                                             <li className="underline"><Link>Sobre A Dinâmica</Link></li>
                                             <li className="underline"><Link>Missão,Visão e Valores</Link></li>
                                             <li className="underline"><Link>Atividades Desenvolvidas pela Dinâmica</Link></li>
