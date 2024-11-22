@@ -4,8 +4,8 @@ import Info from "../components/Info"
 import Scrolltop from "../components/ScrollTop";
 import InputMask from "react-input-mask"
 import Call from "../assets/call-calling.svg"
-import { useState } from "react";
-import emailjs from '@emailjs/browser';
+import { useState, useEffect } from "react";
+import { data } from "autoprefixer";
 
 export default function FaleConosco() {
     const [firtName, setfirstName] = useState('')
@@ -14,33 +14,43 @@ export default function FaleConosco() {
     const [numberPhone,setNumberPhone] = useState('')
     const [message, setMessage] = useState('')
     const [camps,setCamps] = useState(true)
-    const params = {
-        name: firtName + "" + lastName,
-        message: message,
-        email: email
-    }
-    async function sendMessage(e) {
-        e.preventDefault()
-        if (firtName && lastName && email && message && numberPhone) {
-            setCamps(true)
-            await emailjs.send("service_top3q42", "template_dbfowlw", params, "3LzW-01toXIL65Ohj")
-                .then(() => {
-                    console.log("Mensagem enviada com sucesso!")
-                    setfirstName('')
-                    setLastName('')
-                    setEmail('')
-                    setMessage('')
-                    setNumberPhone('')
-                    alert("Mensagem enviada com sucesso!")
-                }
-                )
-                .catch(()=> console.error("Erro ao enviar mensagem!"))
-        } else {
+    useEffect(()=>{
+    function verify() {
+        if (firtName.trim().length > 0  && lastName.trim().length > 0 && email.trim().length > 0 && message.trim().length > 0 && numberPhone.trim().length > 0) {
             setCamps(false)
-            alert("Preencha todos os campos!")
+            console.log("Formulário completo")
+        }else{
+            setCamps(true)
+            console.log("formulario incompleto")
         }
     }
-    return (
+    verify()
+},[firtName,lastName,email,numberPhone,message])
+
+    function sendMessage(){}
+    async function sendEmail(){
+        const response =  await  fetch("https://martin-crisp-killdeer.ngrok-free.app/cooperados/contato",{
+            method:'POST',
+            headers:{"Content-type":"application/json; charset=UTF-8"},
+            body:JSON.stringify({
+                primeiroNome:firtName,
+                segundoNome:lastName,
+                email:email,
+                telefone:numberPhone,
+                mensagem:message
+            },
+        )}
+        ).then(()=>{
+            console.log("Enviado")
+            alert("enviado")
+            setfirstName("")
+            setLastName("")
+            setEmail("")
+            setNumberPhone("")
+            setMessage("")
+        })
+    }
+        return (
         <>
             <div className="md:px-20 lg:px-40 2xl:px-80">
                 <Scrolltop />
@@ -49,16 +59,26 @@ export default function FaleConosco() {
             </div>
             <div className="md:px-20 lg:px-40 2xl:px-80 font-nunitoSans py-10 bg-cinza">
                 <div action="" className="flex flex-col px-2 gap-3 items-start pt-4 ">
-                    <input value={firtName} onChange={(e) => { setfirstName(e.target.value) }} type="text" placeholder="Primeiro nome" className="w-full p-3 rounded-xl" />
-                    <input type="text" value={lastName} onChange={(e) => { setLastName(e.target.value) }} placeholder="Segundo nome" className="w-full p-3 rounded-xl" /> 
-                    <input type="email" value={email} onChange={(e) => { setEmail(e.target.value) }} placeholder="E-mail" className="w-full p-3 rounded-xl" /> <InputMask mask="(99) 99999-9999" value={numberPhone} onChange={(e)=>{setNumberPhone(e.target.value)}} placeholder="(00) 00000-0000" className="rounded-xl border p-3 w-full" />
-                    <textarea name="" id="" placeholder="Mensagem" value={message} onChange={(e) => { setMessage(e.target.value) }} className="w-full p-3 rounded-xl"></textarea>
-                    {
-                        !camps ?
-                            <div className="text-red-600 font-bold">PREENCHA TODOS OS CAMPOS ANTES DE ENVIAR O FORMULÁRIO!!</div>
-                            :null
-                    }
-                    <button onClick={sendMessage} className="p-2 w-32 border-2 border-laranja duration-300 bg-laranja text-white rounded-xl">Enviar</button>
+                    <input value={firtName} onInput={(e) => {
+                         setfirstName(e.target.value)
+                         sendMessage()
+                          }} type="text" placeholder="Primeiro nome" className="w-full p-3 rounded-xl" />
+                    <input type="text" value={lastName} onInput={(e) => { 
+                        setLastName(e.target.value)
+                         sendMessage()
+                     }} placeholder="Segundo nome" className="w-full p-3 rounded-xl" /> 
+                    <input type="email" value={email} onInput={(e) => { setEmail(e.target.value) 
+                         sendMessage()
+                    }} placeholder="E-mail" className="w-full p-3 rounded-xl" /> 
+                    <InputMask mask="(99) 99999-9999" value={numberPhone} onInput={(e)=>{setNumberPhone(e.target.value)
+                        sendMessage()
+                    }} placeholder="(00) 00000-0000" className="rounded-xl border p-3 w-full" />
+                    <textarea name="" id="" placeholder="Mensagem" value={message} onInput={(e) => { setMessage(e.target.value)
+                         sendMessage()
+                     }} className="w-full p-3 rounded-xl"></textarea>
+                    <button disabled={camps} onClick={sendEmail} className={`p-2 w-32 border-2  duration-300 border-laranja bg-laranja text-white rounded-xl disabled:bg-gray-500 disabled:border-gray-500
+                    hover:cursor-pointer hover:bg-orange-600
+                        `}>Enviar</button>
                 </div>
             </div>
             <main className="flex flex-col w-full  md:px-20 lg:px-40 2xl:px-80 gap-5 bg-zinc-100  text-zinc-800">
