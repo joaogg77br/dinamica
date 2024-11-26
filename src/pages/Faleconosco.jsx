@@ -14,7 +14,7 @@ export default function FaleConosco() {
     const [numberPhone,setNumberPhone] = useState('')
     const [message, setMessage] = useState('')
     const [camps,setCamps] = useState(true)
-    const [phoneNumber,setPhoneNumber] = useContext(NumberPhoneVerify)
+    const [phoneNumber,setPhoneNumber,string,setString] = useContext(NumberPhoneVerify)
 
     useEffect(()=>{
     function verify() {
@@ -38,12 +38,18 @@ export default function FaleConosco() {
                 primeiroNome:firtName,
                 segundoNome:lastName,
                 email:email,
-                telefone:numberPhone,
+                telefone:string,
                 mensagem:message
             },
         )}
         ).then(()=>{
             console.log("Enviado")
+            console.log({
+                primeiroNome:firtName,
+                segundoNome:lastName,
+                email:email,
+                telefone:string,
+                mensagem:message})
             alert("enviado")
             setfirstName("")
             setLastName("")
