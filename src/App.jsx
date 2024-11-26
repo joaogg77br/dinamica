@@ -2,9 +2,9 @@ import { useState } from 'react'
 import './font.css'
 import Header from './components/Header'
 import Explain from './components/Explain'
-import ImageExplain1 from "./assets/Nova pasta/AmigosDePapel.jpg"
-import ImageExplain2 from "./assets/Nova pasta/cabecasLaranjas.jpg"
-import ImageExplain3 from "./assets/comunidade.jpg"
+import ImageExplain1 from "./assets/imagens-otimizadas/AmigosDePapel-Cwp8ToND.jpg"
+import ImageExplain2 from "./assets/imagens-otimizadas/cabecasLaranjas-BbIlTVGe.jpg"
+import ImageExplain3 from "./assets/imagens-otimizadas/comunidade-xd7maPK1.jpg"
 import Advantagens from './components/Advantages'
 import LastNews from './components/LastNews'
 import Footer from './components/Footer'

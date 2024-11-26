@@ -2,9 +2,9 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
 import Scrolltop from "../components/ScrollTop";
-import Barbeiro from "../assets/BarbeiroCurse.png"
-import Aula from "../assets/IMG_1703.png"
-import CourseCongratilation from "../assets/CourseCongratulation.png"
+import Barbeiro from "../assets/imagens-otimizadas/BarbeiroCurse-D73WvwFe.png"
+import Aula from "../assets/imagens-otimizadas/IMG_1703-CCoouuzU.png"
+import CourseCongratilation from "../assets/imagens-otimizadas/CourseCongratulation-DgT4Pg7e.png"
 
 export default function Educacao() {
     return (

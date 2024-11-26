@@ -2,8 +2,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
 import Scrolltop from "../components/ScrollTop";
-import Imagem1 from "../assets/Nova pasta/caraAleatorio.jpg"
-import Imagem2 from "../assets/Nova pasta/QuebraCabeca.jpg"
+import Imagem1 from "../assets/imagens-otimizadas/caraAleatorio-BcTgMLsL.jpg"
+import Imagem2 from "../assets/imagens-otimizadas/QuebraCabeca-lmeIul7m.jpg"
 import Imagem3 from "../assets/Nova pasta/Gari.jpg"
 
 export default function Cooperativismo() {

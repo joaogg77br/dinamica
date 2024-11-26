@@ -2,10 +2,10 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info"
 import Scrolltop from "../components/ScrollTop";
-import InputMask from "react-input-mask"
 import Call from "../assets/call-calling.svg"
-import { useState, useEffect } from "react";
-import { data } from "autoprefixer";
+import InputPhoneMask from "../components/InputMask";
+import { useState, useEffect,useContext } from "react";
+import { NumberPhoneVerify } from "../Context/NumberPhoneV";
 
 export default function FaleConosco() {
     const [firtName, setfirstName] = useState('')
@@ -14,9 +14,11 @@ export default function FaleConosco() {
     const [numberPhone,setNumberPhone] = useState('')
     const [message, setMessage] = useState('')
     const [camps,setCamps] = useState(true)
+    const [phoneNumber,setPhoneNumber] = useContext(NumberPhoneVerify)
+
     useEffect(()=>{
     function verify() {
-        if (firtName.trim().length > 0  && lastName.trim().length > 0 && email.trim().length > 0 && message.trim().length > 0 && numberPhone.trim().length > 0) {
+        if (firtName.trim().length > 0  && lastName.trim().length > 0 && email.trim().length > 0 && message.trim().length > 0 && phoneNumber)  {
             setCamps(false)
             console.log("Formulário completo")
         }else{
@@ -25,7 +27,7 @@ export default function FaleConosco() {
         }
     }
     verify()
-},[firtName,lastName,email,numberPhone,message])
+},[firtName,lastName,email,numberPhone,message,phoneNumber])
 
     function sendMessage(){}
     async function sendEmail(){
@@ -70,9 +72,7 @@ export default function FaleConosco() {
                     <input type="email" value={email} onInput={(e) => { setEmail(e.target.value) 
                          sendMessage()
                     }} placeholder="E-mail" className="w-full p-3 rounded-xl" /> 
-                    <InputMask mask="(99) 99999-9999" value={numberPhone} onInput={(e)=>{setNumberPhone(e.target.value)
-                        sendMessage()
-                    }} placeholder="(00) 00000-0000" className="rounded-xl border p-3 w-full" />
+                    <InputPhoneMask/>
                     <textarea name="" id="" placeholder="Mensagem" value={message} onInput={(e) => { setMessage(e.target.value)
                          sendMessage()
                      }} className="w-full p-3 rounded-xl"></textarea>
@@ -191,6 +191,12 @@ export default function FaleConosco() {
 
                             </article>
                             <article className="grid gap-5 pb-10  px-4 border-l-2 border-laranja ">
+                                <div>
+                                    <h1 className="text-xl font-bold">Livramento/PB</h1>
+                                    <br />
+                                    <p>(83) 99644-9146</p>
+                                    <p>livramento@dinamicacooperativa.com.br</p>
+                                </div>
                                 <div>
                                     <h1 className="text-xl font-bold">São Miguel dos Campos/AL </h1>
                                     <br />

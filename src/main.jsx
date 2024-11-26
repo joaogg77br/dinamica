@@ -24,6 +24,8 @@ import PagecontainerB from './pages/PageContainerB.jsx'
 import PagecontainerC from './pages/PageContainerC.jsx'
 import PagecontainerD from './pages/PageContainerD.jsx'
 import PagecontainerE from './pages/PageContainerE.jsx'
+import { NumberPhoneVProvider } from './Context/NumberPhoneV.jsx'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -122,6 +124,8 @@ const router = createBrowserRouter([
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <NumberPhoneVProvider>
     <RouterProvider router={router} />
+    </NumberPhoneVProvider>
   </StrictMode>
 )
