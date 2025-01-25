@@ -1,0 +1,13 @@
+.spin{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  animation: spin 1s infinite linear;
+  scale:2;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -11,6 +11,7 @@
 .força{
     animation: animation .3s ease-in-out;
 }
+
 .flwo{
     position: fixed;
     top: 0;
@@ -20,12 +21,12 @@
     
 }
 
-@keyframes animation{
+@keyframes animation {
+  
     0%{
         height: 0%;
     }
     100%{
         opacity: 100%;
     }
-    
 }

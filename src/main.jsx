@@ -24,6 +24,7 @@ import PagecontainerB from './pages/PageContainerB.jsx'
 import PagecontainerC from './pages/PageContainerC.jsx'
 import PagecontainerD from './pages/PageContainerD.jsx'
 import PagecontainerE from './pages/PageContainerE.jsx'
+import NoticesDescription from "./pages/NoticesDescription.jsx"
 import { NumberPhoneVProvider } from './Context/NumberPhoneV.jsx'
 
 const router = createBrowserRouter([
@@ -99,6 +100,10 @@ const router = createBrowserRouter([
   {
     path:"/notices/cooperativa",
     element:<PageNotice/>
+  },
+  {
+    path:"/noticias/:page/:id",
+    element:<NoticesDescription/>
   },
   {
     path:"/conteudos/pdfs",

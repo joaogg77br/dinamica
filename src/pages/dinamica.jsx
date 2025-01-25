@@ -6,6 +6,7 @@ import reuniao from "../assets/imagens-otimizadas/residencia-DQXkXte9.png"
 import Scrolltop from "../components/ScrollTop";
 
 export default function Dinamica() {
+  
     return (
         <div className="font-nunitoSans">
             <Scrolltop/>
@@ -35,7 +36,6 @@ export default function Dinamica() {
                 </div>
             </section>
             <Footer />
-
         </div>
     )
 }
