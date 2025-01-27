@@ -65,7 +65,7 @@ export default function Notices() {
       <div className="md:px-20 lg:px-40 2xl:px-80">
         <Scrolltop />
         <Header />
-        <Info Title={"background"} />
+        <Info Title={"Notícias"} />
       </div><main className="flex flex-col px-4 md:px-0 items-center justify-center lg:flex-row gap-14 w-full bg-zinc-100  py-10 2xl:gap-12">
         <div className="w-full flex items-center justify-center lg:px-10">
           <main className="grid grid-cols-1 justify-center lg:grid-cols-2 xl:grid-cols-3 lg:flex-row  gap-8 bg-zinc-100  2xl:gap-14 ">
