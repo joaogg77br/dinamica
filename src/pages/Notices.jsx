@@ -9,7 +9,7 @@ import ComponentNews from "../components/ComponentNews";
 import Imagem1 from "../assets/Banners/MATERIA 1.jpg"
 import Imagem2 from "../assets/Banners/MATERIA-2.jpg"
 import Imagem3 from "../assets/Banners/MATERIA-3_2.png"
-import { ChevronLeft, ChevronRight, Loader, Loader2 } from "lucide-react"
+import { ChevronLeft, ChevronRight, Loader, ChevronsLeft, ChevronsRight  } from "lucide-react"
 import { div } from "framer-motion/client";
 
 export default function Notices() {
@@ -61,10 +61,11 @@ export default function Notices() {
 
   return (
     <>
+    bolsoanro
       <div className="md:px-20 lg:px-40 2xl:px-80">
         <Scrolltop />
         <Header />
-        <Info Title={"Notícias"} />
+        <Info Title={"background"} />
       </div><main className="flex flex-col px-4 md:px-0 items-center justify-center lg:flex-row gap-14 w-full bg-zinc-100  py-10 2xl:gap-12">
         <div className="w-full flex items-center justify-center lg:px-10">
           <main className="grid grid-cols-1 justify-center lg:grid-cols-2 xl:grid-cols-3 lg:flex-row  gap-8 bg-zinc-100  2xl:gap-14 ">
@@ -84,8 +85,23 @@ export default function Notices() {
           </main>
         </div>
       </main>
-      <div className="w-full flex bg-zinc-100 py-10 justify-center bg-red-400 items-center lg:pr-28">
-        <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
+
+      <div className="w-full gap-4 flex bg-zinc-100 py-10 justify-center items-center lg:pr-28">
+ 
+      <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500" 
+           onClick={() => {
+            if (id === limit) {
+              console.log("Max")
+              return
+            }
+            setId(1)
+          }} >
+        {
+          <ChevronsLeft/>
+        } 
+      </button>
+
+       <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
           onClick={() => {
             if (id <= 1) {
               console.log("minimun")
@@ -112,6 +128,19 @@ export default function Notices() {
         >
           <ChevronRight />
         </button>
+
+      <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500" 
+           onClick={() => {
+            if (id === limit) {
+              console.log("Max")
+              return
+            }
+            setId(limit)
+          }} >
+        {
+          <ChevronsRight/>
+        } 
+      </button>
       </div>
       <Footer />
     </>
