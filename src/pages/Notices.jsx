@@ -86,7 +86,7 @@ export default function Notices() {
         </div>
       </main>
 
-      <div className="w-full gap-4 flex bg-zinc-100 py-10 justify-center items-center lg:pr-28">
+      <div className="w-full gap-4 flex bg-zinc-100 py-10 justify-center items-center  text-white">
 
         <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
           onClick={() => {
@@ -109,7 +109,7 @@ export default function Notices() {
           <ChevronLeft />
         </button>
 
-        <div className="text-2xl mx-6">
+        <div className="text-2xl mx-6 text-black">
           {`${id}/${limit}`}
         </div>
 

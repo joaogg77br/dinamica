@@ -49,7 +49,7 @@ export default function NoticesDescription() {
             :
             <div>
               <div className="sm:pr-10 text-zinc-800 w-full px-4 pt-10 md:px-32  xl:items-center xl:justify-center flex-col gap-4">
-                <div className="l flex items-center flex-col" dangerouslySetInnerHTML={{ __html: item.conteudo }}></div>
+                <div className="l flex items-center text-justify flex-col" dangerouslySetInnerHTML={{ __html: item.conteudo }}></div>
               </div>
             </div>
           }

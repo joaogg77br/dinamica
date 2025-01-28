@@ -13,7 +13,7 @@
 }
 
 .l p{
-  text-align: start;
+    text-align: justify;
 }
 
 .l img:first-of-type{
@@ -50,6 +50,6 @@
   }
   .l > p:nth-child(n+3){
     padding-left:100px ;
-    padding-right:100px ;
+    padding-right:200px ;
   }
 }
