@@ -35,7 +35,8 @@ import FrameSkin21 from "../assets/Parceiros/Frame 81.svg"
 import FrameSkin22 from "../assets/Parceiros/Frame 82.svg"
 import 'swiper/css';
 import 'swiper/css/pagination';
-import Video from "../assets/filme.mp4"
+import Video from "../assets/filme-BqOdhwS8.mp4"
+
 import { X } from "lucide-react";
 import { useEffect, useState, UseState } from "react"
 import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Autoplay } from "swiper/modules"
@@ -57,7 +58,7 @@ export default function Conteudos() {
             <div className="bg-zinc-100 flex flex-col items-center gap-4 md:px-20 lg:px-40 2xl:px-80 py-2 pb-4">
                 <h1 className=" text-center text-2xl lg:text-3xl font-bold md:text-3xl ">Filme institucional</h1>
                 <video className="w-full lg:w-4/5  lg:rounded-custom" controls autoPlay  >
-                    <source src={Video}  type="video/mp4"/>
+                    <source src={Video} type="video/mp4" />
                 </video>
             </div>
             <div className="flex flex-col justify-center items-center p-4 py-10 lg:px-40 2xl:px-80">

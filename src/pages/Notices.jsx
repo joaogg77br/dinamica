@@ -9,7 +9,7 @@ import ComponentNews from "../components/ComponentNews";
 import Imagem1 from "../assets/Banners/MATERIA 1.jpg"
 import Imagem2 from "../assets/Banners/MATERIA-2.jpg"
 import Imagem3 from "../assets/Banners/MATERIA-3_2.png"
-import { ChevronLeft, ChevronRight, Loader, ChevronsLeft, ChevronsRight  } from "lucide-react"
+import { ChevronLeft, ChevronRight, Loader, ChevronsLeft, ChevronsRight } from "lucide-react"
 import { div } from "framer-motion/client";
 
 export default function Notices() {
@@ -61,7 +61,7 @@ export default function Notices() {
 
   return (
     <>
-    bolsoanro
+      bolsoanro
       <div className="md:px-20 lg:px-40 2xl:px-80">
         <Scrolltop />
         <Header />
@@ -69,7 +69,7 @@ export default function Notices() {
       </div><main className="flex flex-col px-4 md:px-0 items-center justify-center lg:flex-row gap-14 w-full bg-zinc-100  py-10 2xl:gap-12">
         <div className="w-full flex items-center justify-center lg:px-10">
           <main className="grid grid-cols-1 justify-center lg:grid-cols-2 xl:grid-cols-3 lg:flex-row  gap-8 bg-zinc-100  2xl:gap-14 ">
-            { loading ?
+            {loading ?
               news.map((notice, index) => {
                 return (
                   <Link to={`/noticias/${id}/${index}`}>
@@ -79,7 +79,7 @@ export default function Notices() {
               })
               :
               <div className="w-full flex items-center justify-center">
-                <Loader className="spin"/>
+                <Loader className="spin" />
               </div>
             }
           </main>
@@ -87,21 +87,17 @@ export default function Notices() {
       </main>
 
       <div className="w-full gap-4 flex bg-zinc-100 py-10 justify-center items-center lg:pr-28">
- 
-      <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500" 
-           onClick={() => {
-            if (id === limit) {
-              console.log("Max")
-              return
-            }
-            setId(1)
-          }} >
-        {
-          <ChevronsLeft/>
-        } 
-      </button>
 
-       <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
+        <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
+          onClick={() => {
+            setId(id = 1)
+          }} >
+          {
+            <ChevronsLeft />
+          }
+        </button>
+
+        <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
           onClick={() => {
             if (id <= 1) {
               console.log("minimun")
@@ -119,7 +115,7 @@ export default function Notices() {
 
         <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
           onClick={() => {
-            if (id === limit) {
+            if (id >= limit) {
               console.log("Max")
               return
             }
@@ -129,18 +125,18 @@ export default function Notices() {
           <ChevronRight />
         </button>
 
-      <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500" 
-           onClick={() => {
-            if (id === limit) {
+        <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
+          onClick={() => {
+            if (id == limit) {
               console.log("Max")
               return
             }
             setId(limit)
           }} >
-        {
-          <ChevronsRight/>
-        } 
-      </button>
+          {
+            <ChevronsRight />
+          }
+        </button>
       </div>
       <Footer />
     </>

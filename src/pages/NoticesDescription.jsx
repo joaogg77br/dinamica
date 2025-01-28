@@ -4,51 +4,57 @@ import Scrolltop from "../components/ScrollTop"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Info from "../components/Info"
+import Post from "../components/Post"
 import "../anima.css"
 import secondImage from "../assets/imagens-otimizadas/MATERIA-3_2-BKPExm7o.jpg"
-import {Loader} from "lucide-react"
+import VejaMais from "../components/VejaMais"
+import { Loader } from "lucide-react"
+import LastNews from "../components/LastNews"
 export default function NoticesDescription() {
   const { id, page } = useParams()
-  const [loading,setLoading] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [item, setItem] = useState({})
+
   useEffect(() => {
     setLoading(true)
     fetch(`https://api.zeruns.com.br/noticias?page=${page}`)
       .then(e => e.json())
       .then(data => {
         setLoading(false)
-        console.log("")
+        console.log(data.data[id])
+        console.log(data.data[id].titulo)
+        console.log(data.data[id].updatedAt)
         setItem(data.data[id])
-        console.log(data.data[id].conteudo)
       })
-    .catch(err => console.log(err))
-  }, [])
+      .catch(err => console.log(err))
+  }, [id, page])
+
   return (
     <>
       <div>
-      <div className="w-full justify-center items-center">
-      </div>
+        <div className="w-full justify-center items-center">
+        </div>
         <div className="md:px-20 lg:px-40 2xl:px-80">
           <Scrolltop />
           <Header />
-          <Info Title={item.titulo} />
+          <Post
+            Title={item.titulo}
+            Time={item.updatedAt}
+          />
         </div>
-        <main className="md:px-20 lg:px-40 2xl:px-80 font-nunitoSans py-10">
-          { loading ?
+        <main className="font-nunitoSans py-10">
+          {loading ?
             <div className="w-full flex items-center justify-center">
-              <Loader className="spin"/>
             </div>
-           :
+            :
             <div>
-            <div className="">
-              <img src={item.imagem_capa} alt="" className="w-full  md:h-1/2 lg:h-720 md:rounded-custom object-cover" />
+              <div className="sm:pr-10 text-zinc-800 w-full px-4 pt-10 md:px-32  xl:items-center xl:justify-center flex-col gap-4">
+                <div className="l flex items-center flex-col" dangerouslySetInnerHTML={{ __html: item.conteudo }}></div>
+              </div>
             </div>
-            <div className="text-zinc-800 w-full pt-10 md:px-40 flex xl:items-center xl:justify-center flex-col gap-4">
-              <div   dangerouslySetInnerHTML={{ __html: item.conteudo }}></div>
-          </div>
-            </div>
-         }  
+          }
         </main>
+        <VejaMais />
         <Footer />
       </div>
     </>

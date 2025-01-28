@@ -11,3 +11,45 @@
     transform: rotate(360deg);
   }
 }
+
+.l p{
+  text-align: start;
+}
+
+.l img:first-of-type{
+  border-radius: 10px;
+    margin-right:40px;
+  }
+
+@media (min-width:640px){
+  .l img:first-of-type{
+    margin-left:20px;
+    margin-right:20px;
+  }
+  .l > p:nth-child(n+3){
+    padding-left:50px ;
+    padding-right:50px ;
+  }
+}
+
+@media (min-width:768px){
+  .l img:first-of-type{
+    margin-left:20px;
+    margin-right:20px;
+  }
+  .l > p:nth-child(n+3){
+    padding-left:30px ;
+    padding-right:50px ;
+  }
+}
+
+@media (min-width:1024px){
+  .l img:first-of-type{
+    margin-left:20px;
+    margin-right:20px;
+  }
+  .l > p:nth-child(n+3){
+    padding-left:100px ;
+    padding-right:100px ;
+  }
+}
