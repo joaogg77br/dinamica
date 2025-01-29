@@ -10,29 +10,43 @@ import Imagem1 from "../assets/Banners/MATERIA 1.jpg"
 import Imagem2 from "../assets/Banners/MATERIA-2.jpg"
 import Imagem3 from "../assets/Banners/MATERIA-3_2.png"
 import { ChevronLeft, ChevronRight, Loader, ChevronsLeft, ChevronsRight } from "lucide-react"
-import { div } from "framer-motion/client";
+import { div, i } from "framer-motion/client";
 
 export default function Notices() {
 
   const [loading, setLoading] = useState(true)
   const [news, setNews] = useState([])
   let [limit, setLimit] = useState(1)
-  const [pagelimit, setPageLimit] = useState(1)
-  const [rest, setRest] = useState(0)
+  let [x, setX] = useState([])
+  let [pag, setPag] = useState([])
   let [id, setId] = useState(1)
+  useEffect(() => {
+    if (id == 1) {
+      setPag(pag = [1, 2, 3].filter(page => page <= limit))
+      console.log("1p", pag, 2 === limit, limit)
+      return
+    } else if (id == limit) {
+      setPag(pag = [limit - 2, limit - 1, limit].filter(page => page >= 1))
+      console.log("2p", pag)
+      return
+    }
+    setPag(pag = [id - 1, id, id + 1].filter(page => page >= 1 && page < limit))
+    console.log("3p", pag)
+
+  }, [id, limit])
+
   const Api = () => {
     const url = `https://api.zeruns.com.br/noticias?page=${id}`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
         setNews(data.data); // Atualiza o estado com as notícias
-        console.log("ID atual:", id, "URL:", url);
         setLoading(true)
       })
       .catch((err) => console.error("Erro ao buscar notícias:", err));
   };
 
-  // useEffect que dispara a busca sempre que o ID muda
+  // useEffect que dispara a busca sempre ue o ID muda
   useEffect(() => {
     setLoading(false)
     Api();
@@ -49,9 +63,8 @@ export default function Notices() {
           const r = data.total % 3
           if (r != 0 && r < 3) {
             setLimit(Math.floor(t + 1))
-            return
+            console.log(limit)
           }
-          setLimit(t)
         })
         .catch(err => console.log(err))
     }
@@ -86,9 +99,9 @@ export default function Notices() {
         </div>
       </main>
 
-      <div className="w-full gap-4 flex bg-zinc-100 py-10 justify-center items-center  text-white">
+      <div className="w-full flex-wrap gap-4 flex bg-zinc-100 py-10 justify-center items-center  text-laranja">
 
-        <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
+        <button className="p-3 bg-zinc-100  rounded duration-150 hover:bg-white"
           onClick={() => {
             setId(id = 1)
           }} >
@@ -97,7 +110,7 @@ export default function Notices() {
           }
         </button>
 
-        <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
+        <button className="p-3 bg-zinc-100 rounded duration-150 "
           onClick={() => {
             if (id <= 1) {
               console.log("minimun")
@@ -109,11 +122,24 @@ export default function Notices() {
           <ChevronLeft />
         </button>
 
-        <div className="text-2xl mx-6 text-black">
-          {`${id}/${limit}`}
+        <div className="text-sm mx-6 text-black flex gap-4">
+          {
+            pag.map(num => {
+              return (
+                <button key={num + 1} className={`rounded p-2 px-4 duration-300 border-laranja border-2 ${num === id ? `bg-laranja text-white` : ` bg-zinc-100 text-laranja`}`}
+                  onClick={
+                    () => {
+                      setId(id = num)
+                    }
+                  }>
+                  {num}
+                </button>
+              )
+            })
+          }
         </div>
 
-        <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
+        <button className="p-3  rounded duration-150 "
           onClick={() => {
             if (id >= limit) {
               console.log("Max")
@@ -125,7 +151,7 @@ export default function Notices() {
           <ChevronRight />
         </button>
 
-        <button className="p-3 bg-laranja rounded duration-150 hover:bg-orange-500"
+        <button className="p-3  rounded duration-150"
           onClick={() => {
             if (id == limit) {
               console.log("Max")

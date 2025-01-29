@@ -36,27 +36,27 @@ function App() {
         <Scrolltop />
         <Header />
         <div className='mt-2'>
-        <Swiper className='mt-2 '
-          spaceBetween={50}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-          }}
-          grabCursor={true}
-          Navigation={true}
-          pagination={true}
-          modules={[Pagination, Autoplay]}
-        >
-          <SwiperSlide className='px-2 md:px-0 py-2 bg-orange-500'>
-            <img src={Banner3} alt="" className='w-full' />
-          </SwiperSlide>
-          <SwiperSlide className='px-2 md:px-0 py-2'>
-            <img src={Banner} alt="" className='w-full' />
-          </SwiperSlide>
-          <SwiperSlide className='px-2 md:px-0 py-2'>
-            <img src={Banner2} alt="" className='w-full' />
-          </SwiperSlide>
-        </Swiper>
+          <Swiper className='mt-2 '
+            spaceBetween={50}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            grabCursor={true}
+            Navigation={true}
+            pagination={true}
+            modules={[Pagination, Autoplay]}
+          >
+            <SwiperSlide className='px-2 md:px-0 py-2'>
+              <img src={Banner3} alt="" className='w-full' />
+            </SwiperSlide>
+            <SwiperSlide className='px-2 md:px-0 py-2'>
+              <img src={Banner} alt="" className='w-full' />
+            </SwiperSlide>
+            <SwiperSlide className='px-2 md:px-0 py-2'>
+              <img src={Banner2} alt="" className='w-full' />
+            </SwiperSlide>
+          </Swiper>
         </div>
 
         <div className='lg:pt-10 p-4 lg:p-0'>
@@ -66,13 +66,13 @@ function App() {
                 Acesse nosso Instagram
               </h1>
               <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-auto gap-4 p-2">
-                <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-36 rounded-2xl 2xl:h-64'/>
+                <img src={InstagramScreenShot} alt="" className='w-full md:w-auto md:h-36 rounded-2xl 2xl:h-64' />
                 <img src={InstagramQrCode} alt="" className='w-full md:w-auto md:h-36 xl:h-36 2xl:h-64' />
               </div>
             </div>
           </a>
         </div>
-        
+
         <div className='flex flex-col px-4 md:px-0 gap-10 lg:gap-16  pb-10 pt-10'>
           <Explain
             title={"Cooperativismo: juntos construímos uma sociedade mais próspera"}
@@ -80,7 +80,7 @@ function App() {
             img={ImageExplain1}
             side={true}
           />
-    
+
           <Explain
             title={"O que é uma Cooperativa?"}
             text={'A Cooperativa protege os diversos interesses econômicos e sociais dos trabalhadores. Diferente de empresas capitalistas, constituidas para gerar lucro e concentrar capital, uma cooperativa não tem fins lucrativos. Assim, o que visam é a satisfação das atividades econômicas e qualidade dos serviços prestados.'}

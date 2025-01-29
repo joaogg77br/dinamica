@@ -28,7 +28,9 @@ export default function NoticesDescription() {
       })
       .catch(err => console.log(err))
   }, [id, page])
-
+  let data = new Date(item.updatedAt)
+  console.log(item.updatedAt, data, data.toLocaleString())
+  data = data.toLocaleString()
   return (
     <>
       <div>
@@ -39,7 +41,7 @@ export default function NoticesDescription() {
           <Header />
           <Post
             Title={item.titulo}
-            Time={item.updatedAt}
+            Time={data}
           />
         </div>
         <main className="font-nunitoSans py-10">
