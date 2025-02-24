@@ -2,15 +2,10 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Info from "../components/Info";
-import axios from "axios"
 import { useState, useEffect } from "react";
 import Scrolltop from "../components/ScrollTop";
 import ComponentNews from "../components/ComponentNews";
-import Imagem1 from "../assets/Banners/MATERIA 1.jpg"
-import Imagem2 from "../assets/Banners/MATERIA-2.jpg"
-import Imagem3 from "../assets/Banners/MATERIA-3_2.png"
 import { ChevronLeft, ChevronRight, Loader, ChevronsLeft, ChevronsRight } from "lucide-react"
-import { div, i } from "framer-motion/client";
 
 export default function Notices() {
 
@@ -20,20 +15,24 @@ export default function Notices() {
   let [x, setX] = useState([])
   let [pag, setPag] = useState([])
   let [id, setId] = useState(1)
+
   useEffect(() => {
     if (id == 1) {
       setPag(pag = [1, 2, 3].filter(page => page <= limit))
-      console.log("1p", pag, 2 === limit, limit)
       return
     } else if (id == limit) {
       setPag(pag = [limit - 2, limit - 1, limit].filter(page => page >= 1))
-      console.log("2p", pag)
       return
     }
-    setPag(pag = [id - 1, id, id + 1].filter(page => page >= 1 && page < limit))
-    console.log("3p", pag)
+    setPag(pag = [id - 1, id, id + 1].filter(page => page >= 1 && page <= limit))
 
   }, [id, limit])
+
+  function ordenadeByDate(array) {
+    console.log("arry:", array)
+    let ordanadeArray = array.sort((a, b) => a.createdAt - b.createdAt)
+    console.log("ordenadeArry:", ordanadeArray)
+  }
 
   const Api = () => {
     const url = `https://api.zeruns.com.br/noticias?page=${id}`;
@@ -41,6 +40,7 @@ export default function Notices() {
       .then((response) => response.json())
       .then((data) => {
         setNews(data.data); // Atualiza o estado com as notícias
+        ordenadeByDate(data.data)
         setLoading(true)
       })
       .catch((err) => console.error("Erro ao buscar notícias:", err));
@@ -63,18 +63,17 @@ export default function Notices() {
           const r = data.total % 3
           if (r != 0 && r < 3) {
             setLimit(Math.floor(t + 1))
-            console.log(limit)
+            return
           }
+          setLimit(Math.floor(t))
         })
         .catch(err => console.log(err))
     }
     Api()
   }, [])
 
-
   return (
     <>
-      bolsoanro
       <div className="md:px-20 lg:px-40 2xl:px-80">
         <Scrolltop />
         <Header />
@@ -167,5 +166,5 @@ export default function Notices() {
       <Footer />
     </>
   )
-
 }
+
