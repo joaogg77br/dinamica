@@ -28,7 +28,7 @@ export default function NoticesDescription() {
       })
       .catch(err => console.log(err))
   }, [id, page])
-  let data = new Date(item.updatedAt)
+  let data = new Date(item.publicacao)
   console.log(item.updatedAt, data, data.toLocaleString())
   data = data.toLocaleString()
   return (
