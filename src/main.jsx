@@ -26,111 +26,119 @@ import PagecontainerD from './pages/PageContainerD.jsx'
 import PagecontainerE from './pages/PageContainerE.jsx'
 import NoticesDescription from "./pages/NoticesDescription.jsx"
 import { NumberPhoneVProvider } from './Context/NumberPhoneV.jsx'
+import TermosDeUso from './pages/TermosDeUso.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <App />
   },
   {
-    path:"/noticias",
-    element:<Notices/>
-    
-  },
-  {
-    path:"/dinamica",
-    element:<Dinamica/>
-  },
-  {
-    path:"/mvv",
-    element:<Mvv/>
-  },
-  {
-    path:"/atividades",
-    element:<Atividades/>
-  },
-  {
-    path:"/beneficios",
-    element:<Beneficios/>
-  },
-  {
-    path:"/area de atuacao",
-    element:<Atuacao/>
-  },
-  {
-    path:"/conselhos",
-    element:<Conselhos/>
-  },
-  {
-    path:"/Cooperativismo",
-    element:<Cooperativismo/>
-  },
-  {
-    path:"/principios",
-    element:<Principios/>
-  },
-  {
-    path:"/educação continuada",
-    element:<Principios/>
-  },
-  {
-    path:"/conteudos",
-    element:<Conteudos/>
-  },
-  {
-    path:"/noticias/details/:id",
-    element:<Details/>
-  },
-  {
-    path:"/fale conosco",
-    element:<FaleConosco/>
-  },
-  {
-    path:"/Educacao continuada",
-    element:<Educacao/>
-  },
-  {
-    path:"/notices/outubro_rosa",
-    element:<PageNoticesA/>
-  },
-  {
-    path:"/notices/cooperados",
-    element:<PageNoticesn/>
-  },
-  {
-    path:"/notices/cooperativa",
-    element:<PageNotice/>
-  },
-  {
-    path:"/noticias/:page/:id",
-    element:<NoticesDescription/>
-  },
-  {
-    path:"/conteudos/pdfs",
-    element:<PageContainerA/>
-  },
-  {
-    path:"/conteudos/pdfs/1",
-    element:<PagecontainerB/>
-  },
-  {
-    path:"/conteudos/pdfs/2",
-    element:<PagecontainerC/>
-  },
-  {
-    path:"/conteudos/pdfs/3",
-    element:<PagecontainerD/>
-  },
-  {
-    path:"/conteudos/pdfs/4",
-    element:<PagecontainerD/>
-  }
+    path: "/noticias",
+    element: <Notices />
 
+  },
+  {
+    path: "/dinamica",
+    element: <Dinamica />
+  },
+  {
+    path: "/mvv",
+    element: <Mvv />
+  },
+  {
+    path: "/atividades",
+    element: <Atividades />
+  },
+  {
+    path: "/beneficios",
+    element: <Beneficios />
+  },
+  {
+    path: "/area de atuacao",
+    element: <Atuacao />
+  },
+  {
+    path: "/conselhos",
+    element: <Conselhos />
+  },
+  {
+    path: "/Cooperativismo",
+    element: <Cooperativismo />
+  },
+  {
+    path: "/principios",
+    element: <Principios />
+  },
+  {
+    path: "/educação continuada",
+    element: <Principios />
+  },
+  {
+    path: "/conteudos",
+    element: <Conteudos />
+  },
+  {
+    path: "/noticias/details/:id",
+    element: <Details />
+  },
+  {
+    path: "/fale conosco",
+    element: <FaleConosco />
+  },
+  {
+    path: "/Educacao continuada",
+    element: <Educacao />
+  },
+  {
+    path: "/notices/outubro_rosa",
+    element: <PageNoticesA />
+  },
+  {
+    path: "/notices/cooperados",
+    element: <PageNoticesn />
+  },
+  {
+    path: "/notices/cooperativa",
+    element: <PageNotice />
+  },
+  {
+    path: "/noticias/:page/:id",
+    element: <NoticesDescription />
+  },
+  {
+    path: "/conteudos/pdfs",
+    element: <PageContainerA />
+  },
+  {
+    path: "/conteudos/pdfs/1",
+    element: <PagecontainerB />
+  },
+  {
+    path: "/conteudos/pdfs/2",
+    element: <PagecontainerC />
+  },
+  {
+    path: "/conteudos/pdfs/3",
+    element: <PagecontainerD />
+  },
+  {
+    path: "/conteudos/pdfs/4",
+    element: <PagecontainerD />
+  },
+  {
+    path: "/termos-de-uso",
+    element: <TermosDeUso />
+  },
+  {
+    path: "/termos-de-uso",
+    element: <TermosDeUso />
+  }
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <NumberPhoneVProvider>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </NumberPhoneVProvider>
   </StrictMode>
 )

@@ -36,6 +36,7 @@ import FrameSkin22 from "../assets/Parceiros/Frame 82.svg"
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Video from "../assets/filme-BqOdhwS8.mp4"
+import DinamicaApp from "../components/DinamicaApp";
 
 import { X } from "lucide-react";
 import { useEffect, useState, UseState } from "react"
@@ -116,6 +117,7 @@ export default function Conteudos() {
                     </Link>
                 </div>
             </div>
+
             <section className="flex flex-col gap-6 justify-center items-center pt-12 bg-zinc-100 p-4 lg:pb-32 lg:px-40 2xl:px-80">
                 <img src={WhiteHome} alt="" />
                 <h1 className="text-xl font-medium">Leis do <span className="text-orange-500">Cooperativismo</span></h1>
@@ -162,7 +164,7 @@ export default function Conteudos() {
                     <img src={FrameSkin22} alt="" className="h-16 w-28 rounded-xl" />
                 </div>
             </section>
-
+            <DinamicaApp />
             <Footer />
         </div>
 
