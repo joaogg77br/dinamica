@@ -27,6 +27,7 @@ import PagecontainerE from './pages/PageContainerE.jsx'
 import NoticesDescription from "./pages/NoticesDescription.jsx"
 import { NumberPhoneVProvider } from './Context/NumberPhoneV.jsx'
 import TermosDeUso from './pages/TermosDeUso.jsx'
+import Privacidade from './pages/Privacidade.jsx'
 
 const router = createBrowserRouter([
   {
@@ -131,8 +132,8 @@ const router = createBrowserRouter([
     element: <TermosDeUso />
   },
   {
-    path: "/termos-de-uso",
-    element: <TermosDeUso />
+    path: "/PoliticaDePrivacidade",
+    element: <Privacidade />
   }
 ])
 createRoot(document.getElementById('root')).render(

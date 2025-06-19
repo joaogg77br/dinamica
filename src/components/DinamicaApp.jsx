@@ -8,14 +8,12 @@ export default function DinamicaApp() {
                 <img src={WhiteHome} alt="" />
                 <h1 className="text-xl font-medium">Aplicativo<span className="text-orange-500"> Dinânica  </span>Cooperativa</h1>
 
-                <div className="flex flex-col lg:flex-row justify-center w-full gap-4 ">
+                <div className="flex flex-col items-center lg:flex-row justify-center w-full gap-4 ">
                     <Link to={"/termos-de-uso"}>
                         <button className="mx-2 text-white h-7 bg-laranja  lg:m-0 rounded-xl p-8 flex justify-center items-center text-nowrap duration-300 border-2 border-laranja hover:text-laranja  hover:bg-white" >Termos de Uso</button>
                     </Link>
-                    <Link to={"/conteudos/pdfs/4"}>
-                        <Link to={"/conteudos/pdfs/3"}>
-                            <button className="mx-2 text-white h-7 bg-laranja  lg:m-0 rounded-xl p-8 flex justify-center items-center text-nowrap duration-300 border-2 border-laranja hover:text-laranja  hover:bg-white" >Políticas de Privacidade</button>
-                        </Link>
+                    <Link to={"/PoliticaDePrivacidade"}>
+                        <button className="mx-2 text-white h-7 bg-laranja  lg:m-0 rounded-xl p-8 flex justify-center items-center text-nowrap duration-300 border-2 border-laranja hover:text-laranja  hover:bg-white" >Políticas de Privacidade</button>
                     </Link>
                 </div>
             </section>
