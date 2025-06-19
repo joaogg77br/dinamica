@@ -11,7 +11,7 @@ export default function Privacidade() {
                 <Scrolltop />
                 <Header />
                 <h1 className="text-3xl  font-bold">POLÍTICA DE PRIVACIDADE DO APLICATIVO DINÂMICA</h1>
-                <p>Data da última atualização: [Inserir ­­­­Data]</p>
+                <p>Data da última atualização: 02/05/2025</p>
                 <br />
                 <p>A Dinâmica Cooperativa (doravante denominada "Cooperativa") leva a sério a privacidade dos seus Cooperados e usuários do aplicativo móvel "Aplicativo Dinâmica" (doravante denominado "Aplicativo"). Esta Política de Privacidade descreve como coletamos, usamos, compartilhamos e protegemos suas informações pessoais. Ao utilizar o Aplicativo Dinâmica, você concorda com as práticas descritas nesta Política de Privacidade.
                     <br />
@@ -114,16 +114,9 @@ export default function Privacidade() {
 
                     <br />
                     <br />
-                    <div className="font-bold">[Nome do Encarregado de Proteção de Dados (DPO), se aplicável]</div>
-                    <br />
-                    <br />
-                    <div className="font-bold">[E-mail de contato para privacidade]</div>
-                    <br />
-                    <br />
-                    <div className="font-bold">[Telefone de contato]</div>
-                    <br />
-                    <br />
-                    <div className="font-bold">[Endereço físico da Dinâmica Cooperativa]</div>
+                    <div className="font-bold">Email para contato: juridico@dinamicacooperativa.com.br</div>
+                    <div className="font-bold">Telefone para contato: (82) 99380-1294</div>
+                    <div className="font-bold">Endereço físico da Dinâmica Cooperativa: R. Oldemburgo da Silva Paranhos, 334 - Farol, Maceió - AL, 57051-270</div>
                 </p>
             </div >
             <Footer />

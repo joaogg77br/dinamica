@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-    .swiper-pagination-bullet-active{
+@layer utilities {
+    .swiper-pagination-bullet-active {
         @apply bg-laranja;
     }
 }
 
-.força{
+.titulo-termo {
+    @apply font-bold text-lg text-yellow-300;
+    /* Ajuste as classes Tailwind acima conforme o estilo desejado */
+}
+
+.força {
     animation: animation .3s ease-in-out;
 }
 
@@ -22,31 +27,33 @@
 
 
 @keyframes animation {
-  
-    0%{
+
+    0% {
         height: 0%;
     }
-    100%{
+
+    100% {
         opacity: 100%;
     }
 }
 
-.Animate-show{
+.Animate-show {
     animation: downside 300ms linear;
 }
 
-  @keyframes  downside { 
-    0%{
-        transform:'translate(0px, -300px)';
-          opacity:"0%";
+@keyframes downside {
+    0% {
+        transform: 'translate(0px, -300px)';
+        opacity: "0%";
     }
-    75% {
-        transform:'translate(10px,0px)';
-          opacity:"50%";
-        }
 
-    100% {transform:'translate(10px,0px)';
-          opacity:"100%";
-        }
+    75% {
+        transform: 'translate(10px,0px)';
+        opacity: "50%";
     }
- 
+
+    100% {
+        transform: 'translate(10px,0px)';
+        opacity: "100%";
+    }
+}
