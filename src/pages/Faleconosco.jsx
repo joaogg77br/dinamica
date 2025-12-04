@@ -183,16 +183,10 @@ export default function FaleConosco() {
                                     <p>barra@dinamicacooperativa.com.br </p>
                                 </div>
                                 <div>
-                                    <h1 className="text-xl font-bold">Porto de Pedras/AL </h1>
+                                    <h1 className="text-xl font-bold">Tavares/PB</h1>
                                     <br />
-                                    <p>(82) 9414-2916 </p>
-                                    <p>portodepedras@dinamicacooperativa<br className="sm:hidden" />.com.br </p>
-                                </div>
-                                <div>
-                                    <h1 className="text-xl font-bold">São José da Coroa Grande/PE </h1>
-                                    <br />
-                                    <p>(81) 98325-0962 </p>
-                                    <p>coroagrande@dinamicacooperativa.com.br </p>
+                                    <p>(83) 99622-1949</p>
+                                    <p>tavares@dinamicacooperativa.com.br</p>
                                 </div>
 
                             </article>
@@ -225,7 +219,7 @@ export default function FaleConosco() {
                                     <h1 className="text-xl font-bold">Princesa Isabel/PB</h1>
                                     <br />
                                     <p>(83) 99692-3758 </p>
-                                    <p>princesaisabe@dinamicacooperativa.<br className="sm:hidden" />com.br </p>
+                                    <p>princesaisabel@dinamicacooperativa.<br className="sm:hidden" />com.br </p>
                                 </div>
                                 <div>
                                     <h1 className="text-xl font-bold">Santa Luzia do Norte/AL </h1>

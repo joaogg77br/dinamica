@@ -1,4 +1,4 @@
-import Scrolltop from "../components/Scrolltop"
+import Scrolltop from "../components/ScrollTop.jsx"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 

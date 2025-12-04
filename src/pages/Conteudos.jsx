@@ -10,7 +10,7 @@ import Noticias3 from "../assets/Parceiros/Noticias3.svg"
 import DinamicaNews1 from "../assets/Pdfs/dinamica_news-1_ED.pdf"
 import DinamicaNews2 from "../assets/Pdfs/dinamica_news-2_ED.pdf"
 import DinamicaNews3 from "../assets/Pdfs/dinamica_news-3_ED.pdf"
-import Scrolltop from "../components/Scrolltop";
+import Scrolltop from "../components/ScrollTop.jsx";
 import FrameSkin from "../assets/Parceiros/Frame 56.svg"
 import FrameSkin2 from "../assets/Parceiros/Frame 57.svg"
 import FrameSkin3 from "../assets/Parceiros/Frame 58.svg"
